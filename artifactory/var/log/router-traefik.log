@@ -1,0 +1,24 @@
+2025-06-06T05:48:47.618Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator *aggregator.ProviderAggregator
+2025-06-06T05:48:47.646Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2025-06-06T05:48:47.747Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2025-06-06T05:48:47.756Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *templates.UnhealthyNodeConfProvider
+2025-06-06T06:24:25.229Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator *aggregator.ProviderAggregator
+2025-06-06T06:24:25.232Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2025-06-06T06:24:25.248Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2025-06-06T06:24:25.250Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *templates.UnhealthyNodeConfProvider
+2025-06-06T11:47:14.322Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator *aggregator.ProviderAggregator
+2025-06-06T11:47:14.333Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2025-06-06T11:47:14.417Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2025-06-06T11:47:14.421Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *templates.UnhealthyNodeConfProvider
+2025-06-06T11:49:35.366Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator *aggregator.ProviderAggregator
+2025-06-06T11:49:35.368Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2025-06-06T11:49:35.433Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2025-06-06T11:49:35.433Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *templates.UnhealthyNodeConfProvider
+2025-06-06T12:04:19.045Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator *aggregator.ProviderAggregator
+2025-06-06T12:04:19.054Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2025-06-06T12:04:19.124Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2025-06-06T12:04:19.128Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *templates.UnhealthyNodeConfProvider
+2025-06-06T13:07:10.921Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator *aggregator.ProviderAggregator
+2025-06-06T13:07:10.951Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2025-06-06T13:07:10.996Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2025-06-06T13:07:10.998Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *templates.UnhealthyNodeConfProvider

@@ -1,0 +1,460 @@
+[http.routers]
+
+  [http.routers.jfac_01jx1whbjf25v712c2mrk11s4z-0-jfac_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfac_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2023
+    rule = "Path(`/{part0:com\\.jfrog\\.access\\..*}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfac_01jx1whbjf25v712c2mrk11s4z-0-jfac_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfac_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2023
+    rule = "Path(`/{part0:com\\.jfrog\\.access\\..*}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfac_01jx1whbjf25v712c2mrk11s4z-1-jfac_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfac_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2009
+    rule = "Path(`/{part0:access}/{part1:.*}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfac_01jx1whbjf25v712c2mrk11s4z-1-jfac_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfac_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2009
+    rule = "Path(`/{part0:access}/{part1:.*}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfcfg_01jx1whbjf25v712c2mrk11s4z-0-jfcfg_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfcfg_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2035
+    rule = "Path(`/{part0:com\\.jfrog\\.access\\.v1\\.config\\..*}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfcfg_01jx1whbjf25v712c2mrk11s4z-0-jfcfg_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfcfg_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2035
+    rule = "Path(`/{part0:com\\.jfrog\\.access\\.v1\\.config\\..*}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfcfg_01jx1whbjf25v712c2mrk11s4z-1-jfcfg_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfcfg_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2025
+    rule = "Path(`/{part0:com\\.jfrog\\.jfconfig\\..*}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfcfg_01jx1whbjf25v712c2mrk11s4z-1-jfcfg_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfcfg_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2025
+    rule = "Path(`/{part0:com\\.jfrog\\.jfconfig\\..*}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfcfg_01jx1whbjf25v712c2mrk11s4z-2-jfcfg_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfcfg_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2014
+    rule = "Path(`/{part0:jfconfig}/{part1:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfcfg_01jx1whbjf25v712c2mrk11s4z-2-jfcfg_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfcfg_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2014
+    rule = "Path(`/{part0:jfconfig}/{part1:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfevt_01jx1whbjf25v712c2mrk11s4z-0-jfevt_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfevt_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2022
+    rule = "Path(`/{part0:com\\.jfrog\\.event\\..*}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfevt_01jx1whbjf25v712c2mrk11s4z-0-jfevt_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfevt_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2022
+    rule = "Path(`/{part0:com\\.jfrog\\.event\\..*}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfevt_01jx1whbjf25v712c2mrk11s4z-1-jfevt_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfevt_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2011
+    rule = "Path(`/{part0:event}/{part1:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfevt_01jx1whbjf25v712c2mrk11s4z-1-jfevt_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfevt_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2011
+    rule = "Path(`/{part0:event}/{part1:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jffe_01jx1whbjf25v712c2mrk11s4z-0-jffe_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jffe_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2001
+    rule = "Path(`/`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jffe_01jx1whbjf25v712c2mrk11s4z-0-jffe_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jffe_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2001
+    rule = "Path(`/`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jffe_01jx1whbjf25v712c2mrk11s4z-1-jffe_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jffe_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2003
+    rule = "Path(`/{part0:ui}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jffe_01jx1whbjf25v712c2mrk11s4z-1-jffe_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jffe_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2003
+    rule = "Path(`/{part0:ui}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jffe_01jx1whbjf25v712c2mrk11s4z-2-jffe_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jffe_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2008
+    rule = "Path(`/{part0:ui}/{part1:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jffe_01jx1whbjf25v712c2mrk11s4z-2-jffe_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jffe_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1"
+    priority = 2008
+    rule = "Path(`/{part0:ui}/{part1:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfmd_01jx2njkmndntyknh2an06mh9f-0-jfmd_01jx2njkmndntyknh2an06mh9f-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfmd_01jx2njkmndntyknh2an06mh9f-artifactory-node-1"
+    priority = 2014
+    rule = "Path(`/{part0:metadata}/{part1:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfmd_01jx2njkmndntyknh2an06mh9f-0-jfmd_01jx2njkmndntyknh2an06mh9f-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfmd_01jx2njkmndntyknh2an06mh9f-artifactory-node-1"
+    priority = 2014
+    rule = "Path(`/{part0:metadata}/{part1:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfob_01jx1wjw17758y190rcvsn042n-0-jfob_01jx1wjw17758y190rcvsn042n-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfob_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2019
+    rule = "Path(`/{part0:observability}/{part1:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfob_01jx1wjw17758y190rcvsn042n-0-jfob_01jx1wjw17758y190rcvsn042n-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfob_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2019
+    rule = "Path(`/{part0:observability}/{part1:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-0-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2027
+    rule = "Path(`/{part0:.well-known}/{part1:terraform.json}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-0-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2027
+    rule = "Path(`/{part0:.well-known}/{part1:terraform.json}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-1-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2012
+    rule = "Path(`/{part0:artifactory}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-1-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2012
+    rule = "Path(`/{part0:artifactory}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-2-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2017
+    rule = "Path(`/{part0:artifactory}/{part1:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-2-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2017
+    rule = "Path(`/{part0:artifactory}/{part1:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-3-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2031
+    rule = "Path(`/{part0:lifecycle}/{part1:api}/{part2:v1}/{part3:evidence}/{part4:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-3-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2031
+    rule = "Path(`/{part0:lifecycle}/{part1:api}/{part2:v1}/{part3:evidence}/{part4:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-4-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2023
+    rule = "Path(`/{part0:lifecycle}/{part1:api}/{part2:v2}/{part3:audit}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-4-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2023
+    rule = "Path(`/{part0:lifecycle}/{part1:api}/{part2:v2}/{part3:audit}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-5-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2028
+    rule = "Path(`/{part0:lifecycle}/{part1:api}/{part2:v2}/{part3:audit}/{part4:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-5-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2028
+    rule = "Path(`/{part0:lifecycle}/{part1:api}/{part2:v2}/{part3:audit}/{part4:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-6-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2027
+    rule = "Path(`/{part0:lifecycle}/{part1:api}/{part2:v2}/{part3:keys}/{part4:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-6-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2027
+    rule = "Path(`/{part0:lifecycle}/{part1:api}/{part2:v2}/{part3:keys}/{part4:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-7-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2032
+    rule = "Path(`/{part0:lifecycle}/{part1:api}/{part2:v2}/{part3:promotion}/{part4:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-7-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2032
+    rule = "Path(`/{part0:lifecycle}/{part1:api}/{part2:v2}/{part3:promotion}/{part4:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-8-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2032
+    rule = "Path(`/{part0:lifecycle}/{part1:api}/{part2:v2}/{part3:release_bundle}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-8-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2032
+    rule = "Path(`/{part0:lifecycle}/{part1:api}/{part2:v2}/{part3:release_bundle}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-9-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2037
+    rule = "Path(`/{part0:lifecycle}/{part1:api}/{part2:v2}/{part3:release_bundle}/{part4:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-9-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2037
+    rule = "Path(`/{part0:lifecycle}/{part1:api}/{part2:v2}/{part3:release_bundle}/{part4:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-10-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2008
+    rule = "Path(`/{part0:v2}/{part1:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jfrt_01jx1wjw17758y190rcvsn042n-10-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1"
+    priority = 2008
+    rule = "Path(`/{part0:v2}/{part1:(.*)}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jftpl_01jx1wgjjd55xs021h1peq1z3x-0-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1"
+    priority = 2044
+    rule = "Path(`/{part0:com\\.jfrog\\.access\\.v1\\.serviceregistry\\..*}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jftpl_01jx1wgjjd55xs021h1peq1z3x-0-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1"
+    priority = 2044
+    rule = "Path(`/{part0:com\\.jfrog\\.access\\.v1\\.serviceregistry\\..*}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jftpl_01jx1wgjjd55xs021h1peq1z3x-1-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1"
+    priority = 2025
+    rule = "Path(`/{part0:com\\.jfrog\\.topology\\..*}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jftpl_01jx1wgjjd55xs021h1peq1z3x-1-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1"
+    priority = 2025
+    rule = "Path(`/{part0:com\\.jfrog\\.topology\\..*}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jftpl_01jx1wgjjd55xs021h1peq1z3x-2-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1"
+    priority = 2022
+    rule = "Path(`/{part0:access}/{part1:api}/{part2:v1}/{part3:topology}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jftpl_01jx1wgjjd55xs021h1peq1z3x-2-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1"
+    priority = 2022
+    rule = "Path(`/{part0:access}/{part1:api}/{part2:v1}/{part3:topology}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+  [http.routers.jftpl_01jx1wgjjd55xs021h1peq1z3x-3-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1-internal]
+    entryPoints = ["internal"]
+    service = "external-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1"
+    priority = 2011
+    rule = "Path(`/{part0:topology}/{part1:.*}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader"]
+
+  [http.routers.jftpl_01jx1wgjjd55xs021h1peq1z3x-3-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1-external]
+    entryPoints = ["external"]
+    service = "external-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1"
+    priority = 2011
+    rule = "Path(`/{part0:topology}/{part1:.*}`) && Headers(`X-JFrog-Route-To`,`artifactory-node-1`)"
+    middlewares = ["clearRouteToHeader","hotPath","mtls"]
+
+[http.services]
+
+  [http.services.external-jfac_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1.loadBalancer]
+    passHostHeader = false
+    serversTransport = "externalService"
+
+    [[http.services.external-jfac_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1.loadBalancer.servers]]
+      url = "h2c://127.0.0.1:8082"
+
+  [http.services.external-jfcfg_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1.loadBalancer]
+    passHostHeader = false
+    serversTransport = "externalService"
+
+    [[http.services.external-jfcfg_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1.loadBalancer.servers]]
+      url = "h2c://127.0.0.1:8082"
+
+  [http.services.external-jfevt_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1.loadBalancer]
+    passHostHeader = false
+    serversTransport = "externalService"
+
+    [[http.services.external-jfevt_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1.loadBalancer.servers]]
+      url = "h2c://127.0.0.1:8082"
+
+  [http.services.external-jffe_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1.loadBalancer]
+    passHostHeader = false
+    serversTransport = "externalService"
+
+    [[http.services.external-jffe_01jx1whbjf25v712c2mrk11s4z-artifactory-node-1.loadBalancer.servers]]
+      url = "h2c://127.0.0.1:8082"
+
+  [http.services.external-jfmd_01jx2njkmndntyknh2an06mh9f-artifactory-node-1.loadBalancer]
+    passHostHeader = false
+    serversTransport = "externalService"
+
+    [[http.services.external-jfmd_01jx2njkmndntyknh2an06mh9f-artifactory-node-1.loadBalancer.servers]]
+      url = "h2c://127.0.0.1:8082"
+
+  [http.services.external-jfob_01jx1wjw17758y190rcvsn042n-artifactory-node-1.loadBalancer]
+    passHostHeader = false
+    serversTransport = "externalService"
+
+    [[http.services.external-jfob_01jx1wjw17758y190rcvsn042n-artifactory-node-1.loadBalancer.servers]]
+      url = "h2c://127.0.0.1:8082"
+
+  [http.services.external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1.loadBalancer]
+    passHostHeader = false
+    serversTransport = "externalService"
+
+    [[http.services.external-jfrt_01jx1wjw17758y190rcvsn042n-artifactory-node-1.loadBalancer.servers]]
+      url = "h2c://127.0.0.1:8082"
+
+  [http.services.external-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1.loadBalancer]
+    passHostHeader = false
+    serversTransport = "externalService"
+
+    [[http.services.external-jftpl_01jx1wgjjd55xs021h1peq1z3x-artifactory-node-1.loadBalancer.servers]]
+      url = "h2c://127.0.0.1:8082"
+
+[http.serversTransports.externalService]
+  rootCas = ["/opt/jfrog/artifactory/var/data/router/keys/trusted/access-root-ca.crt"]
+
+  [http.serversTransports.externalService.forwardingTimeouts]
+    readIdleTimeout = "10s"
+    pingTimeout = "1s"
+
+[http.middlewares]
+
+  [http.middlewares.clearRouteToHeader.headers.customRequestHeaders]
+    X-JFrog-Route-To = ""
+
+[http.serversTransports.multiTenantTransport]
+  insecureSkipVerify = true
+
+  [http.serversTransports.multiTenantTransport.forwardingTimeouts]
+    idleConnTimeout = "5s"
+    readIdleTimeout = "10s"
+    pingTimeout = "1s"
+
+[http.middlewares.retryEnabledOnUnavailable.plugin.retryEnabledOnUnavailable]
+  attempts = 3

@@ -1,0 +1,416 @@
+2025-06-06T05:27:45.803Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 5 seconds with 2m0s timeout [startup]
+2025-06-06T05:27:50.813Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 10 seconds with 2m0s timeout [startup]
+2025-06-06T05:27:55.816Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 15 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:00.822Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 20 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:05.827Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 25 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:10.833Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 30 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:15.838Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 35 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:20.842Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 40 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:25.847Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 45 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:30.852Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 50 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:35.859Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 55 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:40.864Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 60 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:45.870Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 65 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:50.875Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 70 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:55.882Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 75 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:00.890Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 80 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:05.897Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 85 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:10.905Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 90 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:15.911Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 95 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:20.918Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 100 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:25.926Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 105 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:30.932Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 110 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:35.937Z [jfcon] [INFO ] [47c22528adc09e76] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 115 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:42.623Z [jfcon] [FATAL] [47c22528adc09e76] [bootstrap.go:169              ] [main                ] [                ] - Failed resolving master key: failed resolving 'shared.security.masterKey' key; file does not exist: /opt/jfrog/artifactory/var/etc/security/master.key [startup]
+2025-06-06T05:37:45.338Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 5 seconds with 2m0s timeout [startup]
+2025-06-06T05:37:50.363Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 10 seconds with 2m0s timeout [startup]
+2025-06-06T05:37:55.366Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 15 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:00.370Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 20 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:05.375Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 25 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:10.381Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 30 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:15.384Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 35 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:20.389Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 40 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:25.392Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 45 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:30.399Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 50 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:35.404Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 55 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:40.410Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 60 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:45.416Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 65 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:50.422Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 70 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:55.431Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 75 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:00.436Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 80 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:05.443Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 85 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:10.449Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 90 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:15.455Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 95 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:20.462Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 100 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:25.468Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 105 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:30.475Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 110 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:35.481Z [jfcon] [INFO ] [6d8518ca4d0bd559] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 115 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:40.331Z [jfcon] [FATAL] [6d8518ca4d0bd559] [bootstrap.go:169              ] [main                ] [                ] - Cluster join: Failed resolving join key: failed resolving 'shared.security.joinKey' key; file does not exist: /opt/jfrog/artifactory/var/etc/security/join.key [startup]
+2025-06-06T05:47:23.007Z [jfcon] [INFO ] [0a97573aab556995] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 5 seconds with 2m0s timeout [startup]
+2025-06-06T05:47:28.304Z [jfcon] [INFO ] [0a97573aab556995] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 10 seconds with 2m0s timeout [startup]
+2025-06-06T05:47:33.814Z [jfcon] [INFO ] [0a97573aab556995] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 15 seconds with 2m0s timeout [startup]
+2025-06-06T05:47:38.825Z [jfcon] [INFO ] [0a97573aab556995] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 20 seconds with 2m0s timeout [startup]
+2025-06-06T05:47:43.267Z [jfcon] [INFO ] [0a97573aab556995] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 25 seconds with 2m0s timeout [startup]
+2025-06-06T05:47:48.500Z [jfcon] [INFO ] [0a97573aab556995] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 30 seconds with 2m0s timeout [startup]
+2025-06-06T05:47:53.928Z [jfcon] [INFO ] [0a97573aab556995] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 35 seconds with 2m0s timeout [startup]
+2025-06-06T05:47:58.941Z [jfcon] [INFO ] [0a97573aab556995] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 40 seconds with 2m0s timeout [startup]
+2025-06-06T05:48:03.951Z [jfcon] [INFO ] [0a97573aab556995] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 45 seconds with 2m0s timeout [startup]
+2025-06-06T05:48:08.961Z [jfcon] [INFO ] [0a97573aab556995] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 50 seconds with 2m0s timeout [startup]
+2025-06-06T05:48:13.982Z [jfcon] [INFO ] [0a97573aab556995] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 55 seconds with 2m0s timeout [startup]
+2025-06-06T05:48:18.992Z [jfcon] [INFO ] [0a97573aab556995] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 60 seconds with 2m0s timeout [startup]
+2025-06-06T05:48:23.996Z [jfcon] [INFO ] [0a97573aab556995] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 65 seconds with 2m0s timeout [startup]
+2025-06-06T05:48:27.999Z [jfcon] [INFO ] [0a97573aab556995] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 70 seconds with 2m0s timeout [startup]
+2025-06-06T05:48:35.166Z [jfcon] [INFO ] [0a97573aab556995] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 5: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T05:48:40.193Z [jfcon] [INFO ] [0a97573aab556995] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 10: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T05:48:45.210Z [jfcon] [INFO ] [0a97573aab556995] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 15: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T05:48:50.245Z [jfcon] [INFO ] [0a97573aab556995] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 20: Service registry Ping failed, will retry. Error: failed to ping access, response status: 404 Not Found (returned 404) [startup]
+2025-06-06T05:48:52.304Z [jfcon] [INFO ] [0a97573aab556995] [bootstrap.go:174              ] [main                ] [                ] - JFConnect Service ID: jfcon@01jx1whbjf25v712c2mrk11s4z [startup]
+2025-06-06T05:48:52.304Z [jfcon] [INFO ] [0a97573aab556995] [bootstrap.go:175              ] [main                ] [                ] - JFConnect Node ID   : artifactory-node-1 [startup]
+2025-06-06T05:48:52.304Z [jfcon] [INFO ] [0a97573aab556995] [bootstrap.go:176              ] [main                ] [                ] - JFConnect Node IP   : 127.0.0.1 [startup]
+2025-06-06T05:48:52.553Z [jfcon] [INFO ] [0a97573aab556995] [join_executor.go:178          ] [main                ] [                ] - Cluster join: Successfully joined the cluster [access_client]
+2025-06-06T05:48:52.556Z [jfcon] [INFO ] [0a97573aab556995] [join_executor.go:190          ] [main                ] [                ] - Cluster join: executing Router register at: localhost:8046 for service id jfcon@01jx1whbjf25v712c2mrk11s4z [access_client]
+2025-06-06T05:48:52.778Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_storage.go:46    ] [main                ] [                ] - EnforcementOn value is forced to the value 'false' [entitlements_storage]
+2025-06-06T05:48:52.858Z [jfcon] [INFO ] [0a97573aab556995] [dedicated_grpc_connection.go:2] [main                ] [                ] - Creating a new dedicated gRPC connection for localhost:8046 [access_client]
+2025-06-06T05:48:52.867Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:49  ] [main                ] [                ] - Starting Platform Config stream connect goroutine [access_client]
+2025-06-06T05:48:52.869Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T05:48:56.253Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:48:56.253Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:48:56.254Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T05:48:56.254Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T05:48:56.255Z [jfcon] [ERROR] [0a97573aab556995] [proxy_config_storage.go:51    ] [main                ] [                ] - Error getting proxy configservice from db, failed loading proxy configservice: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [proxy_config_storage]
+2025-06-06T05:48:56.271Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:149   ] [main                ] [                ] - Registering listener for license/registration_token change [entitlement_service]
+2025-06-06T05:48:56.279Z [jfcon] [INFO ] [0a97573aab556995] [backoffice_metric_logger.go:80] [main                ] [                ] - Initializing BackOfficeMetricsService with usageDir: /opt/jfrog/artifactory/var/data/jfconnect/usage [backoffice_metrics_logger]
+2025-06-06T05:48:56.316Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:48:56.319Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:48:56.322Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T05:48:56.322Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T05:48:56.351Z [jfcon] [INFO ] [0a97573aab556995] [archival_service.go:117       ] [main                ] [                ] - Scheduling archival flow job with interval 4m30s [archival_service]
+2025-06-06T05:48:56.353Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:276   ] [main                ] [                ] - Starting synced actions loop [entitlement_service]
+2025-06-06T05:48:56.353Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:287   ] [main                ] [                ] - Finished synced actions loop [entitlement_service]
+2025-06-06T05:48:56.353Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:141          ] [main                ] [                ] - Scheduling usage flow job with interval 4m10s [usage_service]
+2025-06-06T05:48:56.365Z [jfcon] [INFO ] [0a97573aab556995] [application.go:240            ] [main                ] [                ] - JFConnect (jfcon) service initialization completed in 98.372 seconds. HTTP server listening on 127.0.0.1:8030. GRPC server listening on 127.0.0.1:8035.  [application]
+2025-06-06T05:48:56.461Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:133   ] [main                ] [                ] - Running synced action 'register'  [entitlement_service]
+2025-06-06T05:48:56.462Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:298   ] [main                ] [                ] - Synced action 'register' triggered - acquiring lock [entitlement_service]
+2025-06-06T05:48:56.650Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:48:56.651Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:48:56.652Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T05:48:56.652Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T05:48:56.766Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:48:56.766Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:48:56.774Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T05:48:56.775Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T05:48:56.866Z [jfcon] [WARN ] [0a97573aab556995] [entitlements_service.go:312   ] [main                ] [                ] - Synced action 'register' - failed checking execution requirement: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource
+failed loading entitlements service config
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementsConfigDao).load
+	internal/app/features/storage/entitlements_config_dao.go:72
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementsConfigDao).Get
+	internal/app/features/storage/entitlements_config_dao.go:51
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementStorage).GetConfig
+	internal/app/features/storage/entitlements_storage.go:99
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements/actions.getTriggerRegistration
+	internal/app/features/entitlements/actions/register_synced_action.go:79
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements/actions.(*registerSyncedAction).ShouldExecute
+	internal/app/features/entitlements/actions/register_synced_action.go:47
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.(*service).do
+	internal/app/features/entitlements/entitlements_service.go:310
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.NewService.func1
+	internal/app/features/entitlements/entitlements_service.go:134
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.(*service).StartSyncedActions.func1
+	internal/app/features/entitlements/entitlements_service.go:285
+runtime.goexit
+	/root/.gvm/gos/go1.24.2/src/runtime/asm_amd64.s:1700 [entitlement_service]
+2025-06-06T05:48:56.955Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:48:56.956Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:48:56.956Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T05:48:56.956Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T05:48:57.298Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:48:57.298Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:48:57.298Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T05:48:57.298Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T05:48:57.955Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:48:57.956Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:48:57.993Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T05:48:57.996Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T05:48:59.304Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:48:59.304Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:48:59.307Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T05:48:59.307Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T05:48:59.869Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:133   ] [main                ] [                ] - Running synced action 'register'  [entitlement_service]
+2025-06-06T05:48:59.871Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:298   ] [main                ] [                ] - Synced action 'register' triggered - acquiring lock [entitlement_service]
+2025-06-06T05:48:59.943Z [jfcon] [WARN ] [0a97573aab556995] [entitlements_service.go:312   ] [main                ] [                ] - Synced action 'register' - failed checking execution requirement: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource
+failed loading entitlements service config
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementsConfigDao).load
+	internal/app/features/storage/entitlements_config_dao.go:72
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementsConfigDao).Get
+	internal/app/features/storage/entitlements_config_dao.go:51
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementStorage).GetConfig
+	internal/app/features/storage/entitlements_storage.go:99
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements/actions.getTriggerRegistration
+	internal/app/features/entitlements/actions/register_synced_action.go:79
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements/actions.(*registerSyncedAction).ShouldExecute
+	internal/app/features/entitlements/actions/register_synced_action.go:47
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.(*service).do
+	internal/app/features/entitlements/entitlements_service.go:310
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.NewService.func1
+	internal/app/features/entitlements/entitlements_service.go:134
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.(*service).schedule.func1
+	internal/app/features/entitlements/entitlements_service.go:371
+runtime.goexit
+	/root/.gvm/gos/go1.24.2/src/runtime/asm_amd64.s:1700 [entitlement_service]
+2025-06-06T05:49:01.881Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:49:01.881Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:49:01.882Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T05:49:01.882Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T05:49:02.946Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:133   ] [main                ] [                ] - Running synced action 'register'  [entitlement_service]
+2025-06-06T05:49:02.946Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:298   ] [main                ] [                ] - Synced action 'register' triggered - acquiring lock [entitlement_service]
+2025-06-06T05:49:02.975Z [jfcon] [WARN ] [0a97573aab556995] [entitlements_service.go:312   ] [main                ] [                ] - Synced action 'register' - failed checking execution requirement: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource
+failed loading entitlements service config
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementsConfigDao).load
+	internal/app/features/storage/entitlements_config_dao.go:72
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementsConfigDao).Get
+	internal/app/features/storage/entitlements_config_dao.go:51
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementStorage).GetConfig
+	internal/app/features/storage/entitlements_storage.go:99
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements/actions.getTriggerRegistration
+	internal/app/features/entitlements/actions/register_synced_action.go:79
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements/actions.(*registerSyncedAction).ShouldExecute
+	internal/app/features/entitlements/actions/register_synced_action.go:47
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.(*service).do
+	internal/app/features/entitlements/entitlements_service.go:310
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.NewService.func1
+	internal/app/features/entitlements/entitlements_service.go:134
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.(*service).schedule.func1
+	internal/app/features/entitlements/entitlements_service.go:371
+runtime.goexit
+	/root/.gvm/gos/go1.24.2/src/runtime/asm_amd64.s:1700 [entitlement_service]
+2025-06-06T05:49:04.906Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:49:04.907Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:49:04.909Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T05:49:04.910Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T05:49:05.976Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:133   ] [main                ] [                ] - Running synced action 'register'  [entitlement_service]
+2025-06-06T05:49:05.976Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:298   ] [main                ] [                ] - Synced action 'register' triggered - acquiring lock [entitlement_service]
+2025-06-06T05:49:05.998Z [jfcon] [WARN ] [0a97573aab556995] [entitlements_service.go:312   ] [main                ] [                ] - Synced action 'register' - failed checking execution requirement: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource
+failed loading entitlements service config
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementsConfigDao).load
+	internal/app/features/storage/entitlements_config_dao.go:72
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementsConfigDao).Get
+	internal/app/features/storage/entitlements_config_dao.go:51
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementStorage).GetConfig
+	internal/app/features/storage/entitlements_storage.go:99
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements/actions.getTriggerRegistration
+	internal/app/features/entitlements/actions/register_synced_action.go:79
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements/actions.(*registerSyncedAction).ShouldExecute
+	internal/app/features/entitlements/actions/register_synced_action.go:47
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.(*service).do
+	internal/app/features/entitlements/entitlements_service.go:310
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.NewService.func1
+	internal/app/features/entitlements/entitlements_service.go:134
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.(*service).schedule.func1
+	internal/app/features/entitlements/entitlements_service.go:371
+runtime.goexit
+	/root/.gvm/gos/go1.24.2/src/runtime/asm_amd64.s:1700 [entitlement_service]
+2025-06-06T05:49:07.926Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:49:07.926Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access_client]
+2025-06-06T05:49:07.927Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T05:49:07.927Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T05:49:09.000Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:133   ] [main                ] [                ] - Running synced action 'register'  [entitlement_service]
+2025-06-06T05:49:09.001Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:298   ] [main                ] [                ] - Synced action 'register' triggered - acquiring lock [entitlement_service]
+2025-06-06T05:49:09.046Z [jfcon] [WARN ] [0a97573aab556995] [entitlements_service.go:312   ] [main                ] [                ] - Synced action 'register' - failed checking execution requirement: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource
+failed loading entitlements service config
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementsConfigDao).load
+	internal/app/features/storage/entitlements_config_dao.go:72
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementsConfigDao).Get
+	internal/app/features/storage/entitlements_config_dao.go:51
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementStorage).GetConfig
+	internal/app/features/storage/entitlements_storage.go:99
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements/actions.getTriggerRegistration
+	internal/app/features/entitlements/actions/register_synced_action.go:79
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements/actions.(*registerSyncedAction).ShouldExecute
+	internal/app/features/entitlements/actions/register_synced_action.go:47
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.(*service).do
+	internal/app/features/entitlements/entitlements_service.go:310
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.NewService.func1
+	internal/app/features/entitlements/entitlements_service.go:134
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.(*service).schedule.func1
+	internal/app/features/entitlements/entitlements_service.go:371
+runtime.goexit
+	/root/.gvm/gos/go1.24.2/src/runtime/asm_amd64.s:1700 [entitlement_service]
+2025-06-06T05:49:12.048Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:133   ] [main                ] [                ] - Running synced action 'register'  [entitlement_service]
+2025-06-06T05:49:12.049Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:298   ] [main                ] [                ] - Synced action 'register' triggered - acquiring lock [entitlement_service]
+2025-06-06T05:49:12.122Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:319   ] [main                ] [                ] - Synced action 'register' - executing [entitlement_service]
+2025-06-06T05:49:20.853Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:105 ] [main                ] [                ] - Starting Platform Config stream Recv loop [access_client]
+2025-06-06T05:49:20.854Z [jfcon] [INFO ] [0a97573aab556995] [platform_config_stream.go:137 ] [main                ] [                ] - Starting Platform Config checkKeepAlive [access_client]
+2025-06-06T05:49:20.885Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:180   ] [main                ] [                ] - Event received FullInvalidation. Invoking reset entitlements [entitlement_service]
+2025-06-06T05:49:20.885Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:256   ] [main                ] [                ] - Resetting entitlements service [entitlement_service]
+2025-06-06T05:49:20.885Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:262   ] [main                ] [                ] - Stopping timer [entitlement_service]
+2025-06-06T05:49:20.987Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:133   ] [main                ] [                ] - Running synced action 'reset'  [entitlement_service]
+2025-06-06T05:49:20.987Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:298   ] [main                ] [                ] - Synced action 'reset' triggered - acquiring lock [entitlement_service]
+2025-06-06T05:49:21.002Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:319   ] [main                ] [                ] - Synced action 'reset' - executing [entitlement_service]
+2025-06-06T05:49:21.002Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:339   ] [main                ] [                ] - Synced action 'reset' - finished execution [entitlement_service]
+2025-06-06T05:49:21.125Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:133   ] [main                ] [                ] - Running synced action 'register'  [entitlement_service]
+2025-06-06T05:49:21.126Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:298   ] [main                ] [                ] - Synced action 'register' triggered - acquiring lock [entitlement_service]
+2025-06-06T05:49:21.146Z [jfcon] [INFO ] [0a97573aab556995] [entitlements_service.go:319   ] [main                ] [                ] - Synced action 'register' - executing [entitlement_service]
+2025-06-06T05:49:21.147Z [jfcon] [ERROR] [0a97573aab556995] [entitlements_service.go:357   ] [main                ] [                ] - Synced action 'register' - encountered unrecoverable error, entitlement service stopped until restart or license update. cause: empty registration payload [entitlement_service]
+2025-06-06T05:49:31.917Z [jfcon] [INFO ] [0a97573aab556995] [proxy_config_update_listener.g] [main                ] [                ] - Proxy configservice updated [proxy_config_update_listener]
+2025-06-06T05:49:31.958Z [jfcon] [INFO ] [0a97573aab556995] [proxy_config_update_listener.g] [main                ] [                ] - Proxy configservice change event received, proxy is empty [proxy_config_update_listener]
+2025-06-06T05:49:31.958Z [jfcon] [INFO ] [0a97573aab556995] [proxy_config_update_listener.g] [main                ] [                ] - Resetting transport for all the client [proxy_config_update_listener]
+2025-06-06T05:49:31.959Z [jfcon] [INFO ] [0a97573aab556995] [proxy_config_update_listener.g] [main                ] [                ] - Resetting transport for all the client completed [proxy_config_update_listener]
+2025-06-06T05:49:35.630Z [jfcon] [INFO ] [0a97573aab556995] [proxy_config_update_listener.g] [main                ] [                ] - Proxy configservice updated [proxy_config_update_listener]
+2025-06-06T05:49:35.666Z [jfcon] [INFO ] [0a97573aab556995] [proxy_config_update_listener.g] [main                ] [                ] - Proxy configservice change event received, proxy is empty [proxy_config_update_listener]
+2025-06-06T05:49:35.667Z [jfcon] [INFO ] [0a97573aab556995] [proxy_config_update_listener.g] [main                ] [                ] - Resetting transport for all the client [proxy_config_update_listener]
+2025-06-06T05:49:35.667Z [jfcon] [INFO ] [0a97573aab556995] [proxy_config_update_listener.g] [main                ] [                ] - Resetting transport for all the client completed [proxy_config_update_listener]
+2025-06-06T05:49:36.289Z [jfcon] [INFO ] [0a97573aab556995] [proxy_config_update_listener.g] [main                ] [                ] - Proxy configservice updated [proxy_config_update_listener]
+2025-06-06T05:49:36.325Z [jfcon] [INFO ] [0a97573aab556995] [proxy_config_update_listener.g] [main                ] [                ] - Proxy configservice change event received, proxy is empty [proxy_config_update_listener]
+2025-06-06T05:49:36.326Z [jfcon] [INFO ] [0a97573aab556995] [proxy_config_update_listener.g] [main                ] [                ] - Resetting transport for all the client [proxy_config_update_listener]
+2025-06-06T05:49:36.327Z [jfcon] [INFO ] [0a97573aab556995] [proxy_config_update_listener.g] [main                ] [                ] - Resetting transport for all the client completed [proxy_config_update_listener]
+2025-06-06T05:53:06.692Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T05:53:09.971Z [jfcon] [WARN ] [0a97573aab556995] [artifactory_usage_service.go:2] [main                ] [                ] - Could not perform logs cleanup in artifactory; response status:`403` [artifactory_client]
+2025-06-06T05:53:09.998Z [jfcon] [WARN ] [0a97573aab556995] [artifactory_usage_service.go:2] [main                ] [                ] - Could not perform logs cleanup in artifactory; response status:`403` [artifactory_client]
+2025-06-06T05:53:10.024Z [jfcon] [WARN ] [0a97573aab556995] [artifactory_usage_service.go:2] [main                ] [                ] - Could not perform logs cleanup in artifactory; response status:`403` [artifactory_client]
+2025-06-06T05:53:10.047Z [jfcon] [WARN ] [0a97573aab556995] [artifactory_usage_service.go:2] [main                ] [                ] - Could not perform logs cleanup in artifactory; response status:`403` [artifactory_client]
+2025-06-06T05:53:10.072Z [jfcon] [WARN ] [0a97573aab556995] [artifactory_usage_service.go:2] [main                ] [                ] - Could not perform logs cleanup in artifactory; response status:`403` [artifactory_client]
+2025-06-06T05:53:10.098Z [jfcon] [WARN ] [0a97573aab556995] [artifactory_usage_service.go:2] [main                ] [                ] - Could not perform logs cleanup in artifactory; response status:`403` [artifactory_client]
+2025-06-06T05:53:10.225Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]
+2025-06-06T05:53:13.242Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T05:53:13.325Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]
+2025-06-06T05:53:19.347Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T05:53:19.481Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]
+2025-06-06T05:53:27.025Z [jfcon] [WARN ] [0a97573aab556995] [archival_service.go:183       ] [main                ] [                ] - Usage repo don't exist, skipping archival execution for the day [archival_service]
+2025-06-06T05:53:31.495Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T05:53:31.574Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]
+2025-06-06T05:54:06.503Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T05:54:06.615Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]
+2025-06-06T05:54:54.663Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T05:54:54.775Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]
+2025-06-06T05:56:30.807Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T05:56:30.954Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]
+2025-06-06T05:59:43.065Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T05:59:43.203Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]
+2025-06-06T06:06:07.326Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T06:06:07.532Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]
+2025-06-06T06:07:16.122Z [jfcon] [INFO ] [0a97573aab556995] [proxy_config_update_listener.g] [main                ] [                ] - Proxy configservice updated [proxy_config_update_listener]
+2025-06-06T06:07:16.221Z [jfcon] [INFO ] [0a97573aab556995] [proxy_config_update_listener.g] [main                ] [                ] - Proxy configservice change event received, proxy is empty [proxy_config_update_listener]
+2025-06-06T06:07:16.222Z [jfcon] [INFO ] [0a97573aab556995] [proxy_config_update_listener.g] [main                ] [                ] - Resetting transport for all the client [proxy_config_update_listener]
+2025-06-06T06:07:16.236Z [jfcon] [INFO ] [0a97573aab556995] [proxy_config_update_listener.g] [main                ] [                ] - Resetting transport for all the client completed [proxy_config_update_listener]
+2025-06-06T06:18:55.689Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T06:18:55.895Z [jfcon] [INFO ] [0a97573aab556995] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]
+2025-06-06T06:18:55.900Z [jfcon] [ERROR] [0a97573aab556995] [usage_service.go:571          ] [main                ] [                ] - Usage flow failed; failed to fetch consumption files, response status: 400 Bad Request (returned 400) (Next try in 25m36s) [usage_service]
+2025-06-06T11:46:20.722Z [jfcon] [INFO ] [1d99a9bf0215abef] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 5: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:46:25.743Z [jfcon] [INFO ] [1d99a9bf0215abef] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 10: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:46:30.765Z [jfcon] [INFO ] [1d99a9bf0215abef] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 15: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:46:35.774Z [jfcon] [INFO ] [1d99a9bf0215abef] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 20: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:46:40.787Z [jfcon] [INFO ] [1d99a9bf0215abef] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 25: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:46:45.797Z [jfcon] [INFO ] [1d99a9bf0215abef] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 30: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:46:50.809Z [jfcon] [INFO ] [1d99a9bf0215abef] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 35: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:46:55.820Z [jfcon] [INFO ] [1d99a9bf0215abef] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 40: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:47:00.830Z [jfcon] [INFO ] [1d99a9bf0215abef] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 45: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:47:05.841Z [jfcon] [INFO ] [1d99a9bf0215abef] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 50: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:47:10.855Z [jfcon] [INFO ] [1d99a9bf0215abef] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 55: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:48:45.715Z [jfcon] [INFO ] [616db29724679e3f] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 5: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:48:50.734Z [jfcon] [INFO ] [616db29724679e3f] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 10: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:48:55.746Z [jfcon] [INFO ] [616db29724679e3f] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 15: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:49:00.756Z [jfcon] [INFO ] [616db29724679e3f] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 20: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:49:05.774Z [jfcon] [INFO ] [616db29724679e3f] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 25: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:49:10.782Z [jfcon] [INFO ] [616db29724679e3f] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 30: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:49:15.800Z [jfcon] [INFO ] [616db29724679e3f] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 35: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:49:20.808Z [jfcon] [INFO ] [616db29724679e3f] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 40: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:49:25.819Z [jfcon] [INFO ] [616db29724679e3f] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 45: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:49:30.829Z [jfcon] [INFO ] [616db29724679e3f] [access_thin_client.go:112     ] [main                ] [                ] - Cluster join: Retry 50: Service registry Ping failed, will retry. Error: failed connecting to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:49:35.920Z [jfcon] [INFO ] [616db29724679e3f] [bootstrap.go:174              ] [main                ] [                ] - JFConnect Service ID: jfcon@01jx1whbjf25v712c2mrk11s4z [startup]
+2025-06-06T11:49:35.921Z [jfcon] [INFO ] [616db29724679e3f] [bootstrap.go:175              ] [main                ] [                ] - JFConnect Node ID   : artifactory-node-1 [startup]
+2025-06-06T11:49:35.921Z [jfcon] [INFO ] [616db29724679e3f] [bootstrap.go:176              ] [main                ] [                ] - JFConnect Node IP   : 127.0.0.1 [startup]
+2025-06-06T11:49:36.459Z [jfcon] [INFO ] [616db29724679e3f] [join_executor.go:178          ] [main                ] [                ] - Cluster join: Successfully joined the cluster [access_client]
+2025-06-06T11:49:36.473Z [jfcon] [INFO ] [616db29724679e3f] [join_executor.go:190          ] [main                ] [                ] - Cluster join: executing Router register at: localhost:8046 for service id jfcon@01jx1whbjf25v712c2mrk11s4z [access_client]
+2025-06-06T11:49:36.861Z [jfcon] [INFO ] [616db29724679e3f] [entitlements_storage.go:46    ] [main                ] [                ] - EnforcementOn value is forced to the value 'false' [entitlements_storage]
+2025-06-06T11:49:37.017Z [jfcon] [INFO ] [616db29724679e3f] [dedicated_grpc_connection.go:2] [main                ] [                ] - Creating a new dedicated gRPC connection for localhost:8046 [access_client]
+2025-06-06T11:49:37.038Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:49  ] [main                ] [                ] - Starting Platform Config stream connect goroutine [access_client]
+2025-06-06T11:49:37.060Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T11:49:37.185Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access_client]
+2025-06-06T11:49:37.189Z [jfcon] [ERROR] [616db29724679e3f] [proxy_config_storage.go:51    ] [main                ] [                ] - Error getting proxy configservice from db, failed loading proxy configservice: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [proxy_config_storage]
+2025-06-06T11:49:37.194Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access_client]
+2025-06-06T11:49:37.204Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T11:49:37.208Z [jfcon] [INFO ] [616db29724679e3f] [entitlements_service.go:149   ] [main                ] [                ] - Registering listener for license/registration_token change [entitlement_service]
+2025-06-06T11:49:37.209Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T11:49:37.219Z [jfcon] [INFO ] [616db29724679e3f] [backoffice_metric_logger.go:80] [main                ] [                ] - Initializing BackOfficeMetricsService with usageDir: /opt/jfrog/artifactory/var/data/jfconnect/usage [backoffice_metrics_logger]
+2025-06-06T11:49:37.239Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access_client]
+2025-06-06T11:49:37.240Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access_client]
+2025-06-06T11:49:37.240Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T11:49:37.240Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T11:49:37.267Z [jfcon] [INFO ] [616db29724679e3f] [usage_service.go:141          ] [main                ] [                ] - Scheduling usage flow job with interval 5m30s [usage_service]
+2025-06-06T11:49:37.267Z [jfcon] [INFO ] [616db29724679e3f] [archival_service.go:117       ] [main                ] [                ] - Scheduling archival flow job with interval 4m30s [archival_service]
+2025-06-06T11:49:37.277Z [jfcon] [INFO ] [616db29724679e3f] [entitlements_service.go:276   ] [main                ] [                ] - Starting synced actions loop [entitlement_service]
+2025-06-06T11:49:37.278Z [jfcon] [INFO ] [616db29724679e3f] [entitlements_service.go:287   ] [main                ] [                ] - Finished synced actions loop [entitlement_service]
+2025-06-06T11:49:37.279Z [jfcon] [INFO ] [616db29724679e3f] [application.go:240            ] [main                ] [                ] - JFConnect (jfcon) service initialization completed in 55.589 seconds. HTTP server listening on 127.0.0.1:8030. GRPC server listening on 127.0.0.1:8035.  [application]
+2025-06-06T11:49:37.291Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access_client]
+2025-06-06T11:49:37.292Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access_client]
+2025-06-06T11:49:37.292Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T11:49:37.293Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T11:49:37.403Z [jfcon] [INFO ] [616db29724679e3f] [entitlements_service.go:133   ] [main                ] [                ] - Running synced action 'register'  [entitlement_service]
+2025-06-06T11:49:37.404Z [jfcon] [INFO ] [616db29724679e3f] [entitlements_service.go:298   ] [main                ] [                ] - Synced action 'register' triggered - acquiring lock [entitlement_service]
+2025-06-06T11:49:37.410Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access_client]
+2025-06-06T11:49:37.411Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access_client]
+2025-06-06T11:49:37.412Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T11:49:37.412Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T11:49:37.578Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access_client]
+2025-06-06T11:49:37.591Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access_client]
+2025-06-06T11:49:37.592Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T11:49:37.592Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T11:49:37.915Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access_client]
+2025-06-06T11:49:37.918Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access_client]
+2025-06-06T11:49:37.921Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T11:49:37.922Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T11:49:38.568Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access_client]
+2025-06-06T11:49:38.575Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access_client]
+2025-06-06T11:49:38.578Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T11:49:38.579Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T11:49:39.863Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access_client]
+2025-06-06T11:49:39.864Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access_client]
+2025-06-06T11:49:39.864Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T11:49:39.865Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T11:49:39.960Z [jfcon] [WARN ] [616db29724679e3f] [entitlements_service.go:312   ] [main                ] [                ] - Synced action 'register' - failed checking execution requirement: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8"
+failed loading entitlements service config
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementsConfigDao).load
+	internal/app/features/storage/entitlements_config_dao.go:72
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementsConfigDao).Get
+	internal/app/features/storage/entitlements_config_dao.go:51
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/storage.(*entitlementStorage).GetConfig
+	internal/app/features/storage/entitlements_storage.go:99
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements/actions.getTriggerRegistration
+	internal/app/features/entitlements/actions/register_synced_action.go:79
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements/actions.(*registerSyncedAction).ShouldExecute
+	internal/app/features/entitlements/actions/register_synced_action.go:47
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.(*service).do
+	internal/app/features/entitlements/entitlements_service.go:310
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.NewService.func1
+	internal/app/features/entitlements/entitlements_service.go:134
+jfrog.com/jfrog-jfconnect/v7/internal/app/features/entitlements.(*service).StartSyncedActions.func1
+	internal/app/features/entitlements/entitlements_service.go:285
+runtime.goexit
+	/root/.gvm/gos/go1.24.2/src/runtime/asm_amd64.s:1700 [entitlement_service]
+2025-06-06T11:49:42.962Z [jfcon] [INFO ] [616db29724679e3f] [entitlements_service.go:133   ] [main                ] [                ] - Running synced action 'register'  [entitlement_service]
+2025-06-06T11:49:42.963Z [jfcon] [INFO ] [616db29724679e3f] [entitlements_service.go:298   ] [main                ] [                ] - Synced action 'register' triggered - acquiring lock [entitlement_service]
+2025-06-06T11:49:48.961Z [jfcon] [INFO ] [616db29724679e3f] [entitlements_service.go:319   ] [main                ] [                ] - Synced action 'register' - executing [entitlement_service]
+2025-06-06T11:49:52.273Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:105 ] [main                ] [                ] - Starting Platform Config stream Recv loop [access_client]
+2025-06-06T11:49:52.274Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:137 ] [main                ] [                ] - Starting Platform Config checkKeepAlive [access_client]
+2025-06-06T11:51:14.476Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:147 ] [main                ] [                ] - Platform Config Stream will be reconnected due to keepAliveTimeout. Last Event Time: 2025-06-06 11:50:54 +0000 UTC [access_client]
+2025-06-06T11:51:15.404Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:150 ] [main                ] [                ] - Stopping Platform Config checkKeepAlive [access_client]
+2025-06-06T11:51:15.482Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Canceled desc = context canceled [access_client]
+2025-06-06T11:51:15.484Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:115 ] [main                ] [                ] - Platform Config stream Recv loop stopped [access_client]
+2025-06-06T11:51:15.526Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:88  ] [main                ] [                ] - Platform Config stream disconnected [access_client]
+2025-06-06T11:51:15.546Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access_client]
+2025-06-06T11:51:27.851Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:105 ] [main                ] [                ] - Starting Platform Config stream Recv loop [access_client]
+2025-06-06T11:51:27.853Z [jfcon] [INFO ] [616db29724679e3f] [platform_config_stream.go:137 ] [main                ] [                ] - Starting Platform Config checkKeepAlive [access_client]
+2025-06-06T11:55:07.370Z [jfcon] [INFO ] [616db29724679e3f] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T11:55:07.993Z [jfcon] [INFO ] [616db29724679e3f] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]
+2025-06-06T11:55:11.023Z [jfcon] [INFO ] [616db29724679e3f] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T11:55:11.130Z [jfcon] [INFO ] [616db29724679e3f] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]
+2025-06-06T11:55:17.157Z [jfcon] [INFO ] [616db29724679e3f] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T11:55:17.250Z [jfcon] [INFO ] [616db29724679e3f] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]
+2025-06-06T11:55:29.282Z [jfcon] [INFO ] [616db29724679e3f] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T11:55:29.394Z [jfcon] [INFO ] [616db29724679e3f] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]
+2025-06-06T11:55:53.455Z [jfcon] [INFO ] [616db29724679e3f] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T11:55:53.549Z [jfcon] [INFO ] [616db29724679e3f] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]
+2025-06-06T11:56:41.578Z [jfcon] [INFO ] [616db29724679e3f] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T11:56:41.673Z [jfcon] [INFO ] [616db29724679e3f] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]
+2025-06-06T11:58:17.702Z [jfcon] [INFO ] [616db29724679e3f] [usage_service.go:255          ] [main                ] [                ] - Starting usage collection [usage_service]
+2025-06-06T11:58:17.790Z [jfcon] [INFO ] [616db29724679e3f] [usage_service.go:281          ] [main                ] [                ] - Finished usage collection [usage_service]

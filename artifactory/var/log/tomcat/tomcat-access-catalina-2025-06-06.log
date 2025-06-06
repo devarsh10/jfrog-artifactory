@@ -1,0 +1,608 @@
+06-Jun-2025 05:28:16.745 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [sendReasonPhrase] to [false]
+06-Jun-2025 05:28:18.011 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 05:28:18.189 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2025 05:28:18.190 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.40]
+06-Jun-2025 05:28:18.220 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml]
+06-Jun-2025 05:28:18.255 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/access] in deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has been ignored
+06-Jun-2025 05:28:57.752 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:602)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:632)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1880)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:527)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:418)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1620)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:776)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:412)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:761)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/access]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:406)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:179)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		... 35 more
+	Caused by: org.springframework.context.ApplicationContextException: Unable to start web server
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:170)
+		at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+		at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+		at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+		at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:194)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:174)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:102)
+		at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:171)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4464)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		... 36 more
+	Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.jersey.JerseyAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'jerseyConfig' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-application-7.141.12.jar!/org/jfrog/access/rest/config/JerseyConfig.class]: Failed to instantiate [org.jfrog.access.rest.config.JerseyConfig]: Constructor threw exception
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:413)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1367)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1197)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+		at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+		at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:202)
+		at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:97)
+		at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:271)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:245)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:202)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:167)
+		... 47 more
+	Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jerseyConfig' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-application-7.141.12.jar!/org/jfrog/access/rest/config/JerseyConfig.class]: Failed to instantiate [org.jfrog.access.rest.config.JerseyConfig]: Constructor threw exception
+		at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1739)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627)
+		at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+		... 73 more
+	Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.jfrog.access.rest.config.JerseyConfig]: Constructor threw exception
+		at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222)
+		at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:145)
+		at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318)
+		... 87 more
+	Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationFilter' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-rest-7.141.12.jar!/org/jfrog/access/server/rest/filter/AuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'authenticationServiceImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/service/auth/AuthenticationServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userStorageServiceImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/service/db/UserStorageServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accessUsersDao' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/AccessUsersDao.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'sqlDaoHelperFactory' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/SqlDaoHelperFactory.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accessJdbcHelperImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/util/AccessJdbcHelperImpl.class]: Failed to instantiate [org.jfrog.access.server.db.util.AccessJdbcHelperImpl]: Constructor threw exception
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:747)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:735)
+		at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1418)
+		at org.jfrog.access.rest.config.JerseyConfig.registerAdditionalFilters(JerseyConfig.java:80)
+		at org.jfrog.access.rest.config.JerseyConfig.<init>(JerseyConfig.java:41)
+		at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+		at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:209)
+		... 89 more
+	Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationServiceImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/service/auth/AuthenticationServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userStorageServiceImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/service/db/UserStorageServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accessUsersDao' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/AccessUsersDao.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'sqlDaoHelperFactory' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/SqlDaoHelperFactory.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accessJdbcHelperImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/util/AccessJdbcHelperImpl.class]: Failed to instantiate [org.jfrog.access.server.db.util.AccessJdbcHelperImpl]: Constructor threw exception
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1739)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627)
+		at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+		... 107 more
+	Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userStorageServiceImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/service/db/UserStorageServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accessUsersDao' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/AccessUsersDao.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'sqlDaoHelperFactory' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/SqlDaoHelperFactory.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accessJdbcHelperImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/util/AccessJdbcHelperImpl.class]: Failed to instantiate [org.jfrog.access.server.db.util.AccessJdbcHelperImpl]: Constructor threw exception
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1739)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627)
+		at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+		... 121 more
+	Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accessUsersDao' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/AccessUsersDao.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'sqlDaoHelperFactory' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/SqlDaoHelperFactory.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accessJdbcHelperImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/util/AccessJdbcHelperImpl.class]: Failed to instantiate [org.jfrog.access.server.db.util.AccessJdbcHelperImpl]: Constructor threw exception
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1739)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627)
+		at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+		... 135 more
+	Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlDaoHelperFactory' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/SqlDaoHelperFactory.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accessJdbcHelperImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/util/AccessJdbcHelperImpl.class]: Failed to instantiate [org.jfrog.access.server.db.util.AccessJdbcHelperImpl]: Constructor threw exception
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1681)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627)
+		at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+		... 149 more
+	Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accessJdbcHelperImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/util/AccessJdbcHelperImpl.class]: Failed to instantiate [org.jfrog.access.server.db.util.AccessJdbcHelperImpl]: Constructor threw exception
+		at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1739)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627)
+		at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+		... 162 more
+	Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.jfrog.access.server.db.util.AccessJdbcHelperImpl]: Constructor threw exception
+		at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222)
+		at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:145)
+		at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318)
+		... 176 more
+	Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database (jdbc:postgresql://host.docker.internal:5432/artifactorydb?autosave=conservative&prepareThreshold=0) for user 'artifactory': The connection attempt failed.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+
+		at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:71)
+		at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:76)
+		at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:137)
+		at org.flywaydb.core.Flyway.info(Flyway.java:262)
+		at org.jfrog.access.server.db.spring.AccessFlywayConfiguration.shouldAddInitMigration(AccessFlywayConfiguration.java:91)
+		at org.jfrog.access.server.db.spring.AccessFlywayConfiguration.addInitLocation(AccessFlywayConfiguration.java:73)
+		at org.jfrog.access.server.db.spring.AccessFlywayConfiguration.createFlyway(AccessFlywayConfiguration.java:48)
+		at org.jfrog.storage.util.migration.MigrationUtil.initSchemas(MigrationUtil.java:100)
+		at org.jfrog.access.server.db.util.AccessJdbcHelperImpl.init(AccessJdbcHelperImpl.java:88)
+		at org.jfrog.access.server.db.util.AccessJdbcHelperImpl.<init>(AccessJdbcHelperImpl.java:73)
+		at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+		at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:209)
+		... 178 more
+	Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:364)
+		at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+		at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+		at org.postgresql.Driver.makeConnection(Driver.java:446)
+		at org.postgresql.Driver.connect(Driver.java:298)
+		at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:275)
+		at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:240)
+		at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:59)
+		... 191 more
+	Caused by: java.net.SocketTimeoutException: Connect timed out
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at org.postgresql.core.PGStream.createSocket(PGStream.java:260)
+		at org.postgresql.core.PGStream.<init>(PGStream.java:121)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+		... 198 more
+06-Jun-2025 05:28:57.795 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has finished in [39,574] ms
+06-Jun-2025 05:28:57.799 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT]
+06-Jun-2025 05:28:57.919 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT] has finished in [120] ms
+06-Jun-2025 05:28:57.934 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 05:38:11.746 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [sendReasonPhrase] to [false]
+06-Jun-2025 05:38:12.529 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 05:38:12.588 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2025 05:38:12.589 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.40]
+06-Jun-2025 05:38:12.616 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml]
+06-Jun-2025 05:38:12.644 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/access] in deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has been ignored
+06-Jun-2025 05:38:37.897 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:602)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:632)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1880)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:527)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:418)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1620)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:776)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:412)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:761)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/access]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:406)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:179)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		... 35 more
+	Caused by: org.springframework.context.ApplicationContextException: Unable to start web server
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:170)
+		at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+		at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+		at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+		at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:194)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:174)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:102)
+		at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:171)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4464)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		... 36 more
+	Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.jersey.JerseyAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'jerseyConfig' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-application-7.141.12.jar!/org/jfrog/access/rest/config/JerseyConfig.class]: Failed to instantiate [org.jfrog.access.rest.config.JerseyConfig]: Constructor threw exception
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:413)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1367)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1197)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+		at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+		at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:202)
+		at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:97)
+		at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:271)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:245)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:202)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:167)
+		... 47 more
+	Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jerseyConfig' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-application-7.141.12.jar!/org/jfrog/access/rest/config/JerseyConfig.class]: Failed to instantiate [org.jfrog.access.rest.config.JerseyConfig]: Constructor threw exception
+		at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1739)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627)
+		at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+		... 73 more
+	Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.jfrog.access.rest.config.JerseyConfig]: Constructor threw exception
+		at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222)
+		at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:145)
+		at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318)
+		... 87 more
+	Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationFilter' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-rest-7.141.12.jar!/org/jfrog/access/server/rest/filter/AuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'authenticationServiceImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/service/auth/AuthenticationServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userStorageServiceImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/service/db/UserStorageServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accessUsersDao' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/AccessUsersDao.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'sqlDaoHelperFactory' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/SqlDaoHelperFactory.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accessJdbcHelperImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/util/AccessJdbcHelperImpl.class]: Failed to instantiate [org.jfrog.access.server.db.util.AccessJdbcHelperImpl]: Constructor threw exception
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:747)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:735)
+		at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1418)
+		at org.jfrog.access.rest.config.JerseyConfig.registerAdditionalFilters(JerseyConfig.java:80)
+		at org.jfrog.access.rest.config.JerseyConfig.<init>(JerseyConfig.java:41)
+		at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+		at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:209)
+		... 89 more
+	Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationServiceImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/service/auth/AuthenticationServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userStorageServiceImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/service/db/UserStorageServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accessUsersDao' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/AccessUsersDao.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'sqlDaoHelperFactory' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/SqlDaoHelperFactory.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accessJdbcHelperImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/util/AccessJdbcHelperImpl.class]: Failed to instantiate [org.jfrog.access.server.db.util.AccessJdbcHelperImpl]: Constructor threw exception
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1739)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627)
+		at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+		... 107 more
+	Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userStorageServiceImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/service/db/UserStorageServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accessUsersDao' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/AccessUsersDao.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'sqlDaoHelperFactory' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/SqlDaoHelperFactory.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accessJdbcHelperImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/util/AccessJdbcHelperImpl.class]: Failed to instantiate [org.jfrog.access.server.db.util.AccessJdbcHelperImpl]: Constructor threw exception
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1739)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627)
+		at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+		... 121 more
+	Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accessUsersDao' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/AccessUsersDao.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'sqlDaoHelperFactory' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/SqlDaoHelperFactory.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accessJdbcHelperImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/util/AccessJdbcHelperImpl.class]: Failed to instantiate [org.jfrog.access.server.db.util.AccessJdbcHelperImpl]: Constructor threw exception
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1739)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627)
+		at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+		... 135 more
+	Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlDaoHelperFactory' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/dao/SqlDaoHelperFactory.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accessJdbcHelperImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/util/AccessJdbcHelperImpl.class]: Failed to instantiate [org.jfrog.access.server.db.util.AccessJdbcHelperImpl]: Constructor threw exception
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1681)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627)
+		at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+		... 149 more
+	Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accessJdbcHelperImpl' defined in URL [jar:file:/opt/jfrog/artifactory/app/access/tomcat/webapps/access/WEB-INF/lib/access-server-core-7.141.12.jar!/org/jfrog/access/server/db/util/AccessJdbcHelperImpl.class]: Failed to instantiate [org.jfrog.access.server.db.util.AccessJdbcHelperImpl]: Constructor threw exception
+		at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321)
+		at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1739)
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627)
+		at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+		at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+		... 162 more
+	Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.jfrog.access.server.db.util.AccessJdbcHelperImpl]: Constructor threw exception
+		at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222)
+		at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:145)
+		at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318)
+		... 176 more
+	Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database (jdbc:postgresql://host.docker.internal:5432/artifactorydb?autosave=conservative&prepareThreshold=0) for user 'artifactory': The connection attempt failed.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+
+		at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:71)
+		at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:76)
+		at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:137)
+		at org.flywaydb.core.Flyway.info(Flyway.java:262)
+		at org.jfrog.access.server.db.spring.AccessFlywayConfiguration.shouldAddInitMigration(AccessFlywayConfiguration.java:91)
+		at org.jfrog.access.server.db.spring.AccessFlywayConfiguration.addInitLocation(AccessFlywayConfiguration.java:73)
+		at org.jfrog.access.server.db.spring.AccessFlywayConfiguration.createFlyway(AccessFlywayConfiguration.java:48)
+		at org.jfrog.storage.util.migration.MigrationUtil.initSchemas(MigrationUtil.java:100)
+		at org.jfrog.access.server.db.util.AccessJdbcHelperImpl.init(AccessJdbcHelperImpl.java:88)
+		at org.jfrog.access.server.db.util.AccessJdbcHelperImpl.<init>(AccessJdbcHelperImpl.java:73)
+		at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+		at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:209)
+		... 178 more
+	Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:364)
+		at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+		at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+		at org.postgresql.Driver.makeConnection(Driver.java:446)
+		at org.postgresql.Driver.connect(Driver.java:298)
+		at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:275)
+		at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:240)
+		at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:59)
+		... 191 more
+	Caused by: java.net.SocketTimeoutException: Connect timed out
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at org.postgresql.core.PGStream.createSocket(PGStream.java:260)
+		at org.postgresql.core.PGStream.<init>(PGStream.java:121)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+		... 198 more
+06-Jun-2025 05:38:37.908 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has finished in [25,291] ms
+06-Jun-2025 05:38:37.910 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT]
+06-Jun-2025 05:38:37.937 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT] has finished in [26] ms
+06-Jun-2025 05:38:37.942 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 05:47:19.062 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [sendReasonPhrase] to [false]
+06-Jun-2025 05:47:19.852 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 05:47:19.948 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2025 05:47:19.949 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.40]
+06-Jun-2025 05:47:19.990 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml]
+06-Jun-2025 05:47:20.031 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/access] in deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has been ignored
+06-Jun-2025 05:48:39.946 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has finished in [79,953] ms
+06-Jun-2025 05:48:39.954 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT]
+06-Jun-2025 05:48:40.011 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT] has finished in [57] ms
+06-Jun-2025 05:48:40.032 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 06:23:26.748 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [sendReasonPhrase] to [false]
+06-Jun-2025 06:23:28.900 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 06:23:29.196 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2025 06:23:29.197 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.40]
+06-Jun-2025 06:23:29.340 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml]
+06-Jun-2025 06:23:29.443 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/access] in deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has been ignored
+06-Jun-2025 06:24:21.003 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has finished in [51,663] ms
+06-Jun-2025 06:24:21.005 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT]
+06-Jun-2025 06:24:21.039 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT] has finished in [34] ms
+06-Jun-2025 06:24:21.047 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 11:46:17.694 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [sendReasonPhrase] to [false]
+06-Jun-2025 11:46:18.430 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 11:46:18.485 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2025 11:46:18.486 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.40]
+06-Jun-2025 11:46:18.509 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml]
+06-Jun-2025 11:46:18.540 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/access] in deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has been ignored
+06-Jun-2025 11:47:07.760 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has finished in [49,250] ms
+06-Jun-2025 11:47:07.762 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT]
+06-Jun-2025 11:47:07.785 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT] has finished in [23] ms
+06-Jun-2025 11:47:07.793 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 11:48:42.713 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [sendReasonPhrase] to [false]
+06-Jun-2025 11:48:43.431 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 11:48:43.486 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2025 11:48:43.487 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.40]
+06-Jun-2025 11:48:43.513 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml]
+06-Jun-2025 11:48:43.549 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/access] in deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has been ignored
+06-Jun-2025 11:49:29.213 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has finished in [45,699] ms
+06-Jun-2025 11:49:29.215 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT]
+06-Jun-2025 11:49:29.254 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT] has finished in [39] ms
+06-Jun-2025 11:49:29.271 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 12:02:42.460 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [sendReasonPhrase] to [false]
+06-Jun-2025 12:02:44.027 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 12:02:44.196 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2025 12:02:44.197 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.40]
+06-Jun-2025 12:02:44.251 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml]
+06-Jun-2025 12:02:44.312 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/access] in deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has been ignored
+06-Jun-2025 12:04:12.572 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has finished in [88,320] ms
+06-Jun-2025 12:04:12.574 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT]
+06-Jun-2025 12:04:12.597 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT] has finished in [23] ms
+06-Jun-2025 12:04:12.602 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 12:24:15.451 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [sendReasonPhrase] to [false]
+06-Jun-2025 12:24:17.732 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 12:24:17.865 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2025 12:24:17.874 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.40]
+06-Jun-2025 12:24:17.980 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml]
+06-Jun-2025 12:24:18.072 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/access] in deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has been ignored
+06-Jun-2025 12:26:14.191 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has finished in [116,209] ms
+06-Jun-2025 12:26:14.201 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT]
+06-Jun-2025 12:26:14.260 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT] has finished in [60] ms
+06-Jun-2025 12:26:14.283 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 13:06:19.133 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector] failed to set property [sendReasonPhrase] to [false]
+06-Jun-2025 13:06:21.055 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8040"]
+06-Jun-2025 13:06:21.157 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2025 13:06:21.158 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.40]
+06-Jun-2025 13:06:21.234 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml]
+06-Jun-2025 13:06:21.281 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/access] in deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has been ignored
+06-Jun-2025 13:07:06.886 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/access/tomcat/conf/Catalina/localhost/access.xml] has finished in [45,651] ms
+06-Jun-2025 13:07:06.888 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT]
+06-Jun-2025 13:07:06.903 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/app/access/tomcat/webapps/ROOT] has finished in [14] ms
+06-Jun-2025 13:07:06.907 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8040"]

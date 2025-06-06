@@ -1,0 +1,1659 @@
+2025-06-06T05:27:37.696Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [bootstrap.go:56               ] [main                ] [                ] - Effective configuration:
+access.jfconfig.enabled (Environment Variable: JF_ACCESS_JFCONFIG_ENABLED): true
+access.useexternaltopology (Environment Variable: JF_ACCESS_USEEXTERNALTOPOLOGY): true
+artifactory.pid (Environment Variable: JF_ARTIFACTORY_PID): /opt/jfrog/artifactory/var/work/run/artifactory.pid
+artifactory.user (Environment Variable: JF_ARTIFACTORY_USER): artifactory
+event.accessClient.joinTimeout (Default Value): 5m
+event.accessClient.pingTimeout (Default Value): 5m
+event.artifactoryClient.request.timeout (Default Value): 5s
+event.baseUrlCache.interval (Default Value): 5m
+event.customWebhooks.enabled (Default Value): true
+event.customWebhooks.maxIdleConnections (Default Value): 100
+event.customWebhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.customWebhooks.retryCount (Default Value): 5
+event.customWebhooks.retryWaitMillis (Default Value): 10000
+event.customWebhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.customWebhooks.sizeLimits.payloadMaxSizeBytes (Default Value): 51200
+event.customWebhooks.sizeLimits.secretsMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.secretsMaxSizeBytes (Default Value): 5120
+event.customWebhooks.timeoutMillis (Default Value): 30000
+event.customWebhooks.tlsInsecure (Default Value): false
+event.domainCache.interval (Default Value): 5m
+event.grpcPort (Default Value): 8062
+event.logging.application.caller (Default Value): false
+event.logging.application.console (Default Value): true
+event.logging.application.filePath (Default Value): event-service.log
+event.logging.application.format (Default Value): jftext
+event.logging.application.level (Default Value): info
+event.logging.application.rotation.compress (Default Value): true
+event.logging.application.rotation.keepLastDecompressed (Default Value): 1
+event.logging.application.rotation.maxAgeDays (Default Value): 365
+event.logging.application.rotation.maxFiles (Default Value): 10
+event.logging.application.rotation.maxSizeMb (Default Value): 25
+event.logging.consoleLog.format (Default Value): jftext
+event.logging.metrics.console (Default Value): false
+event.logging.metrics.filePath (Default Value): event-metrics.log
+event.logging.metrics.rotation.compress (Default Value): true
+event.logging.metrics.rotation.keepLastDecompressed (Default Value): 1
+event.logging.metrics.rotation.maxAgeDays (Default Value): 365
+event.logging.metrics.rotation.maxFiles (Default Value): 10
+event.logging.metrics.rotation.maxSizeMb (Default Value): 25
+event.logging.outgoingRequest.console (Default Value): false
+event.logging.outgoingRequest.filePath (Default Value): event-webhook-request-out.log
+event.logging.outgoingRequest.rotation.compress (Default Value): true
+event.logging.outgoingRequest.rotation.keepLastDecompressed (Default Value): 1
+event.logging.outgoingRequest.rotation.maxAgeDays (Default Value): 365
+event.logging.outgoingRequest.rotation.maxFiles (Default Value): 10
+event.logging.outgoingRequest.rotation.maxSizeMb (Default Value): 25
+event.logging.request.console (Default Value): false
+event.logging.request.filePath (Default Value): event-request.log
+event.logging.request.rotation.compress (Default Value): true
+event.logging.request.rotation.keepLastDecompressed (Default Value): 1
+event.logging.request.rotation.maxAgeDays (Default Value): 365
+event.logging.request.rotation.maxFiles (Default Value): 10
+event.logging.request.rotation.maxSizeMb (Default Value): 25
+event.logging.troubleshooting.console (Default Value): false
+event.logging.troubleshooting.filePath (Default Value): event-troubleshooting.log
+event.logging.troubleshooting.rotation.compress (Default Value): true
+event.logging.troubleshooting.rotation.keepLastDecompressed (Default Value): 1
+event.logging.troubleshooting.rotation.maxAgeDays (Default Value): 365
+event.logging.troubleshooting.rotation.maxFiles (Default Value): 10
+event.logging.troubleshooting.rotation.maxSizeMb (Default Value): 25
+event.metrics.enabled (Default Value): false
+event.metrics.exclude (Default Value): []
+event.metrics.interval (Default Value): 10s
+event.metrics.logPeriodically (Default Value): true
+event.metrics.tokenVerification.accessUrl (Default Value): 
+event.metrics.tokenVerification.retryBackoffInitialIntervalMillis (Default Value): 500
+event.metrics.tokenVerification.retryBackoffMaxElapsedTimeMillis (Default Value): 0
+event.metrics.tokenVerification.retryBackoffMaxIntervalMillis (Default Value): 3600000
+event.metrics.tokenVerification.revocableExpiryThresholdSeconds (Default Value): -1
+event.metrics.triggers.enabled (Default Value): true
+event.metrics.triggers.intervalMillis (Default Value): 20000
+event.metrics.triggers.limit (Default Value): 1000000
+event.port (Default Value): 8061
+event.profiling.enabled (Default Value): false
+event.proxyCache.interval (Default Value): 5m
+event.rateLimit.burstSize (Default Value): 10000
+event.rateLimit.frequency (Default Value): 1000
+event.rateLimit.maxConcurrentHandlers (Default Value): 50000
+event.security.blacklist.enabled (Default Value): true
+event.security.blacklist.timeoutMillis (Default Value): 5000
+event.shutdownWaitForRouterTimeoutSecs (Default Value): 10
+event.supportBundle.aggregationTimeout (Default Value): 1h
+event.tokenCache.timeout (Default Value): 1m
+event.troubleshooting.enabled (Default Value): false
+event.troubleshooting.keepAliveIntervalMillis (Default Value): 10000
+event.troubleshooting.redis.addresses (Default Value): []
+event.troubleshooting.redis.blockTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.cleanupIntervalMillis (Default Value): 30000
+event.troubleshooting.redis.dialTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.password (Default Value): *****
+event.troubleshooting.redis.readTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.serverType (Default Value): single
+event.troubleshooting.redis.streamBatchSize (Default Value): 1000
+event.troubleshooting.redis.streamMaxLen (Default Value): 10000
+event.troubleshooting.redis.tlsEnabled (Default Value): false
+event.troubleshooting.redis.tlsInsecure (Default Value): false
+event.troubleshooting.redis.username (Default Value): 
+event.troubleshooting.redis.writeTimeoutMillis (Default Value): 0
+event.troubleshooting.storageType (Default Value): log
+event.troubleshooting.streamIdSuffix (Default Value): troubleshooting
+event.webhooks.maxIdleConnections (Default Value): 100
+event.webhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.webhooks.retryCount (Default Value): 5
+event.webhooks.retryWait (Default Value): 10s
+event.webhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.webhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.webhooks.timeout (Default Value): 30s
+event.webhooks.tlsInsecure (Default Value): false
+event.webhooks.urlStrictPolicy (Default Value): true
+legacy.artifactory.pid (Environment Variable: JF_LEGACY_ARTIFACTORY_PID): /opt/jfrog/artifactory/app/run/artifactory.pid
+metadata.accessclient.url (Environment Variable: JF_METADATA_ACCESSCLIENT_URL): http://localhost:8081/access
+product.data.internal (Environment Variable: JF_PRODUCT_DATA_INTERNAL): /var/opt/jfrog/artifactory
+product.home (Environment Variable: JF_PRODUCT_HOME): /opt/jfrog/artifactory
+router.entrypoints.internalPort (Default Value): 8046
+router.topology.local.requiredservicetypes (Environment Variable: JF_ROUTER_TOPOLOGY_LOCAL_REQUIREDSERVICETYPES): jfrt,jfac,jfmd,jffe,jfob,jfcon,jfevt,jfevd,jfcfg,jftpl,jfomr
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://host.docker.internal:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.multiTenant.cellId (Default Value): 
+shared.multiTenant.enabled (Default Value): false
+shared.multiTenant.tenantRegistryClient.caCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.cacheExpirationSecs (Default Value): 21600
+shared.multiTenant.tenantRegistryClient.clientCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.clientCertKey (Default Value): *****
+shared.multiTenant.tenantRegistryClient.dialTimeoutSecs (Default Value): 10
+shared.multiTenant.tenantRegistryClient.endpoints (Default Value): 
+shared.multiTenant.tenantRegistryClient.pingCacheExpirationSecs (Default Value): 15
+shared.multiTenant.tenantRegistryClient.pingTimeoutSecs (Default Value): 1
+shared.multiTenant.tenantRegistryClient.requestTimeoutSecs (Default Value): 30
+shared.newrelic.appName (Default Value): 
+shared.newrelic.distributedTracerEnabled (Default Value): true
+shared.newrelic.enableDebugLog (Default Value): false
+shared.newrelic.enabled (Default Value): false
+shared.newrelic.licenseKey (Default Value): *****
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): 099e1d1a365c
+shared.node.ip (Environment Variable: JF_SHARED_NODE_IP): 172.17.0.3
+shared.node.name (Environment Variable: JF_SHARED_NODE_NAME): 099e1d1a365c
+shared.openTelemetry.distributedTracerEnabled (Default Value): true
+shared.openTelemetry.enabled (Default Value): false
+shared.openTelemetry.endpoint (Default Value): 
+shared.openTelemetry.exportPace (Default Value): 0s
+shared.openTelemetry.labels (Default Value): 
+shared.openTelemetry.metricsEnabled (Default Value): false
+shared.openTelemetry.serviceName (Default Value): jfevt
+shared.openTelemetry.token (Default Value): *****
+shared.openTelemetry.useGrpcExporters (Default Value): true
+shared.restrictedmode.enabled (Environment Variable: JF_SHARED_RESTRICTEDMODE_ENABLED): true
+shared.security.ExposeApplicationHeaders (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+shared.security.joinKeyFile (Default Value): etc/security/join.key
+shared.security.masterKeyFile (Default Value): etc/security/master.key
+system.yaml (Environment Variable: JF_SYSTEM_YAML): /opt/jfrog/artifactory/var/etc/system.yaml [startup]
+2025-06-06T05:27:42.711Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 5 seconds with 2m0s timeout [startup]
+2025-06-06T05:27:47.721Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 10 seconds with 2m0s timeout [startup]
+2025-06-06T05:27:52.724Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 15 seconds with 2m0s timeout [startup]
+2025-06-06T05:27:57.729Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 20 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:02.733Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 25 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:07.741Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 30 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:12.748Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 35 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:17.753Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 40 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:22.760Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 45 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:27.768Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 50 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:32.772Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 55 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:37.778Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 60 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:42.787Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 65 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:47.791Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 70 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:52.794Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 75 seconds with 2m0s timeout [startup]
+2025-06-06T05:28:57.813Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 80 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:02.818Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 85 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:07.824Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 90 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:12.839Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 95 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:17.844Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 100 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:22.849Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 105 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:27.923Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 110 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:32.932Z [jfevt] [INFO ] [6e2f3a19ebf6561d] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 115 seconds with 2m0s timeout [startup]
+2025-06-06T05:29:38.080Z [jfevt] [FATAL] [6e2f3a19ebf6561d] [bootstrap.go:161              ] [main                ] [                ] - Failed resolving master key: failed resolving 'shared.security.masterKey' key; file does not exist: /opt/jfrog/artifactory/var/etc/security/master.key [startup]
+2025-06-06T05:37:35.758Z [jfevt] [INFO ] [4364b3374d3e94a9] [bootstrap.go:56               ] [main                ] [                ] - Effective configuration:
+access.jfconfig.enabled (Environment Variable: JF_ACCESS_JFCONFIG_ENABLED): true
+access.useexternaltopology (Environment Variable: JF_ACCESS_USEEXTERNALTOPOLOGY): true
+artifactory.pid (Environment Variable: JF_ARTIFACTORY_PID): /opt/jfrog/artifactory/var/work/run/artifactory.pid
+artifactory.user (Environment Variable: JF_ARTIFACTORY_USER): artifactory
+event.accessClient.joinTimeout (Default Value): 5m
+event.accessClient.pingTimeout (Default Value): 5m
+event.artifactoryClient.request.timeout (Default Value): 5s
+event.baseUrlCache.interval (Default Value): 5m
+event.customWebhooks.enabled (Default Value): true
+event.customWebhooks.maxIdleConnections (Default Value): 100
+event.customWebhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.customWebhooks.retryCount (Default Value): 5
+event.customWebhooks.retryWaitMillis (Default Value): 10000
+event.customWebhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.customWebhooks.sizeLimits.payloadMaxSizeBytes (Default Value): 51200
+event.customWebhooks.sizeLimits.secretsMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.secretsMaxSizeBytes (Default Value): 5120
+event.customWebhooks.timeoutMillis (Default Value): 30000
+event.customWebhooks.tlsInsecure (Default Value): false
+event.domainCache.interval (Default Value): 5m
+event.grpcPort (Default Value): 8062
+event.logging.application.caller (Default Value): false
+event.logging.application.console (Default Value): true
+event.logging.application.filePath (Default Value): event-service.log
+event.logging.application.format (Default Value): jftext
+event.logging.application.level (Default Value): info
+event.logging.application.rotation.compress (Default Value): true
+event.logging.application.rotation.keepLastDecompressed (Default Value): 1
+event.logging.application.rotation.maxAgeDays (Default Value): 365
+event.logging.application.rotation.maxFiles (Default Value): 10
+event.logging.application.rotation.maxSizeMb (Default Value): 25
+event.logging.consoleLog.format (Default Value): jftext
+event.logging.metrics.console (Default Value): false
+event.logging.metrics.filePath (Default Value): event-metrics.log
+event.logging.metrics.rotation.compress (Default Value): true
+event.logging.metrics.rotation.keepLastDecompressed (Default Value): 1
+event.logging.metrics.rotation.maxAgeDays (Default Value): 365
+event.logging.metrics.rotation.maxFiles (Default Value): 10
+event.logging.metrics.rotation.maxSizeMb (Default Value): 25
+event.logging.outgoingRequest.console (Default Value): false
+event.logging.outgoingRequest.filePath (Default Value): event-webhook-request-out.log
+event.logging.outgoingRequest.rotation.compress (Default Value): true
+event.logging.outgoingRequest.rotation.keepLastDecompressed (Default Value): 1
+event.logging.outgoingRequest.rotation.maxAgeDays (Default Value): 365
+event.logging.outgoingRequest.rotation.maxFiles (Default Value): 10
+event.logging.outgoingRequest.rotation.maxSizeMb (Default Value): 25
+event.logging.request.console (Default Value): false
+event.logging.request.filePath (Default Value): event-request.log
+event.logging.request.rotation.compress (Default Value): true
+event.logging.request.rotation.keepLastDecompressed (Default Value): 1
+event.logging.request.rotation.maxAgeDays (Default Value): 365
+event.logging.request.rotation.maxFiles (Default Value): 10
+event.logging.request.rotation.maxSizeMb (Default Value): 25
+event.logging.troubleshooting.console (Default Value): false
+event.logging.troubleshooting.filePath (Default Value): event-troubleshooting.log
+event.logging.troubleshooting.rotation.compress (Default Value): true
+event.logging.troubleshooting.rotation.keepLastDecompressed (Default Value): 1
+event.logging.troubleshooting.rotation.maxAgeDays (Default Value): 365
+event.logging.troubleshooting.rotation.maxFiles (Default Value): 10
+event.logging.troubleshooting.rotation.maxSizeMb (Default Value): 25
+event.metrics.enabled (Default Value): false
+event.metrics.exclude (Default Value): []
+event.metrics.interval (Default Value): 10s
+event.metrics.logPeriodically (Default Value): true
+event.metrics.tokenVerification.accessUrl (Default Value): 
+event.metrics.tokenVerification.retryBackoffInitialIntervalMillis (Default Value): 500
+event.metrics.tokenVerification.retryBackoffMaxElapsedTimeMillis (Default Value): 0
+event.metrics.tokenVerification.retryBackoffMaxIntervalMillis (Default Value): 3600000
+event.metrics.tokenVerification.revocableExpiryThresholdSeconds (Default Value): -1
+event.metrics.triggers.enabled (Default Value): true
+event.metrics.triggers.intervalMillis (Default Value): 20000
+event.metrics.triggers.limit (Default Value): 1000000
+event.port (Default Value): 8061
+event.profiling.enabled (Default Value): false
+event.proxyCache.interval (Default Value): 5m
+event.rateLimit.burstSize (Default Value): 10000
+event.rateLimit.frequency (Default Value): 1000
+event.rateLimit.maxConcurrentHandlers (Default Value): 50000
+event.security.blacklist.enabled (Default Value): true
+event.security.blacklist.timeoutMillis (Default Value): 5000
+event.shutdownWaitForRouterTimeoutSecs (Default Value): 10
+event.supportBundle.aggregationTimeout (Default Value): 1h
+event.tokenCache.timeout (Default Value): 1m
+event.troubleshooting.enabled (Default Value): false
+event.troubleshooting.keepAliveIntervalMillis (Default Value): 10000
+event.troubleshooting.redis.addresses (Default Value): []
+event.troubleshooting.redis.blockTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.cleanupIntervalMillis (Default Value): 30000
+event.troubleshooting.redis.dialTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.password (Default Value): *****
+event.troubleshooting.redis.readTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.serverType (Default Value): single
+event.troubleshooting.redis.streamBatchSize (Default Value): 1000
+event.troubleshooting.redis.streamMaxLen (Default Value): 10000
+event.troubleshooting.redis.tlsEnabled (Default Value): false
+event.troubleshooting.redis.tlsInsecure (Default Value): false
+event.troubleshooting.redis.username (Default Value): 
+event.troubleshooting.redis.writeTimeoutMillis (Default Value): 0
+event.troubleshooting.storageType (Default Value): log
+event.troubleshooting.streamIdSuffix (Default Value): troubleshooting
+event.webhooks.maxIdleConnections (Default Value): 100
+event.webhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.webhooks.retryCount (Default Value): 5
+event.webhooks.retryWait (Default Value): 10s
+event.webhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.webhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.webhooks.timeout (Default Value): 30s
+event.webhooks.tlsInsecure (Default Value): false
+event.webhooks.urlStrictPolicy (Default Value): true
+legacy.artifactory.pid (Environment Variable: JF_LEGACY_ARTIFACTORY_PID): /opt/jfrog/artifactory/app/run/artifactory.pid
+metadata.accessclient.url (Environment Variable: JF_METADATA_ACCESSCLIENT_URL): http://localhost:8081/access
+product.data.internal (Environment Variable: JF_PRODUCT_DATA_INTERNAL): /var/opt/jfrog/artifactory
+product.home (Environment Variable: JF_PRODUCT_HOME): /opt/jfrog/artifactory
+router.entrypoints.internalPort (Default Value): 8046
+router.topology.local.requiredservicetypes (Environment Variable: JF_ROUTER_TOPOLOGY_LOCAL_REQUIREDSERVICETYPES): jfrt,jfac,jfmd,jffe,jfob,jfcon,jfevt,jfevd,jfcfg,jftpl,jfomr
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://host.docker.internal:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.multiTenant.cellId (Default Value): 
+shared.multiTenant.enabled (Default Value): false
+shared.multiTenant.tenantRegistryClient.caCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.cacheExpirationSecs (Default Value): 21600
+shared.multiTenant.tenantRegistryClient.clientCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.clientCertKey (Default Value): *****
+shared.multiTenant.tenantRegistryClient.dialTimeoutSecs (Default Value): 10
+shared.multiTenant.tenantRegistryClient.endpoints (Default Value): 
+shared.multiTenant.tenantRegistryClient.pingCacheExpirationSecs (Default Value): 15
+shared.multiTenant.tenantRegistryClient.pingTimeoutSecs (Default Value): 1
+shared.multiTenant.tenantRegistryClient.requestTimeoutSecs (Default Value): 30
+shared.newrelic.appName (Default Value): 
+shared.newrelic.distributedTracerEnabled (Default Value): true
+shared.newrelic.enableDebugLog (Default Value): false
+shared.newrelic.enabled (Default Value): false
+shared.newrelic.licenseKey (Default Value): *****
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): 3279034a9346
+shared.node.ip (Environment Variable: JF_SHARED_NODE_IP): 172.17.0.3
+shared.node.name (Environment Variable: JF_SHARED_NODE_NAME): 3279034a9346
+shared.openTelemetry.distributedTracerEnabled (Default Value): true
+shared.openTelemetry.enabled (Default Value): false
+shared.openTelemetry.endpoint (Default Value): 
+shared.openTelemetry.exportPace (Default Value): 0s
+shared.openTelemetry.labels (Default Value): 
+shared.openTelemetry.metricsEnabled (Default Value): false
+shared.openTelemetry.serviceName (Default Value): jfevt
+shared.openTelemetry.token (Default Value): *****
+shared.openTelemetry.useGrpcExporters (Default Value): true
+shared.restrictedmode.enabled (Environment Variable: JF_SHARED_RESTRICTEDMODE_ENABLED): true
+shared.security.ExposeApplicationHeaders (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+shared.security.joinKeyFile (Default Value): etc/security/join.key
+shared.security.masterKeyFile (Default Value): etc/security/master.key
+system.yaml (Environment Variable: JF_SYSTEM_YAML): /opt/jfrog/artifactory/var/etc/system.yaml [startup]
+2025-06-06T05:37:40.767Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 5 seconds with 2m0s timeout [startup]
+2025-06-06T05:37:45.776Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 10 seconds with 2m0s timeout [startup]
+2025-06-06T05:37:50.786Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 15 seconds with 2m0s timeout [startup]
+2025-06-06T05:37:55.795Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 20 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:00.799Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 25 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:05.805Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 30 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:10.810Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 35 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:15.814Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 40 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:20.817Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 45 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:25.821Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 50 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:30.825Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 55 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:35.832Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 60 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:40.837Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 65 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:45.843Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 70 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:50.852Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 75 seconds with 2m0s timeout [startup]
+2025-06-06T05:38:55.858Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 80 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:00.864Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 85 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:05.870Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 90 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:10.874Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 95 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:15.879Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 100 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:20.886Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 105 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:25.895Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 110 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:30.900Z [jfevt] [INFO ] [4364b3374d3e94a9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 115 seconds with 2m0s timeout [startup]
+2025-06-06T05:39:35.761Z [jfevt] [FATAL] [4364b3374d3e94a9] [bootstrap.go:161              ] [main                ] [                ] - Cluster join: Failed resolving join key: failed resolving 'shared.security.joinKey' key; file does not exist: /opt/jfrog/artifactory/var/etc/security/join.key [startup]
+2025-06-06T05:47:14.887Z [jfevt] [INFO ] [6006002f46e378e2] [bootstrap.go:56               ] [main                ] [                ] - Effective configuration:
+access.jfconfig.enabled (Environment Variable: JF_ACCESS_JFCONFIG_ENABLED): true
+access.useexternaltopology (Environment Variable: JF_ACCESS_USEEXTERNALTOPOLOGY): true
+artifactory.pid (Environment Variable: JF_ARTIFACTORY_PID): /opt/jfrog/artifactory/var/work/run/artifactory.pid
+artifactory.user (Environment Variable: JF_ARTIFACTORY_USER): artifactory
+event.accessClient.joinTimeout (Default Value): 5m
+event.accessClient.pingTimeout (Default Value): 5m
+event.artifactoryClient.request.timeout (Default Value): 5s
+event.baseUrlCache.interval (Default Value): 5m
+event.customWebhooks.enabled (Default Value): true
+event.customWebhooks.maxIdleConnections (Default Value): 100
+event.customWebhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.customWebhooks.retryCount (Default Value): 5
+event.customWebhooks.retryWaitMillis (Default Value): 10000
+event.customWebhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.customWebhooks.sizeLimits.payloadMaxSizeBytes (Default Value): 51200
+event.customWebhooks.sizeLimits.secretsMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.secretsMaxSizeBytes (Default Value): 5120
+event.customWebhooks.timeoutMillis (Default Value): 30000
+event.customWebhooks.tlsInsecure (Default Value): false
+event.domainCache.interval (Default Value): 5m
+event.grpcPort (Default Value): 8062
+event.logging.application.caller (Default Value): false
+event.logging.application.console (Default Value): true
+event.logging.application.filePath (Default Value): event-service.log
+event.logging.application.format (Default Value): jftext
+event.logging.application.level (Default Value): info
+event.logging.application.rotation.compress (Default Value): true
+event.logging.application.rotation.keepLastDecompressed (Default Value): 1
+event.logging.application.rotation.maxAgeDays (Default Value): 365
+event.logging.application.rotation.maxFiles (Default Value): 10
+event.logging.application.rotation.maxSizeMb (Default Value): 25
+event.logging.consoleLog.format (Default Value): jftext
+event.logging.metrics.console (Default Value): false
+event.logging.metrics.filePath (Default Value): event-metrics.log
+event.logging.metrics.rotation.compress (Default Value): true
+event.logging.metrics.rotation.keepLastDecompressed (Default Value): 1
+event.logging.metrics.rotation.maxAgeDays (Default Value): 365
+event.logging.metrics.rotation.maxFiles (Default Value): 10
+event.logging.metrics.rotation.maxSizeMb (Default Value): 25
+event.logging.outgoingRequest.console (Default Value): false
+event.logging.outgoingRequest.filePath (Default Value): event-webhook-request-out.log
+event.logging.outgoingRequest.rotation.compress (Default Value): true
+event.logging.outgoingRequest.rotation.keepLastDecompressed (Default Value): 1
+event.logging.outgoingRequest.rotation.maxAgeDays (Default Value): 365
+event.logging.outgoingRequest.rotation.maxFiles (Default Value): 10
+event.logging.outgoingRequest.rotation.maxSizeMb (Default Value): 25
+event.logging.request.console (Default Value): false
+event.logging.request.filePath (Default Value): event-request.log
+event.logging.request.rotation.compress (Default Value): true
+event.logging.request.rotation.keepLastDecompressed (Default Value): 1
+event.logging.request.rotation.maxAgeDays (Default Value): 365
+event.logging.request.rotation.maxFiles (Default Value): 10
+event.logging.request.rotation.maxSizeMb (Default Value): 25
+event.logging.troubleshooting.console (Default Value): false
+event.logging.troubleshooting.filePath (Default Value): event-troubleshooting.log
+event.logging.troubleshooting.rotation.compress (Default Value): true
+event.logging.troubleshooting.rotation.keepLastDecompressed (Default Value): 1
+event.logging.troubleshooting.rotation.maxAgeDays (Default Value): 365
+event.logging.troubleshooting.rotation.maxFiles (Default Value): 10
+event.logging.troubleshooting.rotation.maxSizeMb (Default Value): 25
+event.metrics.enabled (Default Value): false
+event.metrics.exclude (Default Value): []
+event.metrics.interval (Default Value): 10s
+event.metrics.logPeriodically (Default Value): true
+event.metrics.tokenVerification.accessUrl (Default Value): 
+event.metrics.tokenVerification.retryBackoffInitialIntervalMillis (Default Value): 500
+event.metrics.tokenVerification.retryBackoffMaxElapsedTimeMillis (Default Value): 0
+event.metrics.tokenVerification.retryBackoffMaxIntervalMillis (Default Value): 3600000
+event.metrics.tokenVerification.revocableExpiryThresholdSeconds (Default Value): -1
+event.metrics.triggers.enabled (Default Value): true
+event.metrics.triggers.intervalMillis (Default Value): 20000
+event.metrics.triggers.limit (Default Value): 1000000
+event.port (Default Value): 8061
+event.profiling.enabled (Default Value): false
+event.proxyCache.interval (Default Value): 5m
+event.rateLimit.burstSize (Default Value): 10000
+event.rateLimit.frequency (Default Value): 1000
+event.rateLimit.maxConcurrentHandlers (Default Value): 50000
+event.security.blacklist.enabled (Default Value): true
+event.security.blacklist.timeoutMillis (Default Value): 5000
+event.shutdownWaitForRouterTimeoutSecs (Default Value): 10
+event.supportBundle.aggregationTimeout (Default Value): 1h
+event.tokenCache.timeout (Default Value): 1m
+event.troubleshooting.enabled (Default Value): false
+event.troubleshooting.keepAliveIntervalMillis (Default Value): 10000
+event.troubleshooting.redis.addresses (Default Value): []
+event.troubleshooting.redis.blockTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.cleanupIntervalMillis (Default Value): 30000
+event.troubleshooting.redis.dialTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.password (Default Value): *****
+event.troubleshooting.redis.readTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.serverType (Default Value): single
+event.troubleshooting.redis.streamBatchSize (Default Value): 1000
+event.troubleshooting.redis.streamMaxLen (Default Value): 10000
+event.troubleshooting.redis.tlsEnabled (Default Value): false
+event.troubleshooting.redis.tlsInsecure (Default Value): false
+event.troubleshooting.redis.username (Default Value): 
+event.troubleshooting.redis.writeTimeoutMillis (Default Value): 0
+event.troubleshooting.storageType (Default Value): log
+event.troubleshooting.streamIdSuffix (Default Value): troubleshooting
+event.webhooks.maxIdleConnections (Default Value): 100
+event.webhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.webhooks.retryCount (Default Value): 5
+event.webhooks.retryWait (Default Value): 10s
+event.webhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.webhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.webhooks.timeout (Default Value): 30s
+event.webhooks.tlsInsecure (Default Value): false
+event.webhooks.urlStrictPolicy (Default Value): true
+legacy.artifactory.pid (Environment Variable: JF_LEGACY_ARTIFACTORY_PID): /opt/jfrog/artifactory/app/run/artifactory.pid
+metadata.accessclient.url (Environment Variable: JF_METADATA_ACCESSCLIENT_URL): http://localhost:8081/access
+product.data.internal (Environment Variable: JF_PRODUCT_DATA_INTERNAL): /var/opt/jfrog/artifactory
+product.home (Environment Variable: JF_PRODUCT_HOME): /opt/jfrog/artifactory
+router.entrypoints.internalPort (Default Value): 8046
+router.topology.local.requiredservicetypes (Environment Variable: JF_ROUTER_TOPOLOGY_LOCAL_REQUIREDSERVICETYPES): jfrt,jfac,jfmd,jffe,jfob,jfcon,jfevt,jfevd,jfcfg,jftpl,jfomr
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.multiTenant.cellId (Default Value): 
+shared.multiTenant.enabled (Default Value): false
+shared.multiTenant.tenantRegistryClient.caCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.cacheExpirationSecs (Default Value): 21600
+shared.multiTenant.tenantRegistryClient.clientCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.clientCertKey (Default Value): *****
+shared.multiTenant.tenantRegistryClient.dialTimeoutSecs (Default Value): 10
+shared.multiTenant.tenantRegistryClient.endpoints (Default Value): 
+shared.multiTenant.tenantRegistryClient.pingCacheExpirationSecs (Default Value): 15
+shared.multiTenant.tenantRegistryClient.pingTimeoutSecs (Default Value): 1
+shared.multiTenant.tenantRegistryClient.requestTimeoutSecs (Default Value): 30
+shared.newrelic.appName (Default Value): 
+shared.newrelic.distributedTracerEnabled (Default Value): true
+shared.newrelic.enableDebugLog (Default Value): false
+shared.newrelic.enabled (Default Value): false
+shared.newrelic.licenseKey (Default Value): *****
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.node.ip (Environment Variable: JF_SHARED_NODE_IP): 127.0.0.1
+shared.node.name (Environment Variable: JF_SHARED_NODE_NAME): 70669e478afc
+shared.openTelemetry.distributedTracerEnabled (Default Value): true
+shared.openTelemetry.enabled (Default Value): false
+shared.openTelemetry.endpoint (Default Value): 
+shared.openTelemetry.exportPace (Default Value): 0s
+shared.openTelemetry.labels (Default Value): 
+shared.openTelemetry.metricsEnabled (Default Value): false
+shared.openTelemetry.serviceName (Default Value): jfevt
+shared.openTelemetry.token (Default Value): *****
+shared.openTelemetry.useGrpcExporters (Default Value): true
+shared.restrictedmode.enabled (Environment Variable: JF_SHARED_RESTRICTEDMODE_ENABLED): true
+shared.security.ExposeApplicationHeaders (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+shared.security.joinKeyFile (Default Value): etc/security/join.key
+shared.security.masterKeyFile (Default Value): etc/security/master.key
+system.yaml (Environment Variable: JF_SYSTEM_YAML): /opt/jfrog/artifactory/var/etc/system.yaml [startup]
+2025-06-06T05:47:19.894Z [jfevt] [INFO ] [6006002f46e378e2] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 5 seconds with 2m0s timeout [startup]
+2025-06-06T05:47:24.905Z [jfevt] [INFO ] [6006002f46e378e2] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 10 seconds with 2m0s timeout [startup]
+2025-06-06T05:47:30.462Z [jfevt] [INFO ] [6006002f46e378e2] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 15 seconds with 2m0s timeout [startup]
+2025-06-06T05:47:35.241Z [jfevt] [INFO ] [6006002f46e378e2] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 20 seconds with 2m0s timeout [startup]
+2025-06-06T05:47:45.103Z [jfevt] [INFO ] [6006002f46e378e2] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 30 seconds with 2m0s timeout [startup]
+2025-06-06T05:47:50.422Z [jfevt] [INFO ] [6006002f46e378e2] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 35 seconds with 2m0s timeout [startup]
+2025-06-06T05:47:55.439Z [jfevt] [INFO ] [6006002f46e378e2] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 40 seconds with 2m0s timeout [startup]
+2025-06-06T05:48:00.447Z [jfevt] [INFO ] [6006002f46e378e2] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 45 seconds with 2m0s timeout [startup]
+2025-06-06T05:48:05.457Z [jfevt] [INFO ] [6006002f46e378e2] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 50 seconds with 2m0s timeout [startup]
+2025-06-06T05:48:10.490Z [jfevt] [INFO ] [6006002f46e378e2] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 55 seconds with 2m0s timeout [startup]
+2025-06-06T05:48:15.523Z [jfevt] [INFO ] [6006002f46e378e2] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 60 seconds with 2m0s timeout [startup]
+2025-06-06T05:48:20.530Z [jfevt] [INFO ] [6006002f46e378e2] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 65 seconds with 2m0s timeout [startup]
+2025-06-06T05:48:25.534Z [jfevt] [INFO ] [6006002f46e378e2] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 70 seconds with 2m0s timeout [startup]
+2025-06-06T05:48:30.540Z [jfevt] [INFO ] [6006002f46e378e2] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 75 seconds with 2m0s timeout [startup]
+2025-06-06T05:48:35.655Z [jfevt] [INFO ] [6006002f46e378e2] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 5: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T05:48:40.674Z [jfevt] [INFO ] [6006002f46e378e2] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 10: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T05:48:45.691Z [jfevt] [INFO ] [6006002f46e378e2] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 15: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T05:48:50.748Z [jfevt] [INFO ] [6006002f46e378e2] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 20: Service registry ping failed, will retry. Error: Failed to ping access, response status: 404 Not Found (returned 404) [startup]
+2025-06-06T05:48:52.807Z [jfevt] [INFO ] [6006002f46e378e2] [bootstrap.go:146              ] [main                ] [                ] - JFrog Event Service ID: jfevt@01jx1whbjf25v712c2mrk11s4z [startup]
+2025-06-06T05:48:52.807Z [jfevt] [INFO ] [6006002f46e378e2] [bootstrap.go:147              ] [main                ] [                ] - JFrog Event Node ID   : artifactory-node-1 [startup]
+2025-06-06T05:48:52.811Z [jfevt] [INFO ] [6006002f46e378e2] [bootstrap.go:148              ] [main                ] [                ] - JFrog Event Node IP   : 127.0.0.1 [startup]
+2025-06-06T05:48:53.309Z [jfevt] [INFO ] [6006002f46e378e2] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [subscriptions]
+2025-06-06T05:48:53.322Z [jfevt] [INFO ] [6006002f46e378e2] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [subscriptions]
+2025-06-06T05:48:53.325Z [jfevt] [INFO ] [6006002f46e378e2] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [subscriptions]
+2025-06-06T05:48:53.325Z [jfevt] [INFO ] [6006002f46e378e2] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [subscriptions]
+2025-06-06T05:48:53.931Z [jfevt] [INFO ] [6006002f46e378e2] [join_executor.go:178          ] [main                ] [                ] - Cluster join: Successfully joined the cluster [access_client]
+2025-06-06T05:48:53.933Z [jfevt] [INFO ] [6006002f46e378e2] [join_executor.go:190          ] [main                ] [                ] - Cluster join: executing Router register at: localhost:8046 for service id jfevt@01jx1whbjf25v712c2mrk11s4z [access_client]
+2025-06-06T05:48:54.303Z [jfevt] [INFO ] [6006002f46e378e2] [application.go:200            ] [main                ] [                ] - JFrog Event (jfevt) service initialization completed in 99.432 seconds. HTTP server listening on 127.0.0.1:8061. GRPC server listening on 127.0.0.1:8062. [application]
+2025-06-06T05:48:54.318Z [jfevt] [INFO ] [6006002f46e378e2] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [events]
+2025-06-06T05:48:54.320Z [jfevt] [INFO ] [6006002f46e378e2] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [events]
+2025-06-06T05:48:54.322Z [jfevt] [INFO ] [6006002f46e378e2] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [events]
+2025-06-06T05:48:54.322Z [jfevt] [INFO ] [6006002f46e378e2] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [events]
+2025-06-06T05:50:59.609Z [jfevt] [WARN ] [41d1e1bc6455b8f2] [middlewares.go:96             ] [main                ] [                ] - Context error when processing request: 'context canceled'. Status code: '200'. [http_server]
+2025-06-06T06:23:20.956Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [bootstrap.go:56               ] [main                ] [                ] - Effective configuration:
+access.jfconfig.enabled (Environment Variable: JF_ACCESS_JFCONFIG_ENABLED): true
+access.useexternaltopology (Environment Variable: JF_ACCESS_USEEXTERNALTOPOLOGY): true
+artifactory.pid (Environment Variable: JF_ARTIFACTORY_PID): /opt/jfrog/artifactory/var/work/run/artifactory.pid
+artifactory.user (Environment Variable: JF_ARTIFACTORY_USER): artifactory
+event.accessClient.joinTimeout (Default Value): 5m
+event.accessClient.pingTimeout (Default Value): 5m
+event.artifactoryClient.request.timeout (Default Value): 5s
+event.baseUrlCache.interval (Default Value): 5m
+event.customWebhooks.enabled (Default Value): true
+event.customWebhooks.maxIdleConnections (Default Value): 100
+event.customWebhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.customWebhooks.retryCount (Default Value): 5
+event.customWebhooks.retryWaitMillis (Default Value): 10000
+event.customWebhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.customWebhooks.sizeLimits.payloadMaxSizeBytes (Default Value): 51200
+event.customWebhooks.sizeLimits.secretsMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.secretsMaxSizeBytes (Default Value): 5120
+event.customWebhooks.timeoutMillis (Default Value): 30000
+event.customWebhooks.tlsInsecure (Default Value): false
+event.domainCache.interval (Default Value): 5m
+event.grpcPort (Default Value): 8062
+event.logging.application.caller (Default Value): false
+event.logging.application.console (Default Value): true
+event.logging.application.filePath (Default Value): event-service.log
+event.logging.application.format (Default Value): jftext
+event.logging.application.level (Default Value): info
+event.logging.application.rotation.compress (Default Value): true
+event.logging.application.rotation.keepLastDecompressed (Default Value): 1
+event.logging.application.rotation.maxAgeDays (Default Value): 365
+event.logging.application.rotation.maxFiles (Default Value): 10
+event.logging.application.rotation.maxSizeMb (Default Value): 25
+event.logging.consoleLog.format (Default Value): jftext
+event.logging.metrics.console (Default Value): false
+event.logging.metrics.filePath (Default Value): event-metrics.log
+event.logging.metrics.rotation.compress (Default Value): true
+event.logging.metrics.rotation.keepLastDecompressed (Default Value): 1
+event.logging.metrics.rotation.maxAgeDays (Default Value): 365
+event.logging.metrics.rotation.maxFiles (Default Value): 10
+event.logging.metrics.rotation.maxSizeMb (Default Value): 25
+event.logging.outgoingRequest.console (Default Value): false
+event.logging.outgoingRequest.filePath (Default Value): event-webhook-request-out.log
+event.logging.outgoingRequest.rotation.compress (Default Value): true
+event.logging.outgoingRequest.rotation.keepLastDecompressed (Default Value): 1
+event.logging.outgoingRequest.rotation.maxAgeDays (Default Value): 365
+event.logging.outgoingRequest.rotation.maxFiles (Default Value): 10
+event.logging.outgoingRequest.rotation.maxSizeMb (Default Value): 25
+event.logging.request.console (Default Value): false
+event.logging.request.filePath (Default Value): event-request.log
+event.logging.request.rotation.compress (Default Value): true
+event.logging.request.rotation.keepLastDecompressed (Default Value): 1
+event.logging.request.rotation.maxAgeDays (Default Value): 365
+event.logging.request.rotation.maxFiles (Default Value): 10
+event.logging.request.rotation.maxSizeMb (Default Value): 25
+event.logging.troubleshooting.console (Default Value): false
+event.logging.troubleshooting.filePath (Default Value): event-troubleshooting.log
+event.logging.troubleshooting.rotation.compress (Default Value): true
+event.logging.troubleshooting.rotation.keepLastDecompressed (Default Value): 1
+event.logging.troubleshooting.rotation.maxAgeDays (Default Value): 365
+event.logging.troubleshooting.rotation.maxFiles (Default Value): 10
+event.logging.troubleshooting.rotation.maxSizeMb (Default Value): 25
+event.metrics.enabled (Default Value): false
+event.metrics.exclude (Default Value): []
+event.metrics.interval (Default Value): 10s
+event.metrics.logPeriodically (Default Value): true
+event.metrics.tokenVerification.accessUrl (Default Value): 
+event.metrics.tokenVerification.retryBackoffInitialIntervalMillis (Default Value): 500
+event.metrics.tokenVerification.retryBackoffMaxElapsedTimeMillis (Default Value): 0
+event.metrics.tokenVerification.retryBackoffMaxIntervalMillis (Default Value): 3600000
+event.metrics.tokenVerification.revocableExpiryThresholdSeconds (Default Value): -1
+event.metrics.triggers.enabled (Default Value): true
+event.metrics.triggers.intervalMillis (Default Value): 20000
+event.metrics.triggers.limit (Default Value): 1000000
+event.port (Default Value): 8061
+event.profiling.enabled (Default Value): false
+event.proxyCache.interval (Default Value): 5m
+event.rateLimit.burstSize (Default Value): 10000
+event.rateLimit.frequency (Default Value): 1000
+event.rateLimit.maxConcurrentHandlers (Default Value): 50000
+event.security.blacklist.enabled (Default Value): true
+event.security.blacklist.timeoutMillis (Default Value): 5000
+event.shutdownWaitForRouterTimeoutSecs (Default Value): 10
+event.supportBundle.aggregationTimeout (Default Value): 1h
+event.tokenCache.timeout (Default Value): 1m
+event.troubleshooting.enabled (Default Value): false
+event.troubleshooting.keepAliveIntervalMillis (Default Value): 10000
+event.troubleshooting.redis.addresses (Default Value): []
+event.troubleshooting.redis.blockTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.cleanupIntervalMillis (Default Value): 30000
+event.troubleshooting.redis.dialTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.password (Default Value): *****
+event.troubleshooting.redis.readTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.serverType (Default Value): single
+event.troubleshooting.redis.streamBatchSize (Default Value): 1000
+event.troubleshooting.redis.streamMaxLen (Default Value): 10000
+event.troubleshooting.redis.tlsEnabled (Default Value): false
+event.troubleshooting.redis.tlsInsecure (Default Value): false
+event.troubleshooting.redis.username (Default Value): 
+event.troubleshooting.redis.writeTimeoutMillis (Default Value): 0
+event.troubleshooting.storageType (Default Value): log
+event.troubleshooting.streamIdSuffix (Default Value): troubleshooting
+event.webhooks.maxIdleConnections (Default Value): 100
+event.webhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.webhooks.retryCount (Default Value): 5
+event.webhooks.retryWait (Default Value): 10s
+event.webhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.webhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.webhooks.timeout (Default Value): 30s
+event.webhooks.tlsInsecure (Default Value): false
+event.webhooks.urlStrictPolicy (Default Value): true
+legacy.artifactory.pid (Environment Variable: JF_LEGACY_ARTIFACTORY_PID): /opt/jfrog/artifactory/app/run/artifactory.pid
+metadata.accessclient.url (Environment Variable: JF_METADATA_ACCESSCLIENT_URL): http://localhost:8081/access
+product.data.internal (Environment Variable: JF_PRODUCT_DATA_INTERNAL): /var/opt/jfrog/artifactory
+product.home (Environment Variable: JF_PRODUCT_HOME): /opt/jfrog/artifactory
+router.entrypoints.internalPort (Default Value): 8046
+router.topology.local.requiredservicetypes (Environment Variable: JF_ROUTER_TOPOLOGY_LOCAL_REQUIREDSERVICETYPES): jfrt,jfac,jfmd,jffe,jfob,jfevt,jfcfg,jftpl
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.multiTenant.cellId (Default Value): 
+shared.multiTenant.enabled (Default Value): false
+shared.multiTenant.tenantRegistryClient.caCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.cacheExpirationSecs (Default Value): 21600
+shared.multiTenant.tenantRegistryClient.clientCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.clientCertKey (Default Value): *****
+shared.multiTenant.tenantRegistryClient.dialTimeoutSecs (Default Value): 10
+shared.multiTenant.tenantRegistryClient.endpoints (Default Value): 
+shared.multiTenant.tenantRegistryClient.pingCacheExpirationSecs (Default Value): 15
+shared.multiTenant.tenantRegistryClient.pingTimeoutSecs (Default Value): 1
+shared.multiTenant.tenantRegistryClient.requestTimeoutSecs (Default Value): 30
+shared.newrelic.appName (Default Value): 
+shared.newrelic.distributedTracerEnabled (Default Value): true
+shared.newrelic.enableDebugLog (Default Value): false
+shared.newrelic.enabled (Default Value): false
+shared.newrelic.licenseKey (Default Value): *****
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.node.ip (Environment Variable: JF_SHARED_NODE_IP): 127.0.0.1
+shared.node.name (Environment Variable: JF_SHARED_NODE_NAME): 4147a3288834
+shared.openTelemetry.distributedTracerEnabled (Default Value): true
+shared.openTelemetry.enabled (Default Value): false
+shared.openTelemetry.endpoint (Default Value): 
+shared.openTelemetry.exportPace (Default Value): 0s
+shared.openTelemetry.labels (Default Value): 
+shared.openTelemetry.metricsEnabled (Default Value): false
+shared.openTelemetry.serviceName (Default Value): jfevt
+shared.openTelemetry.token (Default Value): *****
+shared.openTelemetry.useGrpcExporters (Default Value): true
+shared.restrictedmode.enabled (Environment Variable: JF_SHARED_RESTRICTEDMODE_ENABLED): true
+shared.security.ExposeApplicationHeaders (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+shared.security.joinKeyFile (Default Value): etc/security/join.key
+shared.security.masterKeyFile (Default Value): etc/security/master.key
+system.yaml (Environment Variable: JF_SYSTEM_YAML): /opt/jfrog/artifactory/var/etc/system.yaml [startup]
+2025-06-06T06:23:24.978Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 5: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T06:23:30.004Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 10: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T06:23:35.029Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 15: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T06:23:40.051Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 20: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T06:23:45.069Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 25: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T06:23:50.081Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 30: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T06:23:55.092Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 35: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T06:24:00.102Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 40: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T06:24:05.112Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 45: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T06:24:10.128Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 50: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T06:24:15.138Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 55: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T06:24:20.148Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 60: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T06:24:25.158Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 65: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T06:24:26.213Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [bootstrap.go:146              ] [main                ] [                ] - JFrog Event Service ID: jfevt@01jx1whbjf25v712c2mrk11s4z [startup]
+2025-06-06T06:24:26.213Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [bootstrap.go:147              ] [main                ] [                ] - JFrog Event Node ID   : artifactory-node-1 [startup]
+2025-06-06T06:24:26.215Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [bootstrap.go:148              ] [main                ] [                ] - JFrog Event Node IP   : 127.0.0.1 [startup]
+2025-06-06T06:24:26.307Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [subscriptions]
+2025-06-06T06:24:26.310Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [subscriptions]
+2025-06-06T06:24:26.312Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [subscriptions]
+2025-06-06T06:24:26.312Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [subscriptions]
+2025-06-06T06:24:26.503Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [join_executor.go:178          ] [main                ] [                ] - Cluster join: Successfully joined the cluster [access_client]
+2025-06-06T06:24:26.504Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [join_executor.go:190          ] [main                ] [                ] - Cluster join: executing Router register at: localhost:8046 for service id jfevt@01jx1whbjf25v712c2mrk11s4z [access_client]
+2025-06-06T06:24:26.540Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [application.go:200            ] [main                ] [                ] - JFrog Event (jfevt) service initialization completed in 65.605 seconds. HTTP server listening on 127.0.0.1:8061. GRPC server listening on 127.0.0.1:8062. [application]
+2025-06-06T06:24:26.550Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [events]
+2025-06-06T06:24:26.552Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [events]
+2025-06-06T06:24:26.555Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [events]
+2025-06-06T06:24:26.555Z [jfevt] [INFO ] [2fba9a1fbd6f5da8] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [events]
+2025-06-06T11:46:13.747Z [jfevt] [INFO ] [04efadc8d14fc59f] [bootstrap.go:56               ] [main                ] [                ] - Effective configuration:
+access.jfconfig.enabled (Environment Variable: JF_ACCESS_JFCONFIG_ENABLED): true
+access.useexternaltopology (Environment Variable: JF_ACCESS_USEEXTERNALTOPOLOGY): true
+artifactory.pid (Environment Variable: JF_ARTIFACTORY_PID): /opt/jfrog/artifactory/var/work/run/artifactory.pid
+artifactory.user (Environment Variable: JF_ARTIFACTORY_USER): artifactory
+event.accessClient.joinTimeout (Default Value): 5m
+event.accessClient.pingTimeout (Default Value): 5m
+event.artifactoryClient.request.timeout (Default Value): 5s
+event.baseUrlCache.interval (Default Value): 5m
+event.customWebhooks.enabled (Default Value): true
+event.customWebhooks.maxIdleConnections (Default Value): 100
+event.customWebhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.customWebhooks.retryCount (Default Value): 5
+event.customWebhooks.retryWaitMillis (Default Value): 10000
+event.customWebhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.customWebhooks.sizeLimits.payloadMaxSizeBytes (Default Value): 51200
+event.customWebhooks.sizeLimits.secretsMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.secretsMaxSizeBytes (Default Value): 5120
+event.customWebhooks.timeoutMillis (Default Value): 30000
+event.customWebhooks.tlsInsecure (Default Value): false
+event.domainCache.interval (Default Value): 5m
+event.grpcPort (Default Value): 8062
+event.logging.application.caller (Default Value): false
+event.logging.application.console (Default Value): true
+event.logging.application.filePath (Default Value): event-service.log
+event.logging.application.format (Default Value): jftext
+event.logging.application.level (Default Value): info
+event.logging.application.rotation.compress (Default Value): true
+event.logging.application.rotation.keepLastDecompressed (Default Value): 1
+event.logging.application.rotation.maxAgeDays (Default Value): 365
+event.logging.application.rotation.maxFiles (Default Value): 10
+event.logging.application.rotation.maxSizeMb (Default Value): 25
+event.logging.consoleLog.format (Default Value): jftext
+event.logging.metrics.console (Default Value): false
+event.logging.metrics.filePath (Default Value): event-metrics.log
+event.logging.metrics.rotation.compress (Default Value): true
+event.logging.metrics.rotation.keepLastDecompressed (Default Value): 1
+event.logging.metrics.rotation.maxAgeDays (Default Value): 365
+event.logging.metrics.rotation.maxFiles (Default Value): 10
+event.logging.metrics.rotation.maxSizeMb (Default Value): 25
+event.logging.outgoingRequest.console (Default Value): false
+event.logging.outgoingRequest.filePath (Default Value): event-webhook-request-out.log
+event.logging.outgoingRequest.rotation.compress (Default Value): true
+event.logging.outgoingRequest.rotation.keepLastDecompressed (Default Value): 1
+event.logging.outgoingRequest.rotation.maxAgeDays (Default Value): 365
+event.logging.outgoingRequest.rotation.maxFiles (Default Value): 10
+event.logging.outgoingRequest.rotation.maxSizeMb (Default Value): 25
+event.logging.request.console (Default Value): false
+event.logging.request.filePath (Default Value): event-request.log
+event.logging.request.rotation.compress (Default Value): true
+event.logging.request.rotation.keepLastDecompressed (Default Value): 1
+event.logging.request.rotation.maxAgeDays (Default Value): 365
+event.logging.request.rotation.maxFiles (Default Value): 10
+event.logging.request.rotation.maxSizeMb (Default Value): 25
+event.logging.troubleshooting.console (Default Value): false
+event.logging.troubleshooting.filePath (Default Value): event-troubleshooting.log
+event.logging.troubleshooting.rotation.compress (Default Value): true
+event.logging.troubleshooting.rotation.keepLastDecompressed (Default Value): 1
+event.logging.troubleshooting.rotation.maxAgeDays (Default Value): 365
+event.logging.troubleshooting.rotation.maxFiles (Default Value): 10
+event.logging.troubleshooting.rotation.maxSizeMb (Default Value): 25
+event.metrics.enabled (Default Value): false
+event.metrics.exclude (Default Value): []
+event.metrics.interval (Default Value): 10s
+event.metrics.logPeriodically (Default Value): true
+event.metrics.tokenVerification.accessUrl (Default Value): 
+event.metrics.tokenVerification.retryBackoffInitialIntervalMillis (Default Value): 500
+event.metrics.tokenVerification.retryBackoffMaxElapsedTimeMillis (Default Value): 0
+event.metrics.tokenVerification.retryBackoffMaxIntervalMillis (Default Value): 3600000
+event.metrics.tokenVerification.revocableExpiryThresholdSeconds (Default Value): -1
+event.metrics.triggers.enabled (Default Value): true
+event.metrics.triggers.intervalMillis (Default Value): 20000
+event.metrics.triggers.limit (Default Value): 1000000
+event.port (Default Value): 8061
+event.profiling.enabled (Default Value): false
+event.proxyCache.interval (Default Value): 5m
+event.rateLimit.burstSize (Default Value): 10000
+event.rateLimit.frequency (Default Value): 1000
+event.rateLimit.maxConcurrentHandlers (Default Value): 50000
+event.security.blacklist.enabled (Default Value): true
+event.security.blacklist.timeoutMillis (Default Value): 5000
+event.shutdownWaitForRouterTimeoutSecs (Default Value): 10
+event.supportBundle.aggregationTimeout (Default Value): 1h
+event.tokenCache.timeout (Default Value): 1m
+event.troubleshooting.enabled (Default Value): false
+event.troubleshooting.keepAliveIntervalMillis (Default Value): 10000
+event.troubleshooting.redis.addresses (Default Value): []
+event.troubleshooting.redis.blockTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.cleanupIntervalMillis (Default Value): 30000
+event.troubleshooting.redis.dialTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.password (Default Value): *****
+event.troubleshooting.redis.readTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.serverType (Default Value): single
+event.troubleshooting.redis.streamBatchSize (Default Value): 1000
+event.troubleshooting.redis.streamMaxLen (Default Value): 10000
+event.troubleshooting.redis.tlsEnabled (Default Value): false
+event.troubleshooting.redis.tlsInsecure (Default Value): false
+event.troubleshooting.redis.username (Default Value): 
+event.troubleshooting.redis.writeTimeoutMillis (Default Value): 0
+event.troubleshooting.storageType (Default Value): log
+event.troubleshooting.streamIdSuffix (Default Value): troubleshooting
+event.webhooks.maxIdleConnections (Default Value): 100
+event.webhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.webhooks.retryCount (Default Value): 5
+event.webhooks.retryWait (Default Value): 10s
+event.webhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.webhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.webhooks.timeout (Default Value): 30s
+event.webhooks.tlsInsecure (Default Value): false
+event.webhooks.urlStrictPolicy (Default Value): true
+legacy.artifactory.pid (Environment Variable: JF_LEGACY_ARTIFACTORY_PID): /opt/jfrog/artifactory/app/run/artifactory.pid
+metadata.accessclient.url (Environment Variable: JF_METADATA_ACCESSCLIENT_URL): http://localhost:8081/access
+product.data.internal (Environment Variable: JF_PRODUCT_DATA_INTERNAL): /var/opt/jfrog/artifactory
+product.home (Environment Variable: JF_PRODUCT_HOME): /opt/jfrog/artifactory
+router.entrypoints.internalPort (Default Value): 8046
+router.topology.local.requiredservicetypes (Environment Variable: JF_ROUTER_TOPOLOGY_LOCAL_REQUIREDSERVICETYPES): jfrt,jfac,jfmd,jffe,jfob,jfcon,jfevt,jfevd,jfcfg,jftpl,jfomr
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.multiTenant.cellId (Default Value): 
+shared.multiTenant.enabled (Default Value): false
+shared.multiTenant.tenantRegistryClient.caCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.cacheExpirationSecs (Default Value): 21600
+shared.multiTenant.tenantRegistryClient.clientCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.clientCertKey (Default Value): *****
+shared.multiTenant.tenantRegistryClient.dialTimeoutSecs (Default Value): 10
+shared.multiTenant.tenantRegistryClient.endpoints (Default Value): 
+shared.multiTenant.tenantRegistryClient.pingCacheExpirationSecs (Default Value): 15
+shared.multiTenant.tenantRegistryClient.pingTimeoutSecs (Default Value): 1
+shared.multiTenant.tenantRegistryClient.requestTimeoutSecs (Default Value): 30
+shared.newrelic.appName (Default Value): 
+shared.newrelic.distributedTracerEnabled (Default Value): true
+shared.newrelic.enableDebugLog (Default Value): false
+shared.newrelic.enabled (Default Value): false
+shared.newrelic.licenseKey (Default Value): *****
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.node.ip (Environment Variable: JF_SHARED_NODE_IP): 127.0.0.1
+shared.node.name (Environment Variable: JF_SHARED_NODE_NAME): 430b57084b87
+shared.openTelemetry.distributedTracerEnabled (Default Value): true
+shared.openTelemetry.enabled (Default Value): false
+shared.openTelemetry.endpoint (Default Value): 
+shared.openTelemetry.exportPace (Default Value): 0s
+shared.openTelemetry.labels (Default Value): 
+shared.openTelemetry.metricsEnabled (Default Value): false
+shared.openTelemetry.serviceName (Default Value): jfevt
+shared.openTelemetry.token (Default Value): *****
+shared.openTelemetry.useGrpcExporters (Default Value): true
+shared.restrictedmode.enabled (Environment Variable: JF_SHARED_RESTRICTEDMODE_ENABLED): true
+shared.security.ExposeApplicationHeaders (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+shared.security.joinKeyFile (Default Value): etc/security/join.key
+shared.security.masterKeyFile (Default Value): etc/security/master.key
+system.yaml (Environment Variable: JF_SYSTEM_YAML): /opt/jfrog/artifactory/var/etc/system.yaml [startup]
+2025-06-06T11:46:17.772Z [jfevt] [INFO ] [04efadc8d14fc59f] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 5: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:46:22.791Z [jfevt] [INFO ] [04efadc8d14fc59f] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 10: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:46:27.832Z [jfevt] [INFO ] [04efadc8d14fc59f] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 15: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:46:32.845Z [jfevt] [INFO ] [04efadc8d14fc59f] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 20: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:46:37.870Z [jfevt] [INFO ] [04efadc8d14fc59f] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 25: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:46:42.891Z [jfevt] [INFO ] [04efadc8d14fc59f] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 30: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:46:47.905Z [jfevt] [INFO ] [04efadc8d14fc59f] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 35: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:46:52.914Z [jfevt] [INFO ] [04efadc8d14fc59f] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 40: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:46:57.923Z [jfevt] [INFO ] [04efadc8d14fc59f] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 45: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:47:02.932Z [jfevt] [INFO ] [04efadc8d14fc59f] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 50: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:47:07.947Z [jfevt] [INFO ] [04efadc8d14fc59f] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 55: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:47:12.977Z [jfevt] [INFO ] [04efadc8d14fc59f] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 60: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:48:38.274Z [jfevt] [INFO ] [36623f4ee12b99dc] [bootstrap.go:56               ] [main                ] [                ] - Effective configuration:
+access.jfconfig.enabled (Environment Variable: JF_ACCESS_JFCONFIG_ENABLED): true
+access.useexternaltopology (Environment Variable: JF_ACCESS_USEEXTERNALTOPOLOGY): true
+artifactory.pid (Environment Variable: JF_ARTIFACTORY_PID): /opt/jfrog/artifactory/var/work/run/artifactory.pid
+artifactory.user (Environment Variable: JF_ARTIFACTORY_USER): artifactory
+event.accessClient.joinTimeout (Default Value): 5m
+event.accessClient.pingTimeout (Default Value): 5m
+event.artifactoryClient.request.timeout (Default Value): 5s
+event.baseUrlCache.interval (Default Value): 5m
+event.customWebhooks.enabled (Default Value): true
+event.customWebhooks.maxIdleConnections (Default Value): 100
+event.customWebhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.customWebhooks.retryCount (Default Value): 5
+event.customWebhooks.retryWaitMillis (Default Value): 10000
+event.customWebhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.customWebhooks.sizeLimits.payloadMaxSizeBytes (Default Value): 51200
+event.customWebhooks.sizeLimits.secretsMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.secretsMaxSizeBytes (Default Value): 5120
+event.customWebhooks.timeoutMillis (Default Value): 30000
+event.customWebhooks.tlsInsecure (Default Value): false
+event.domainCache.interval (Default Value): 5m
+event.grpcPort (Default Value): 8062
+event.logging.application.caller (Default Value): false
+event.logging.application.console (Default Value): true
+event.logging.application.filePath (Default Value): event-service.log
+event.logging.application.format (Default Value): jftext
+event.logging.application.level (Default Value): info
+event.logging.application.rotation.compress (Default Value): true
+event.logging.application.rotation.keepLastDecompressed (Default Value): 1
+event.logging.application.rotation.maxAgeDays (Default Value): 365
+event.logging.application.rotation.maxFiles (Default Value): 10
+event.logging.application.rotation.maxSizeMb (Default Value): 25
+event.logging.consoleLog.format (Default Value): jftext
+event.logging.metrics.console (Default Value): false
+event.logging.metrics.filePath (Default Value): event-metrics.log
+event.logging.metrics.rotation.compress (Default Value): true
+event.logging.metrics.rotation.keepLastDecompressed (Default Value): 1
+event.logging.metrics.rotation.maxAgeDays (Default Value): 365
+event.logging.metrics.rotation.maxFiles (Default Value): 10
+event.logging.metrics.rotation.maxSizeMb (Default Value): 25
+event.logging.outgoingRequest.console (Default Value): false
+event.logging.outgoingRequest.filePath (Default Value): event-webhook-request-out.log
+event.logging.outgoingRequest.rotation.compress (Default Value): true
+event.logging.outgoingRequest.rotation.keepLastDecompressed (Default Value): 1
+event.logging.outgoingRequest.rotation.maxAgeDays (Default Value): 365
+event.logging.outgoingRequest.rotation.maxFiles (Default Value): 10
+event.logging.outgoingRequest.rotation.maxSizeMb (Default Value): 25
+event.logging.request.console (Default Value): false
+event.logging.request.filePath (Default Value): event-request.log
+event.logging.request.rotation.compress (Default Value): true
+event.logging.request.rotation.keepLastDecompressed (Default Value): 1
+event.logging.request.rotation.maxAgeDays (Default Value): 365
+event.logging.request.rotation.maxFiles (Default Value): 10
+event.logging.request.rotation.maxSizeMb (Default Value): 25
+event.logging.troubleshooting.console (Default Value): false
+event.logging.troubleshooting.filePath (Default Value): event-troubleshooting.log
+event.logging.troubleshooting.rotation.compress (Default Value): true
+event.logging.troubleshooting.rotation.keepLastDecompressed (Default Value): 1
+event.logging.troubleshooting.rotation.maxAgeDays (Default Value): 365
+event.logging.troubleshooting.rotation.maxFiles (Default Value): 10
+event.logging.troubleshooting.rotation.maxSizeMb (Default Value): 25
+event.metrics.enabled (Default Value): false
+event.metrics.exclude (Default Value): []
+event.metrics.interval (Default Value): 10s
+event.metrics.logPeriodically (Default Value): true
+event.metrics.tokenVerification.accessUrl (Default Value): 
+event.metrics.tokenVerification.retryBackoffInitialIntervalMillis (Default Value): 500
+event.metrics.tokenVerification.retryBackoffMaxElapsedTimeMillis (Default Value): 0
+event.metrics.tokenVerification.retryBackoffMaxIntervalMillis (Default Value): 3600000
+event.metrics.tokenVerification.revocableExpiryThresholdSeconds (Default Value): -1
+event.metrics.triggers.enabled (Default Value): true
+event.metrics.triggers.intervalMillis (Default Value): 20000
+event.metrics.triggers.limit (Default Value): 1000000
+event.port (Default Value): 8061
+event.profiling.enabled (Default Value): false
+event.proxyCache.interval (Default Value): 5m
+event.rateLimit.burstSize (Default Value): 10000
+event.rateLimit.frequency (Default Value): 1000
+event.rateLimit.maxConcurrentHandlers (Default Value): 50000
+event.security.blacklist.enabled (Default Value): true
+event.security.blacklist.timeoutMillis (Default Value): 5000
+event.shutdownWaitForRouterTimeoutSecs (Default Value): 10
+event.supportBundle.aggregationTimeout (Default Value): 1h
+event.tokenCache.timeout (Default Value): 1m
+event.troubleshooting.enabled (Default Value): false
+event.troubleshooting.keepAliveIntervalMillis (Default Value): 10000
+event.troubleshooting.redis.addresses (Default Value): []
+event.troubleshooting.redis.blockTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.cleanupIntervalMillis (Default Value): 30000
+event.troubleshooting.redis.dialTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.password (Default Value): *****
+event.troubleshooting.redis.readTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.serverType (Default Value): single
+event.troubleshooting.redis.streamBatchSize (Default Value): 1000
+event.troubleshooting.redis.streamMaxLen (Default Value): 10000
+event.troubleshooting.redis.tlsEnabled (Default Value): false
+event.troubleshooting.redis.tlsInsecure (Default Value): false
+event.troubleshooting.redis.username (Default Value): 
+event.troubleshooting.redis.writeTimeoutMillis (Default Value): 0
+event.troubleshooting.storageType (Default Value): log
+event.troubleshooting.streamIdSuffix (Default Value): troubleshooting
+event.webhooks.maxIdleConnections (Default Value): 100
+event.webhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.webhooks.retryCount (Default Value): 5
+event.webhooks.retryWait (Default Value): 10s
+event.webhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.webhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.webhooks.timeout (Default Value): 30s
+event.webhooks.tlsInsecure (Default Value): false
+event.webhooks.urlStrictPolicy (Default Value): true
+legacy.artifactory.pid (Environment Variable: JF_LEGACY_ARTIFACTORY_PID): /opt/jfrog/artifactory/app/run/artifactory.pid
+metadata.accessclient.url (Environment Variable: JF_METADATA_ACCESSCLIENT_URL): http://localhost:8081/access
+product.data.internal (Environment Variable: JF_PRODUCT_DATA_INTERNAL): /var/opt/jfrog/artifactory
+product.home (Environment Variable: JF_PRODUCT_HOME): /opt/jfrog/artifactory
+router.entrypoints.internalPort (Default Value): 8046
+router.topology.local.requiredservicetypes (Environment Variable: JF_ROUTER_TOPOLOGY_LOCAL_REQUIREDSERVICETYPES): jfrt,jfac,jfmd,jffe,jfob,jfcon,jfevt,jfevd,jfcfg,jftpl,jfomr
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.multiTenant.cellId (Default Value): 
+shared.multiTenant.enabled (Default Value): false
+shared.multiTenant.tenantRegistryClient.caCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.cacheExpirationSecs (Default Value): 21600
+shared.multiTenant.tenantRegistryClient.clientCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.clientCertKey (Default Value): *****
+shared.multiTenant.tenantRegistryClient.dialTimeoutSecs (Default Value): 10
+shared.multiTenant.tenantRegistryClient.endpoints (Default Value): 
+shared.multiTenant.tenantRegistryClient.pingCacheExpirationSecs (Default Value): 15
+shared.multiTenant.tenantRegistryClient.pingTimeoutSecs (Default Value): 1
+shared.multiTenant.tenantRegistryClient.requestTimeoutSecs (Default Value): 30
+shared.newrelic.appName (Default Value): 
+shared.newrelic.distributedTracerEnabled (Default Value): true
+shared.newrelic.enableDebugLog (Default Value): false
+shared.newrelic.enabled (Default Value): false
+shared.newrelic.licenseKey (Default Value): *****
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.node.ip (Environment Variable: JF_SHARED_NODE_IP): 127.0.0.1
+shared.node.name (Environment Variable: JF_SHARED_NODE_NAME): c1c392036784
+shared.openTelemetry.distributedTracerEnabled (Default Value): true
+shared.openTelemetry.enabled (Default Value): false
+shared.openTelemetry.endpoint (Default Value): 
+shared.openTelemetry.exportPace (Default Value): 0s
+shared.openTelemetry.labels (Default Value): 
+shared.openTelemetry.metricsEnabled (Default Value): false
+shared.openTelemetry.serviceName (Default Value): jfevt
+shared.openTelemetry.token (Default Value): *****
+shared.openTelemetry.useGrpcExporters (Default Value): true
+shared.restrictedmode.enabled (Environment Variable: JF_SHARED_RESTRICTEDMODE_ENABLED): true
+shared.security.ExposeApplicationHeaders (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+shared.security.joinKeyFile (Default Value): etc/security/join.key
+shared.security.masterKeyFile (Default Value): etc/security/master.key
+system.yaml (Environment Variable: JF_SYSTEM_YAML): /opt/jfrog/artifactory/var/etc/system.yaml [startup]
+2025-06-06T11:48:42.301Z [jfevt] [INFO ] [36623f4ee12b99dc] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 5: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:48:47.322Z [jfevt] [INFO ] [36623f4ee12b99dc] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 10: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:48:52.339Z [jfevt] [INFO ] [36623f4ee12b99dc] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 15: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:48:57.344Z [jfevt] [INFO ] [36623f4ee12b99dc] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 20: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:49:02.367Z [jfevt] [INFO ] [36623f4ee12b99dc] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 25: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:49:07.381Z [jfevt] [INFO ] [36623f4ee12b99dc] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 30: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:49:12.395Z [jfevt] [INFO ] [36623f4ee12b99dc] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 35: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:49:17.404Z [jfevt] [INFO ] [36623f4ee12b99dc] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 40: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:49:22.413Z [jfevt] [INFO ] [36623f4ee12b99dc] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 45: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:49:27.427Z [jfevt] [INFO ] [36623f4ee12b99dc] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 50: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:49:32.436Z [jfevt] [INFO ] [36623f4ee12b99dc] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 55: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T11:49:36.498Z [jfevt] [INFO ] [36623f4ee12b99dc] [bootstrap.go:146              ] [main                ] [                ] - JFrog Event Service ID: jfevt@01jx1whbjf25v712c2mrk11s4z [startup]
+2025-06-06T11:49:36.499Z [jfevt] [INFO ] [36623f4ee12b99dc] [bootstrap.go:147              ] [main                ] [                ] - JFrog Event Node ID   : artifactory-node-1 [startup]
+2025-06-06T11:49:36.506Z [jfevt] [INFO ] [36623f4ee12b99dc] [bootstrap.go:148              ] [main                ] [                ] - JFrog Event Node IP   : 127.0.0.1 [startup]
+2025-06-06T11:49:36.967Z [jfevt] [INFO ] [36623f4ee12b99dc] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [subscriptions]
+2025-06-06T11:49:36.969Z [jfevt] [INFO ] [36623f4ee12b99dc] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [subscriptions]
+2025-06-06T11:49:36.977Z [jfevt] [INFO ] [36623f4ee12b99dc] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [subscriptions]
+2025-06-06T11:49:36.979Z [jfevt] [INFO ] [36623f4ee12b99dc] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [subscriptions]
+2025-06-06T11:49:37.483Z [jfevt] [INFO ] [36623f4ee12b99dc] [join_executor.go:178          ] [main                ] [                ] - Cluster join: Successfully joined the cluster [access_client]
+2025-06-06T11:49:37.484Z [jfevt] [INFO ] [36623f4ee12b99dc] [join_executor.go:190          ] [main                ] [                ] - Cluster join: executing Router register at: localhost:8046 for service id jfevt@01jx1whbjf25v712c2mrk11s4z [access_client]
+2025-06-06T11:49:37.717Z [jfevt] [INFO ] [36623f4ee12b99dc] [application.go:200            ] [main                ] [                ] - JFrog Event (jfevt) service initialization completed in 59.461 seconds. HTTP server listening on 127.0.0.1:8061. GRPC server listening on 127.0.0.1:8062. [application]
+2025-06-06T11:49:37.729Z [jfevt] [INFO ] [36623f4ee12b99dc] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [events]
+2025-06-06T11:49:37.745Z [jfevt] [INFO ] [36623f4ee12b99dc] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [events]
+2025-06-06T11:49:37.748Z [jfevt] [INFO ] [36623f4ee12b99dc] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [events]
+2025-06-06T11:49:37.749Z [jfevt] [INFO ] [36623f4ee12b99dc] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [events]
+2025-06-06T12:02:36.550Z [jfevt] [INFO ] [3ae8222af1470293] [bootstrap.go:56               ] [main                ] [                ] - Effective configuration:
+access.jfconfig.enabled (Environment Variable: JF_ACCESS_JFCONFIG_ENABLED): true
+access.useexternaltopology (Environment Variable: JF_ACCESS_USEEXTERNALTOPOLOGY): true
+artifactory.pid (Environment Variable: JF_ARTIFACTORY_PID): /opt/jfrog/artifactory/var/work/run/artifactory.pid
+artifactory.user (Environment Variable: JF_ARTIFACTORY_USER): artifactory
+event.accessClient.joinTimeout (Default Value): 5m
+event.accessClient.pingTimeout (Default Value): 5m
+event.artifactoryClient.request.timeout (Default Value): 5s
+event.baseUrlCache.interval (Default Value): 5m
+event.customWebhooks.enabled (Default Value): true
+event.customWebhooks.maxIdleConnections (Default Value): 100
+event.customWebhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.customWebhooks.retryCount (Default Value): 5
+event.customWebhooks.retryWaitMillis (Default Value): 10000
+event.customWebhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.customWebhooks.sizeLimits.payloadMaxSizeBytes (Default Value): 51200
+event.customWebhooks.sizeLimits.secretsMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.secretsMaxSizeBytes (Default Value): 5120
+event.customWebhooks.timeoutMillis (Default Value): 30000
+event.customWebhooks.tlsInsecure (Default Value): false
+event.domainCache.interval (Default Value): 5m
+event.grpcPort (Default Value): 8062
+event.logging.application.caller (Default Value): false
+event.logging.application.console (Default Value): true
+event.logging.application.filePath (Default Value): event-service.log
+event.logging.application.format (Default Value): jftext
+event.logging.application.level (Default Value): info
+event.logging.application.rotation.compress (Default Value): true
+event.logging.application.rotation.keepLastDecompressed (Default Value): 1
+event.logging.application.rotation.maxAgeDays (Default Value): 365
+event.logging.application.rotation.maxFiles (Default Value): 10
+event.logging.application.rotation.maxSizeMb (Default Value): 25
+event.logging.consoleLog.format (Default Value): jftext
+event.logging.metrics.console (Default Value): false
+event.logging.metrics.filePath (Default Value): event-metrics.log
+event.logging.metrics.rotation.compress (Default Value): true
+event.logging.metrics.rotation.keepLastDecompressed (Default Value): 1
+event.logging.metrics.rotation.maxAgeDays (Default Value): 365
+event.logging.metrics.rotation.maxFiles (Default Value): 10
+event.logging.metrics.rotation.maxSizeMb (Default Value): 25
+event.logging.outgoingRequest.console (Default Value): false
+event.logging.outgoingRequest.filePath (Default Value): event-webhook-request-out.log
+event.logging.outgoingRequest.rotation.compress (Default Value): true
+event.logging.outgoingRequest.rotation.keepLastDecompressed (Default Value): 1
+event.logging.outgoingRequest.rotation.maxAgeDays (Default Value): 365
+event.logging.outgoingRequest.rotation.maxFiles (Default Value): 10
+event.logging.outgoingRequest.rotation.maxSizeMb (Default Value): 25
+event.logging.request.console (Default Value): false
+event.logging.request.filePath (Default Value): event-request.log
+event.logging.request.rotation.compress (Default Value): true
+event.logging.request.rotation.keepLastDecompressed (Default Value): 1
+event.logging.request.rotation.maxAgeDays (Default Value): 365
+event.logging.request.rotation.maxFiles (Default Value): 10
+event.logging.request.rotation.maxSizeMb (Default Value): 25
+event.logging.troubleshooting.console (Default Value): false
+event.logging.troubleshooting.filePath (Default Value): event-troubleshooting.log
+event.logging.troubleshooting.rotation.compress (Default Value): true
+event.logging.troubleshooting.rotation.keepLastDecompressed (Default Value): 1
+event.logging.troubleshooting.rotation.maxAgeDays (Default Value): 365
+event.logging.troubleshooting.rotation.maxFiles (Default Value): 10
+event.logging.troubleshooting.rotation.maxSizeMb (Default Value): 25
+event.metrics.enabled (Default Value): false
+event.metrics.exclude (Default Value): []
+event.metrics.interval (Default Value): 10s
+event.metrics.logPeriodically (Default Value): true
+event.metrics.tokenVerification.accessUrl (Default Value): 
+event.metrics.tokenVerification.retryBackoffInitialIntervalMillis (Default Value): 500
+event.metrics.tokenVerification.retryBackoffMaxElapsedTimeMillis (Default Value): 0
+event.metrics.tokenVerification.retryBackoffMaxIntervalMillis (Default Value): 3600000
+event.metrics.tokenVerification.revocableExpiryThresholdSeconds (Default Value): -1
+event.metrics.triggers.enabled (Default Value): true
+event.metrics.triggers.intervalMillis (Default Value): 20000
+event.metrics.triggers.limit (Default Value): 1000000
+event.port (Default Value): 8061
+event.profiling.enabled (Default Value): false
+event.proxyCache.interval (Default Value): 5m
+event.rateLimit.burstSize (Default Value): 10000
+event.rateLimit.frequency (Default Value): 1000
+event.rateLimit.maxConcurrentHandlers (Default Value): 50000
+event.security.blacklist.enabled (Default Value): true
+event.security.blacklist.timeoutMillis (Default Value): 5000
+event.shutdownWaitForRouterTimeoutSecs (Default Value): 10
+event.supportBundle.aggregationTimeout (Default Value): 1h
+event.tokenCache.timeout (Default Value): 1m
+event.troubleshooting.enabled (Default Value): false
+event.troubleshooting.keepAliveIntervalMillis (Default Value): 10000
+event.troubleshooting.redis.addresses (Default Value): []
+event.troubleshooting.redis.blockTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.cleanupIntervalMillis (Default Value): 30000
+event.troubleshooting.redis.dialTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.password (Default Value): *****
+event.troubleshooting.redis.readTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.serverType (Default Value): single
+event.troubleshooting.redis.streamBatchSize (Default Value): 1000
+event.troubleshooting.redis.streamMaxLen (Default Value): 10000
+event.troubleshooting.redis.tlsEnabled (Default Value): false
+event.troubleshooting.redis.tlsInsecure (Default Value): false
+event.troubleshooting.redis.username (Default Value): 
+event.troubleshooting.redis.writeTimeoutMillis (Default Value): 0
+event.troubleshooting.storageType (Default Value): log
+event.troubleshooting.streamIdSuffix (Default Value): troubleshooting
+event.webhooks.maxIdleConnections (Default Value): 100
+event.webhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.webhooks.retryCount (Default Value): 5
+event.webhooks.retryWait (Default Value): 10s
+event.webhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.webhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.webhooks.timeout (Default Value): 30s
+event.webhooks.tlsInsecure (Default Value): false
+event.webhooks.urlStrictPolicy (Default Value): true
+legacy.artifactory.pid (Environment Variable: JF_LEGACY_ARTIFACTORY_PID): /opt/jfrog/artifactory/app/run/artifactory.pid
+metadata.accessclient.url (Environment Variable: JF_METADATA_ACCESSCLIENT_URL): http://localhost:8081/access
+product.data.internal (Environment Variable: JF_PRODUCT_DATA_INTERNAL): /var/opt/jfrog/artifactory
+product.home (Environment Variable: JF_PRODUCT_HOME): /opt/jfrog/artifactory
+router.entrypoints.internalPort (Default Value): 8046
+router.topology.local.requiredservicetypes (Environment Variable: JF_ROUTER_TOPOLOGY_LOCAL_REQUIREDSERVICETYPES): jfrt,jfac,jfmd,jffe,jfob,jfevt,jfcfg,jftpl
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.multiTenant.cellId (Default Value): 
+shared.multiTenant.enabled (Default Value): false
+shared.multiTenant.tenantRegistryClient.caCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.cacheExpirationSecs (Default Value): 21600
+shared.multiTenant.tenantRegistryClient.clientCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.clientCertKey (Default Value): *****
+shared.multiTenant.tenantRegistryClient.dialTimeoutSecs (Default Value): 10
+shared.multiTenant.tenantRegistryClient.endpoints (Default Value): 
+shared.multiTenant.tenantRegistryClient.pingCacheExpirationSecs (Default Value): 15
+shared.multiTenant.tenantRegistryClient.pingTimeoutSecs (Default Value): 1
+shared.multiTenant.tenantRegistryClient.requestTimeoutSecs (Default Value): 30
+shared.newrelic.appName (Default Value): 
+shared.newrelic.distributedTracerEnabled (Default Value): true
+shared.newrelic.enableDebugLog (Default Value): false
+shared.newrelic.enabled (Default Value): false
+shared.newrelic.licenseKey (Default Value): *****
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.node.ip (Environment Variable: JF_SHARED_NODE_IP): 127.0.0.1
+shared.node.name (Environment Variable: JF_SHARED_NODE_NAME): 7975e4abbc5d
+shared.openTelemetry.distributedTracerEnabled (Default Value): true
+shared.openTelemetry.enabled (Default Value): false
+shared.openTelemetry.endpoint (Default Value): 
+shared.openTelemetry.exportPace (Default Value): 0s
+shared.openTelemetry.labels (Default Value): 
+shared.openTelemetry.metricsEnabled (Default Value): false
+shared.openTelemetry.serviceName (Default Value): jfevt
+shared.openTelemetry.token (Default Value): *****
+shared.openTelemetry.useGrpcExporters (Default Value): true
+shared.restrictedmode.enabled (Environment Variable: JF_SHARED_RESTRICTEDMODE_ENABLED): true
+shared.security.ExposeApplicationHeaders (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+shared.security.joinKeyFile (Default Value): etc/security/join.key
+shared.security.masterKeyFile (Default Value): etc/security/master.key
+system.yaml (Environment Variable: JF_SYSTEM_YAML): /opt/jfrog/artifactory/var/etc/system.yaml [startup]
+2025-06-06T12:02:40.566Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 5: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:02:45.597Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 10: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:02:50.624Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 15: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:02:55.659Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 20: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:03:00.674Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 25: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:03:05.696Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 30: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:03:10.710Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 35: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:03:15.726Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 40: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:03:20.740Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 45: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:03:25.769Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 50: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:03:31.107Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 55: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:03:37.406Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 60: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:03:43.836Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 65: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:03:49.998Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 70: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:03:55.174Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 75: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:04:00.917Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 80: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:04:05.947Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 85: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:04:10.957Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 90: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:04:15.977Z [jfevt] [INFO ] [3ae8222af1470293] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 95: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:04:20.049Z [jfevt] [INFO ] [3ae8222af1470293] [bootstrap.go:146              ] [main                ] [                ] - JFrog Event Service ID: jfevt@01jx1whbjf25v712c2mrk11s4z [startup]
+2025-06-06T12:04:20.050Z [jfevt] [INFO ] [3ae8222af1470293] [bootstrap.go:147              ] [main                ] [                ] - JFrog Event Node ID   : artifactory-node-1 [startup]
+2025-06-06T12:04:20.050Z [jfevt] [INFO ] [3ae8222af1470293] [bootstrap.go:148              ] [main                ] [                ] - JFrog Event Node IP   : 127.0.0.1 [startup]
+2025-06-06T12:04:20.145Z [jfevt] [INFO ] [3ae8222af1470293] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [subscriptions]
+2025-06-06T12:04:20.146Z [jfevt] [INFO ] [3ae8222af1470293] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [subscriptions]
+2025-06-06T12:04:20.148Z [jfevt] [INFO ] [3ae8222af1470293] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [subscriptions]
+2025-06-06T12:04:20.148Z [jfevt] [INFO ] [3ae8222af1470293] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [subscriptions]
+2025-06-06T12:04:20.364Z [jfevt] [INFO ] [3ae8222af1470293] [join_executor.go:178          ] [main                ] [                ] - Cluster join: Successfully joined the cluster [access_client]
+2025-06-06T12:04:20.364Z [jfevt] [INFO ] [3ae8222af1470293] [join_executor.go:190          ] [main                ] [                ] - Cluster join: executing Router register at: localhost:8046 for service id jfevt@01jx1whbjf25v712c2mrk11s4z [access_client]
+2025-06-06T12:04:20.454Z [jfevt] [INFO ] [3ae8222af1470293] [application.go:200            ] [main                ] [                ] - JFrog Event (jfevt) service initialization completed in 103.917 seconds. HTTP server listening on 127.0.0.1:8061. GRPC server listening on 127.0.0.1:8062. [application]
+2025-06-06T12:04:20.458Z [jfevt] [INFO ] [3ae8222af1470293] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [events]
+2025-06-06T12:04:20.466Z [jfevt] [INFO ] [3ae8222af1470293] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [events]
+2025-06-06T12:04:20.468Z [jfevt] [INFO ] [3ae8222af1470293] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [events]
+2025-06-06T12:04:20.468Z [jfevt] [INFO ] [3ae8222af1470293] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [events]
+2025-06-06T12:24:01.477Z [jfevt] [INFO ] [50bfee1470191700] [bootstrap.go:56               ] [main                ] [                ] - Effective configuration:
+access.jfconfig.enabled (Environment Variable: JF_ACCESS_JFCONFIG_ENABLED): true
+access.useexternaltopology (Environment Variable: JF_ACCESS_USEEXTERNALTOPOLOGY): true
+artifactory.pid (Environment Variable: JF_ARTIFACTORY_PID): /opt/jfrog/artifactory/var/work/run/artifactory.pid
+artifactory.user (Environment Variable: JF_ARTIFACTORY_USER): artifactory
+event.accessClient.joinTimeout (Default Value): 5m
+event.accessClient.pingTimeout (Default Value): 5m
+event.artifactoryClient.request.timeout (Default Value): 5s
+event.baseUrlCache.interval (Default Value): 5m
+event.customWebhooks.enabled (Default Value): true
+event.customWebhooks.maxIdleConnections (Default Value): 100
+event.customWebhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.customWebhooks.retryCount (Default Value): 5
+event.customWebhooks.retryWaitMillis (Default Value): 10000
+event.customWebhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.customWebhooks.sizeLimits.payloadMaxSizeBytes (Default Value): 51200
+event.customWebhooks.sizeLimits.secretsMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.secretsMaxSizeBytes (Default Value): 5120
+event.customWebhooks.timeoutMillis (Default Value): 30000
+event.customWebhooks.tlsInsecure (Default Value): false
+event.domainCache.interval (Default Value): 5m
+event.grpcPort (Default Value): 8062
+event.logging.application.caller (Default Value): false
+event.logging.application.console (Default Value): true
+event.logging.application.filePath (Default Value): event-service.log
+event.logging.application.format (Default Value): jftext
+event.logging.application.level (Default Value): info
+event.logging.application.rotation.compress (Default Value): true
+event.logging.application.rotation.keepLastDecompressed (Default Value): 1
+event.logging.application.rotation.maxAgeDays (Default Value): 365
+event.logging.application.rotation.maxFiles (Default Value): 10
+event.logging.application.rotation.maxSizeMb (Default Value): 25
+event.logging.consoleLog.format (Default Value): jftext
+event.logging.metrics.console (Default Value): false
+event.logging.metrics.filePath (Default Value): event-metrics.log
+event.logging.metrics.rotation.compress (Default Value): true
+event.logging.metrics.rotation.keepLastDecompressed (Default Value): 1
+event.logging.metrics.rotation.maxAgeDays (Default Value): 365
+event.logging.metrics.rotation.maxFiles (Default Value): 10
+event.logging.metrics.rotation.maxSizeMb (Default Value): 25
+event.logging.outgoingRequest.console (Default Value): false
+event.logging.outgoingRequest.filePath (Default Value): event-webhook-request-out.log
+event.logging.outgoingRequest.rotation.compress (Default Value): true
+event.logging.outgoingRequest.rotation.keepLastDecompressed (Default Value): 1
+event.logging.outgoingRequest.rotation.maxAgeDays (Default Value): 365
+event.logging.outgoingRequest.rotation.maxFiles (Default Value): 10
+event.logging.outgoingRequest.rotation.maxSizeMb (Default Value): 25
+event.logging.request.console (Default Value): false
+event.logging.request.filePath (Default Value): event-request.log
+event.logging.request.rotation.compress (Default Value): true
+event.logging.request.rotation.keepLastDecompressed (Default Value): 1
+event.logging.request.rotation.maxAgeDays (Default Value): 365
+event.logging.request.rotation.maxFiles (Default Value): 10
+event.logging.request.rotation.maxSizeMb (Default Value): 25
+event.logging.troubleshooting.console (Default Value): false
+event.logging.troubleshooting.filePath (Default Value): event-troubleshooting.log
+event.logging.troubleshooting.rotation.compress (Default Value): true
+event.logging.troubleshooting.rotation.keepLastDecompressed (Default Value): 1
+event.logging.troubleshooting.rotation.maxAgeDays (Default Value): 365
+event.logging.troubleshooting.rotation.maxFiles (Default Value): 10
+event.logging.troubleshooting.rotation.maxSizeMb (Default Value): 25
+event.metrics.enabled (Default Value): false
+event.metrics.exclude (Default Value): []
+event.metrics.interval (Default Value): 10s
+event.metrics.logPeriodically (Default Value): true
+event.metrics.tokenVerification.accessUrl (Default Value): 
+event.metrics.tokenVerification.retryBackoffInitialIntervalMillis (Default Value): 500
+event.metrics.tokenVerification.retryBackoffMaxElapsedTimeMillis (Default Value): 0
+event.metrics.tokenVerification.retryBackoffMaxIntervalMillis (Default Value): 3600000
+event.metrics.tokenVerification.revocableExpiryThresholdSeconds (Default Value): -1
+event.metrics.triggers.enabled (Default Value): true
+event.metrics.triggers.intervalMillis (Default Value): 20000
+event.metrics.triggers.limit (Default Value): 1000000
+event.port (Default Value): 8061
+event.profiling.enabled (Default Value): false
+event.proxyCache.interval (Default Value): 5m
+event.rateLimit.burstSize (Default Value): 10000
+event.rateLimit.frequency (Default Value): 1000
+event.rateLimit.maxConcurrentHandlers (Default Value): 50000
+event.security.blacklist.enabled (Default Value): true
+event.security.blacklist.timeoutMillis (Default Value): 5000
+event.shutdownWaitForRouterTimeoutSecs (Default Value): 10
+event.supportBundle.aggregationTimeout (Default Value): 1h
+event.tokenCache.timeout (Default Value): 1m
+event.troubleshooting.enabled (Default Value): false
+event.troubleshooting.keepAliveIntervalMillis (Default Value): 10000
+event.troubleshooting.redis.addresses (Default Value): []
+event.troubleshooting.redis.blockTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.cleanupIntervalMillis (Default Value): 30000
+event.troubleshooting.redis.dialTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.password (Default Value): *****
+event.troubleshooting.redis.readTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.serverType (Default Value): single
+event.troubleshooting.redis.streamBatchSize (Default Value): 1000
+event.troubleshooting.redis.streamMaxLen (Default Value): 10000
+event.troubleshooting.redis.tlsEnabled (Default Value): false
+event.troubleshooting.redis.tlsInsecure (Default Value): false
+event.troubleshooting.redis.username (Default Value): 
+event.troubleshooting.redis.writeTimeoutMillis (Default Value): 0
+event.troubleshooting.storageType (Default Value): log
+event.troubleshooting.streamIdSuffix (Default Value): troubleshooting
+event.webhooks.maxIdleConnections (Default Value): 100
+event.webhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.webhooks.retryCount (Default Value): 5
+event.webhooks.retryWait (Default Value): 10s
+event.webhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.webhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.webhooks.timeout (Default Value): 30s
+event.webhooks.tlsInsecure (Default Value): false
+event.webhooks.urlStrictPolicy (Default Value): true
+legacy.artifactory.pid (Environment Variable: JF_LEGACY_ARTIFACTORY_PID): /opt/jfrog/artifactory/app/run/artifactory.pid
+metadata.accessclient.url (Environment Variable: JF_METADATA_ACCESSCLIENT_URL): http://localhost:8081/access
+product.data.internal (Environment Variable: JF_PRODUCT_DATA_INTERNAL): /var/opt/jfrog/artifactory
+product.home (Environment Variable: JF_PRODUCT_HOME): /opt/jfrog/artifactory
+router.entrypoints.internalPort (Default Value): 8046
+router.topology.local.requiredservicetypes (Environment Variable: JF_ROUTER_TOPOLOGY_LOCAL_REQUIREDSERVICETYPES): jfrt,jfac,jfmd,jffe,jfob,jfevt,jfcfg,jftpl
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.multiTenant.cellId (Default Value): 
+shared.multiTenant.enabled (Default Value): false
+shared.multiTenant.tenantRegistryClient.caCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.cacheExpirationSecs (Default Value): 21600
+shared.multiTenant.tenantRegistryClient.clientCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.clientCertKey (Default Value): *****
+shared.multiTenant.tenantRegistryClient.dialTimeoutSecs (Default Value): 10
+shared.multiTenant.tenantRegistryClient.endpoints (Default Value): 
+shared.multiTenant.tenantRegistryClient.pingCacheExpirationSecs (Default Value): 15
+shared.multiTenant.tenantRegistryClient.pingTimeoutSecs (Default Value): 1
+shared.multiTenant.tenantRegistryClient.requestTimeoutSecs (Default Value): 30
+shared.newrelic.appName (Default Value): 
+shared.newrelic.distributedTracerEnabled (Default Value): true
+shared.newrelic.enableDebugLog (Default Value): false
+shared.newrelic.enabled (Default Value): false
+shared.newrelic.licenseKey (Default Value): *****
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.node.ip (Environment Variable: JF_SHARED_NODE_IP): 127.0.0.1
+shared.node.name (Environment Variable: JF_SHARED_NODE_NAME): 14aa4af7eb4e
+shared.openTelemetry.distributedTracerEnabled (Default Value): true
+shared.openTelemetry.enabled (Default Value): false
+shared.openTelemetry.endpoint (Default Value): 
+shared.openTelemetry.exportPace (Default Value): 0s
+shared.openTelemetry.labels (Default Value): 
+shared.openTelemetry.metricsEnabled (Default Value): false
+shared.openTelemetry.serviceName (Default Value): jfevt
+shared.openTelemetry.token (Default Value): *****
+shared.openTelemetry.useGrpcExporters (Default Value): true
+shared.restrictedmode.enabled (Environment Variable: JF_SHARED_RESTRICTEDMODE_ENABLED): true
+shared.security.ExposeApplicationHeaders (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+shared.security.joinKeyFile (Default Value): etc/security/join.key
+shared.security.masterKeyFile (Default Value): etc/security/master.key
+system.yaml (Environment Variable: JF_SYSTEM_YAML): /opt/jfrog/artifactory/var/etc/system.yaml [startup]
+2025-06-06T12:24:05.499Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 5: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:24:10.539Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 10: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:24:15.872Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 15: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:24:20.886Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 20: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:24:27.733Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 25: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:24:33.381Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 30: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:24:38.437Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 35: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:24:43.451Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 40: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:24:49.427Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 45: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:25:00.561Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 50: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:25:09.579Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 55: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:25:14.591Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 60: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:25:19.602Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 65: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:25:24.615Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 70: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:25:29.625Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 75: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:25:34.858Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 80: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:25:40.502Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 85: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:25:45.514Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 90: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:25:50.999Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 95: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:25:56.283Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 100: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:26:02.941Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 105: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:26:09.470Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 110: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:26:14.484Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 115: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:26:19.504Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 120: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:26:24.825Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 125: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:26:30.200Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 130: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:26:36.518Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 135: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:27:02.650Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 140: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:27:07.671Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 145: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:27:12.706Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 150: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:27:17.728Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 155: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:27:22.748Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 160: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:27:27.764Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 165: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:27:32.782Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 170: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:27:37.799Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 175: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:27:42.817Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 180: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:27:47.836Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 185: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:27:53.027Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 190: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:27:58.045Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 195: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:28:03.063Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 200: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:28:08.080Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 205: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:28:13.096Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 210: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:28:18.113Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 215: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:28:23.127Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 220: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:28:28.149Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 225: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:28:33.168Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 230: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:28:38.183Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 235: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:28:43.201Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 240: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:28:48.225Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 245: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:28:53.246Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 250: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T12:28:58.264Z [jfevt] [INFO ] [50bfee1470191700] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 255: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T13:06:10.300Z [jfevt] [INFO ] [283c78ac6757e64b] [bootstrap.go:56               ] [main                ] [                ] - Effective configuration:
+access.jfconfig.enabled (Environment Variable: JF_ACCESS_JFCONFIG_ENABLED): true
+access.useexternaltopology (Environment Variable: JF_ACCESS_USEEXTERNALTOPOLOGY): true
+artifactory.pid (Environment Variable: JF_ARTIFACTORY_PID): /opt/jfrog/artifactory/var/work/run/artifactory.pid
+artifactory.user (Environment Variable: JF_ARTIFACTORY_USER): artifactory
+event.accessClient.joinTimeout (Default Value): 5m
+event.accessClient.pingTimeout (Default Value): 5m
+event.artifactoryClient.request.timeout (Default Value): 5s
+event.baseUrlCache.interval (Default Value): 5m
+event.customWebhooks.enabled (Default Value): true
+event.customWebhooks.maxIdleConnections (Default Value): 100
+event.customWebhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.customWebhooks.retryCount (Default Value): 5
+event.customWebhooks.retryWaitMillis (Default Value): 10000
+event.customWebhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.customWebhooks.sizeLimits.payloadMaxSizeBytes (Default Value): 51200
+event.customWebhooks.sizeLimits.secretsMaxCount (Default Value): 50
+event.customWebhooks.sizeLimits.secretsMaxSizeBytes (Default Value): 5120
+event.customWebhooks.timeoutMillis (Default Value): 30000
+event.customWebhooks.tlsInsecure (Default Value): false
+event.domainCache.interval (Default Value): 5m
+event.grpcPort (Default Value): 8062
+event.logging.application.caller (Default Value): false
+event.logging.application.console (Default Value): true
+event.logging.application.filePath (Default Value): event-service.log
+event.logging.application.format (Default Value): jftext
+event.logging.application.level (Default Value): info
+event.logging.application.rotation.compress (Default Value): true
+event.logging.application.rotation.keepLastDecompressed (Default Value): 1
+event.logging.application.rotation.maxAgeDays (Default Value): 365
+event.logging.application.rotation.maxFiles (Default Value): 10
+event.logging.application.rotation.maxSizeMb (Default Value): 25
+event.logging.consoleLog.format (Default Value): jftext
+event.logging.metrics.console (Default Value): false
+event.logging.metrics.filePath (Default Value): event-metrics.log
+event.logging.metrics.rotation.compress (Default Value): true
+event.logging.metrics.rotation.keepLastDecompressed (Default Value): 1
+event.logging.metrics.rotation.maxAgeDays (Default Value): 365
+event.logging.metrics.rotation.maxFiles (Default Value): 10
+event.logging.metrics.rotation.maxSizeMb (Default Value): 25
+event.logging.outgoingRequest.console (Default Value): false
+event.logging.outgoingRequest.filePath (Default Value): event-webhook-request-out.log
+event.logging.outgoingRequest.rotation.compress (Default Value): true
+event.logging.outgoingRequest.rotation.keepLastDecompressed (Default Value): 1
+event.logging.outgoingRequest.rotation.maxAgeDays (Default Value): 365
+event.logging.outgoingRequest.rotation.maxFiles (Default Value): 10
+event.logging.outgoingRequest.rotation.maxSizeMb (Default Value): 25
+event.logging.request.console (Default Value): false
+event.logging.request.filePath (Default Value): event-request.log
+event.logging.request.rotation.compress (Default Value): true
+event.logging.request.rotation.keepLastDecompressed (Default Value): 1
+event.logging.request.rotation.maxAgeDays (Default Value): 365
+event.logging.request.rotation.maxFiles (Default Value): 10
+event.logging.request.rotation.maxSizeMb (Default Value): 25
+event.logging.troubleshooting.console (Default Value): false
+event.logging.troubleshooting.filePath (Default Value): event-troubleshooting.log
+event.logging.troubleshooting.rotation.compress (Default Value): true
+event.logging.troubleshooting.rotation.keepLastDecompressed (Default Value): 1
+event.logging.troubleshooting.rotation.maxAgeDays (Default Value): 365
+event.logging.troubleshooting.rotation.maxFiles (Default Value): 10
+event.logging.troubleshooting.rotation.maxSizeMb (Default Value): 25
+event.metrics.enabled (Default Value): false
+event.metrics.exclude (Default Value): []
+event.metrics.interval (Default Value): 10s
+event.metrics.logPeriodically (Default Value): true
+event.metrics.tokenVerification.accessUrl (Default Value): 
+event.metrics.tokenVerification.retryBackoffInitialIntervalMillis (Default Value): 500
+event.metrics.tokenVerification.retryBackoffMaxElapsedTimeMillis (Default Value): 0
+event.metrics.tokenVerification.retryBackoffMaxIntervalMillis (Default Value): 3600000
+event.metrics.tokenVerification.revocableExpiryThresholdSeconds (Default Value): -1
+event.metrics.triggers.enabled (Default Value): true
+event.metrics.triggers.intervalMillis (Default Value): 20000
+event.metrics.triggers.limit (Default Value): 1000000
+event.port (Default Value): 8061
+event.profiling.enabled (Default Value): false
+event.proxyCache.interval (Default Value): 5m
+event.rateLimit.burstSize (Default Value): 10000
+event.rateLimit.frequency (Default Value): 1000
+event.rateLimit.maxConcurrentHandlers (Default Value): 50000
+event.security.blacklist.enabled (Default Value): true
+event.security.blacklist.timeoutMillis (Default Value): 5000
+event.shutdownWaitForRouterTimeoutSecs (Default Value): 10
+event.supportBundle.aggregationTimeout (Default Value): 1h
+event.tokenCache.timeout (Default Value): 1m
+event.troubleshooting.enabled (Default Value): false
+event.troubleshooting.keepAliveIntervalMillis (Default Value): 10000
+event.troubleshooting.redis.addresses (Default Value): []
+event.troubleshooting.redis.blockTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.cleanupIntervalMillis (Default Value): 30000
+event.troubleshooting.redis.dialTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.password (Default Value): *****
+event.troubleshooting.redis.readTimeoutMillis (Default Value): 0
+event.troubleshooting.redis.serverType (Default Value): single
+event.troubleshooting.redis.streamBatchSize (Default Value): 1000
+event.troubleshooting.redis.streamMaxLen (Default Value): 10000
+event.troubleshooting.redis.tlsEnabled (Default Value): false
+event.troubleshooting.redis.tlsInsecure (Default Value): false
+event.troubleshooting.redis.username (Default Value): 
+event.troubleshooting.redis.writeTimeoutMillis (Default Value): 0
+event.troubleshooting.storageType (Default Value): log
+event.troubleshooting.streamIdSuffix (Default Value): troubleshooting
+event.webhooks.maxIdleConnections (Default Value): 100
+event.webhooks.maxIdleConnectionsPerHost (Default Value): 100
+event.webhooks.retryCount (Default Value): 5
+event.webhooks.retryWait (Default Value): 10s
+event.webhooks.sizeLimits.headersMaxCount (Default Value): 50
+event.webhooks.sizeLimits.headersMaxSizeBytes (Default Value): 5120
+event.webhooks.timeout (Default Value): 30s
+event.webhooks.tlsInsecure (Default Value): false
+event.webhooks.urlStrictPolicy (Default Value): true
+legacy.artifactory.pid (Environment Variable: JF_LEGACY_ARTIFACTORY_PID): /opt/jfrog/artifactory/app/run/artifactory.pid
+metadata.accessclient.url (Environment Variable: JF_METADATA_ACCESSCLIENT_URL): http://localhost:8081/access
+product.data.internal (Environment Variable: JF_PRODUCT_DATA_INTERNAL): /var/opt/jfrog/artifactory
+product.home (Environment Variable: JF_PRODUCT_HOME): /opt/jfrog/artifactory
+router.entrypoints.internalPort (Default Value): 8046
+router.topology.local.requiredservicetypes (Environment Variable: JF_ROUTER_TOPOLOGY_LOCAL_REQUIREDSERVICETYPES): jfrt,jfac,jfmd,jffe,jfob,jfevt,jfcfg,jftpl
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.multiTenant.cellId (Default Value): 
+shared.multiTenant.enabled (Default Value): false
+shared.multiTenant.tenantRegistryClient.caCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.cacheExpirationSecs (Default Value): 21600
+shared.multiTenant.tenantRegistryClient.clientCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.clientCertKey (Default Value): *****
+shared.multiTenant.tenantRegistryClient.dialTimeoutSecs (Default Value): 10
+shared.multiTenant.tenantRegistryClient.endpoints (Default Value): 
+shared.multiTenant.tenantRegistryClient.pingCacheExpirationSecs (Default Value): 15
+shared.multiTenant.tenantRegistryClient.pingTimeoutSecs (Default Value): 1
+shared.multiTenant.tenantRegistryClient.requestTimeoutSecs (Default Value): 30
+shared.newrelic.appName (Default Value): 
+shared.newrelic.distributedTracerEnabled (Default Value): true
+shared.newrelic.enableDebugLog (Default Value): false
+shared.newrelic.enabled (Default Value): false
+shared.newrelic.licenseKey (Default Value): *****
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.node.ip (Environment Variable: JF_SHARED_NODE_IP): 127.0.0.1
+shared.node.name (Environment Variable: JF_SHARED_NODE_NAME): 2cb2dc6873c8
+shared.openTelemetry.distributedTracerEnabled (Default Value): true
+shared.openTelemetry.enabled (Default Value): false
+shared.openTelemetry.endpoint (Default Value): 
+shared.openTelemetry.exportPace (Default Value): 0s
+shared.openTelemetry.labels (Default Value): 
+shared.openTelemetry.metricsEnabled (Default Value): false
+shared.openTelemetry.serviceName (Default Value): jfevt
+shared.openTelemetry.token (Default Value): *****
+shared.openTelemetry.useGrpcExporters (Default Value): true
+shared.restrictedmode.enabled (Environment Variable: JF_SHARED_RESTRICTEDMODE_ENABLED): true
+shared.security.ExposeApplicationHeaders (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+shared.security.joinKeyFile (Default Value): etc/security/join.key
+shared.security.masterKeyFile (Default Value): etc/security/master.key
+system.yaml (Environment Variable: JF_SYSTEM_YAML): /opt/jfrog/artifactory/var/etc/system.yaml [startup]
+2025-06-06T13:06:14.526Z [jfevt] [INFO ] [283c78ac6757e64b] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 5: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T13:06:19.722Z [jfevt] [INFO ] [283c78ac6757e64b] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 10: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T13:06:24.733Z [jfevt] [INFO ] [283c78ac6757e64b] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 15: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T13:06:29.793Z [jfevt] [INFO ] [283c78ac6757e64b] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 20: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T13:06:34.807Z [jfevt] [INFO ] [283c78ac6757e64b] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 25: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T13:06:39.841Z [jfevt] [INFO ] [283c78ac6757e64b] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 30: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T13:06:44.862Z [jfevt] [INFO ] [283c78ac6757e64b] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 35: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T13:06:50.724Z [jfevt] [INFO ] [283c78ac6757e64b] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 40: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T13:06:55.733Z [jfevt] [INFO ] [283c78ac6757e64b] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 45: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T13:07:00.740Z [jfevt] [INFO ] [283c78ac6757e64b] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 50: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T13:07:05.752Z [jfevt] [INFO ] [283c78ac6757e64b] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 55: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T13:07:10.763Z [jfevt] [INFO ] [283c78ac6757e64b] [access_thin_client.go:101     ] [main                ] [                ] - Cluster join: Retry 60: Service registry ping failed, will retry. Error: Error while trying to connect to local router at address 'http://localhost:8046/access/api/v1/system/ping': Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [startup]
+2025-06-06T13:07:11.843Z [jfevt] [INFO ] [283c78ac6757e64b] [bootstrap.go:146              ] [main                ] [                ] - JFrog Event Service ID: jfevt@01jx1whbjf25v712c2mrk11s4z [startup]
+2025-06-06T13:07:11.843Z [jfevt] [INFO ] [283c78ac6757e64b] [bootstrap.go:147              ] [main                ] [                ] - JFrog Event Node ID   : artifactory-node-1 [startup]
+2025-06-06T13:07:11.843Z [jfevt] [INFO ] [283c78ac6757e64b] [bootstrap.go:148              ] [main                ] [                ] - JFrog Event Node IP   : 127.0.0.1 [startup]
+2025-06-06T13:07:12.135Z [jfevt] [INFO ] [283c78ac6757e64b] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [subscriptions]
+2025-06-06T13:07:12.139Z [jfevt] [INFO ] [283c78ac6757e64b] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [subscriptions]
+2025-06-06T13:07:12.141Z [jfevt] [INFO ] [283c78ac6757e64b] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [subscriptions]
+2025-06-06T13:07:12.142Z [jfevt] [INFO ] [283c78ac6757e64b] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [subscriptions]
+2025-06-06T13:07:12.409Z [jfevt] [INFO ] [283c78ac6757e64b] [join_executor.go:178          ] [main                ] [                ] - Cluster join: Successfully joined the cluster [access_client]
+2025-06-06T13:07:12.409Z [jfevt] [INFO ] [283c78ac6757e64b] [join_executor.go:190          ] [main                ] [                ] - Cluster join: executing Router register at: localhost:8046 for service id jfevt@01jx1whbjf25v712c2mrk11s4z [access_client]
+2025-06-06T13:07:12.537Z [jfevt] [INFO ] [283c78ac6757e64b] [application.go:200            ] [main                ] [                ] - JFrog Event (jfevt) service initialization completed in 62.275 seconds. HTTP server listening on 127.0.0.1:8061. GRPC server listening on 127.0.0.1:8062. [application]
+2025-06-06T13:07:12.537Z [jfevt] [INFO ] [283c78ac6757e64b] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [events]
+2025-06-06T13:07:12.540Z [jfevt] [INFO ] [283c78ac6757e64b] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [events]
+2025-06-06T13:07:12.540Z [jfevt] [INFO ] [283c78ac6757e64b] [trusted.go:41                 ] [main                ] [                ] - System cert pool contents were loaded as trusted CAs for TLS communication [events]
+2025-06-06T13:07:12.541Z [jfevt] [INFO ] [283c78ac6757e64b] [trusted.go:24                 ] [main                ] [                ] - No certificate to be loaded as trusted CAs found in [] [events]

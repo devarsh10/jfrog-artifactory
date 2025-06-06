@@ -1,0 +1,29 @@
+---
+federation:
+  inbound:
+    service-id-mapping:
+    - from: "jfcon@*"
+      to: "jfcon@01jx1whbjf25v712c2mrk11s4z"
+    - from: "jfmd@*"
+      to: "jfmd@01jx1wha30ve8065w47xrewdc8"
+    - from: "jfomr@*"
+      to: "jfomr@01jx1whbjf25v712c2mrk11s4z"
+    - from: "jfevd@*"
+      to: "jfevd@01jx1whbjf25v712c2mrk11s4z"
+    - from: "jfevt@*"
+      to: "jfevt@01jx1whbjf25v712c2mrk11s4z"
+    - from: "jfcfg@*"
+      to: "jfcfg@01jx1whbjf25v712c2mrk11s4z"
+    - from: "jfrt@*"
+      to: "jfrt@01jx1wjw17758y190rcvsn042n"
+    - from: "jfob@*"
+      to: "jfob@01jx1wjw17758y190rcvsn042n"
+    - from: "jffe@*"
+      to: "jffe@01jx1whbjf25v712c2mrk11s4z"
+    - from: "jfmd@*"
+      to: "jfmd@01jx1yh0p432zmn8skcv377qy6"
+    - from: "jfmd@*"
+      to: "jfmd@01jx2h4mfqkaxex4939h2cv0nh"
+    - from: "jfmd@*"
+      to: "jfmd@01jx2hy7872z23w07vnngc98kz"
+schema-version: 2

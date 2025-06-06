@@ -1,0 +1,801 @@
+2025-06-06T05:27:41.356Z [jfevd] [INFO ] [5182b8bc024db80f] [application.go:310            ] [main                ] [                ] - Effective configuration:
+access.jfconfig.enabled (Environment Variable: JF_ACCESS_JFCONFIG_ENABLED): true
+access.useexternaltopology (Environment Variable: JF_ACCESS_USEEXTERNALTOPOLOGY): true
+artifactory.pid (Environment Variable: JF_ARTIFACTORY_PID): /opt/jfrog/artifactory/var/work/run/artifactory.pid
+artifactory.user (Environment Variable: JF_ARTIFACTORY_USER): artifactory
+evidence.access.bypass.accessUrl (Default Value): 
+evidence.access.bypass.retryBackoffInitialIntervalMillis (Default Value): 500
+evidence.access.bypass.retryBackoffMaxElapsedTimeMillis (Default Value): 0
+evidence.access.bypass.retryBackoffMaxIntervalMillis (Default Value): 3600000
+evidence.access.bypass.revocableExpiryThresholdSeconds (Default Value): -1
+evidence.access.joinTimeoutMillis (Default Value): 180000
+evidence.access.pingTimeoutMillis (Default Value): 120000
+evidence.accessclient.url (Environment Variable: JF_EVIDENCE_ACCESSCLIENT_URL): http://localhost:8081/access
+evidence.api.maxFilterSize (Default Value): 50
+evidence.api.maxPageSize (Default Value): 200
+evidence.api.maxQueryDepth (Default Value): 20
+evidence.caching.license.capacity (Default Value): 100
+evidence.caching.license.expirationSecs (Default Value): 300
+evidence.caching.publicKeys.capacity (Default Value): 500
+evidence.caching.publicKeys.expirationSecs (Default Value): 14400
+evidence.database.disableParallelSelect (Default Value): true
+evidence.database.enableLogForPostgres (Default Value): false
+evidence.database.kerberosAuth (Default Value): false
+evidence.database.maxIdleConnections (Default Value): 10
+evidence.database.maxOpenConnections (Default Value): 100
+evidence.database.maxRecordsLimit (Default Value): 1000
+evidence.database.metrics.enabled (Default Value): false
+evidence.database.metrics.maxQueriesToTrack (Default Value): 5
+evidence.database.migrationLockRetryIntervalSecs (Default Value): 60
+evidence.database.password (File: shared.database.password): *****
+evidence.database.queryTimeoutSecs (Default Value): 1800
+evidence.database.type (File: shared.database.type): postgresql
+evidence.database.url (File: shared.database.url): jdbc:postgresql://host.docker.internal:5432/artifactorydb
+evidence.database.username (File: shared.database.username): artifactory
+evidence.database.waitForConnectionTimeoutSecs (Default Value): 15
+evidence.graphql.playground (Default Value): true
+evidence.grpcPort (Default Value): 8052
+evidence.httpPort (Default Value): 8051
+evidence.jfConnect.establishConnectionTimeoutMillis (Default Value): 3000
+evidence.jfConnect.fetchIntervalMillis (Default Value): 30000
+evidence.jfConnect.requestTimeoutMillis (Default Value): 30000
+evidence.jfConnect.retryConnectionIntervalMillis (Default Value): 1000
+evidence.jfConnect.tokenExpiryMinutes (Default Value): 1440
+evidence.logging.application.caller (Default Value): false
+evidence.logging.application.console (Default Value): true
+evidence.logging.application.filePath (Default Value): evidence-service.log
+evidence.logging.application.format (Default Value): jftext
+evidence.logging.application.level (Default Value): info
+evidence.logging.application.rotation.compress (Default Value): true
+evidence.logging.application.rotation.keepLastDecompressed (Default Value): 1
+evidence.logging.application.rotation.maxAgeDays (Default Value): 365
+evidence.logging.application.rotation.maxFiles (Default Value): 10
+evidence.logging.application.rotation.maxSizeMb (Default Value): 25
+evidence.logging.consoleLog.format (Default Value): jftext
+evidence.logging.metrics.console (Default Value): false
+evidence.logging.metrics.filePath (Default Value): evidence-metrics.log
+evidence.logging.metrics.rotation.compress (Default Value): true
+evidence.logging.metrics.rotation.keepLastDecompressed (Default Value): 1
+evidence.logging.metrics.rotation.maxAgeDays (Default Value): 365
+evidence.logging.metrics.rotation.maxFiles (Default Value): 10
+evidence.logging.metrics.rotation.maxSizeMb (Default Value): 25
+evidence.logging.request.console (Default Value): false
+evidence.logging.request.filePath (Default Value): evidence-request.log
+evidence.logging.request.rotation.compress (Default Value): true
+evidence.logging.request.rotation.keepLastDecompressed (Default Value): 1
+evidence.logging.request.rotation.maxAgeDays (Default Value): 365
+evidence.logging.request.rotation.maxFiles (Default Value): 10
+evidence.logging.request.rotation.maxSizeMb (Default Value): 25
+evidence.metrics.backOffice.enabled (Default Value): true
+evidence.metrics.enabled (Default Value): false
+evidence.metrics.exclude (Default Value): []
+evidence.metrics.intervalMillis (Default Value): 10s
+evidence.metrics.logPeriodically (Default Value): false
+evidence.metrics.triggers.enabled (Default Value): true
+evidence.metrics.triggers.intervalMillis (Default Value): 20000
+evidence.metrics.triggers.limit (Default Value): 1000000
+evidence.profiling.enabled (Default Value): false
+evidence.supportBundle.aggregationTimeoutMillis (Default Value): 3600000
+legacy.artifactory.pid (Environment Variable: JF_LEGACY_ARTIFACTORY_PID): /opt/jfrog/artifactory/app/run/artifactory.pid
+metadata.accessclient.url (Environment Variable: JF_METADATA_ACCESSCLIENT_URL): http://localhost:8081/access
+onemodel.artifactory.url (Environment Variable: JF_ONEMODEL_ARTIFACTORY_URL): http://localhost:8081
+product.data.internal (Environment Variable: JF_PRODUCT_DATA_INTERNAL): /var/opt/jfrog/artifactory
+product.home (Environment Variable: JF_PRODUCT_HOME): /opt/jfrog/artifactory
+router.entrypoints.internalPort (Default Value): 8046
+router.topology.local.requiredservicetypes (Environment Variable: JF_ROUTER_TOPOLOGY_LOCAL_REQUIREDSERVICETYPES): jfrt,jfac,jfmd,jffe,jfob,jfcon,jfevt,jfevd,jfcfg,jftpl,jfomr
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://host.docker.internal:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.multiTenant.cellId (Default Value): 
+shared.multiTenant.enabled (Default Value): false
+shared.multiTenant.tenantRegistryClient.caCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.cacheExpirationSecs (Default Value): 21600
+shared.multiTenant.tenantRegistryClient.clientCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.clientCertKey (Default Value): *****
+shared.multiTenant.tenantRegistryClient.dialTimeoutSecs (Default Value): 10
+shared.multiTenant.tenantRegistryClient.endpoints (Default Value): 
+shared.multiTenant.tenantRegistryClient.pingCacheExpirationSecs (Default Value): 15
+shared.multiTenant.tenantRegistryClient.pingTimeoutSecs (Default Value): 1
+shared.multiTenant.tenantRegistryClient.requestTimeoutSecs (Default Value): 30
+shared.newrelic.appName (Default Value): 
+shared.newrelic.distributedTracerEnabled (Default Value): true
+shared.newrelic.enableDebugLog (Default Value): false
+shared.newrelic.enabled (Default Value): false
+shared.newrelic.licenseKey (Default Value): *****
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): 099e1d1a365c
+shared.node.ip (Environment Variable: JF_SHARED_NODE_IP): 172.17.0.3
+shared.node.name (Environment Variable: JF_SHARED_NODE_NAME): 099e1d1a365c
+shared.restrictedmode.enabled (Environment Variable: JF_SHARED_RESTRICTEDMODE_ENABLED): true
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+shared.security.exposeApplicationHeaders (Default Value): false
+shared.security.joinKeyFile (Default Value): etc/security/join.key
+shared.security.masterKeyFile (Default Value): etc/security/master.key
+system.yaml (Environment Variable: JF_SYSTEM_YAML): /opt/jfrog/artifactory/var/etc/system.yaml [bootstrap]
+2025-06-06T05:27:46.364Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 5 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:27:51.376Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 10 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:27:56.387Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 15 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:28:01.394Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 20 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:28:06.401Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 25 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:28:11.408Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 30 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:28:16.417Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 35 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:28:21.426Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 40 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:28:26.429Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 45 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:28:31.433Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 50 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:28:36.441Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 55 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:28:41.455Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 60 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:28:46.460Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 65 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:28:51.464Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 70 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:28:56.470Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 75 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:29:01.476Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 80 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:29:06.481Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 85 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:29:11.486Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 90 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:29:16.492Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 95 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:29:21.497Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 100 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:29:26.553Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 105 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:29:31.562Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 110 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:29:36.570Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 115 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:29:41.746Z [jfevd] [INFO ] [5182b8bc024db80f] [security_keys.go:172          ] [main                ] [                ] - Master key is missing. Pending for 120 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:29:42.005Z [jfevd] [FATAL] [5182b8bc024db80f] [application_keys.go:20        ] [main                ] [                ] - Failed to resolve security keys: Failed resolving master key: failed resolving 'shared.security.masterKey' key; file does not exist: /opt/jfrog/artifactory/var/etc/security/master.key [bootstrap]
+2025-06-06T05:37:41.589Z [jfevd] [INFO ] [1a986dfaa7bedff9] [application.go:310            ] [main                ] [                ] - Effective configuration:
+access.jfconfig.enabled (Environment Variable: JF_ACCESS_JFCONFIG_ENABLED): true
+access.useexternaltopology (Environment Variable: JF_ACCESS_USEEXTERNALTOPOLOGY): true
+artifactory.pid (Environment Variable: JF_ARTIFACTORY_PID): /opt/jfrog/artifactory/var/work/run/artifactory.pid
+artifactory.user (Environment Variable: JF_ARTIFACTORY_USER): artifactory
+evidence.access.bypass.accessUrl (Default Value): 
+evidence.access.bypass.retryBackoffInitialIntervalMillis (Default Value): 500
+evidence.access.bypass.retryBackoffMaxElapsedTimeMillis (Default Value): 0
+evidence.access.bypass.retryBackoffMaxIntervalMillis (Default Value): 3600000
+evidence.access.bypass.revocableExpiryThresholdSeconds (Default Value): -1
+evidence.access.joinTimeoutMillis (Default Value): 180000
+evidence.access.pingTimeoutMillis (Default Value): 120000
+evidence.accessclient.url (Environment Variable: JF_EVIDENCE_ACCESSCLIENT_URL): http://localhost:8081/access
+evidence.api.maxFilterSize (Default Value): 50
+evidence.api.maxPageSize (Default Value): 200
+evidence.api.maxQueryDepth (Default Value): 20
+evidence.caching.license.capacity (Default Value): 100
+evidence.caching.license.expirationSecs (Default Value): 300
+evidence.caching.publicKeys.capacity (Default Value): 500
+evidence.caching.publicKeys.expirationSecs (Default Value): 14400
+evidence.database.disableParallelSelect (Default Value): true
+evidence.database.enableLogForPostgres (Default Value): false
+evidence.database.kerberosAuth (Default Value): false
+evidence.database.maxIdleConnections (Default Value): 10
+evidence.database.maxOpenConnections (Default Value): 100
+evidence.database.maxRecordsLimit (Default Value): 1000
+evidence.database.metrics.enabled (Default Value): false
+evidence.database.metrics.maxQueriesToTrack (Default Value): 5
+evidence.database.migrationLockRetryIntervalSecs (Default Value): 60
+evidence.database.password (File: shared.database.password): *****
+evidence.database.queryTimeoutSecs (Default Value): 1800
+evidence.database.type (File: shared.database.type): postgresql
+evidence.database.url (File: shared.database.url): jdbc:postgresql://host.docker.internal:5432/artifactorydb
+evidence.database.username (File: shared.database.username): artifactory
+evidence.database.waitForConnectionTimeoutSecs (Default Value): 15
+evidence.graphql.playground (Default Value): true
+evidence.grpcPort (Default Value): 8052
+evidence.httpPort (Default Value): 8051
+evidence.jfConnect.establishConnectionTimeoutMillis (Default Value): 3000
+evidence.jfConnect.fetchIntervalMillis (Default Value): 30000
+evidence.jfConnect.requestTimeoutMillis (Default Value): 30000
+evidence.jfConnect.retryConnectionIntervalMillis (Default Value): 1000
+evidence.jfConnect.tokenExpiryMinutes (Default Value): 1440
+evidence.logging.application.caller (Default Value): false
+evidence.logging.application.console (Default Value): true
+evidence.logging.application.filePath (Default Value): evidence-service.log
+evidence.logging.application.format (Default Value): jftext
+evidence.logging.application.level (Default Value): info
+evidence.logging.application.rotation.compress (Default Value): true
+evidence.logging.application.rotation.keepLastDecompressed (Default Value): 1
+evidence.logging.application.rotation.maxAgeDays (Default Value): 365
+evidence.logging.application.rotation.maxFiles (Default Value): 10
+evidence.logging.application.rotation.maxSizeMb (Default Value): 25
+evidence.logging.consoleLog.format (Default Value): jftext
+evidence.logging.metrics.console (Default Value): false
+evidence.logging.metrics.filePath (Default Value): evidence-metrics.log
+evidence.logging.metrics.rotation.compress (Default Value): true
+evidence.logging.metrics.rotation.keepLastDecompressed (Default Value): 1
+evidence.logging.metrics.rotation.maxAgeDays (Default Value): 365
+evidence.logging.metrics.rotation.maxFiles (Default Value): 10
+evidence.logging.metrics.rotation.maxSizeMb (Default Value): 25
+evidence.logging.request.console (Default Value): false
+evidence.logging.request.filePath (Default Value): evidence-request.log
+evidence.logging.request.rotation.compress (Default Value): true
+evidence.logging.request.rotation.keepLastDecompressed (Default Value): 1
+evidence.logging.request.rotation.maxAgeDays (Default Value): 365
+evidence.logging.request.rotation.maxFiles (Default Value): 10
+evidence.logging.request.rotation.maxSizeMb (Default Value): 25
+evidence.metrics.backOffice.enabled (Default Value): true
+evidence.metrics.enabled (Default Value): false
+evidence.metrics.exclude (Default Value): []
+evidence.metrics.intervalMillis (Default Value): 10s
+evidence.metrics.logPeriodically (Default Value): false
+evidence.metrics.triggers.enabled (Default Value): true
+evidence.metrics.triggers.intervalMillis (Default Value): 20000
+evidence.metrics.triggers.limit (Default Value): 1000000
+evidence.profiling.enabled (Default Value): false
+evidence.supportBundle.aggregationTimeoutMillis (Default Value): 3600000
+legacy.artifactory.pid (Environment Variable: JF_LEGACY_ARTIFACTORY_PID): /opt/jfrog/artifactory/app/run/artifactory.pid
+metadata.accessclient.url (Environment Variable: JF_METADATA_ACCESSCLIENT_URL): http://localhost:8081/access
+onemodel.artifactory.url (Environment Variable: JF_ONEMODEL_ARTIFACTORY_URL): http://localhost:8081
+product.data.internal (Environment Variable: JF_PRODUCT_DATA_INTERNAL): /var/opt/jfrog/artifactory
+product.home (Environment Variable: JF_PRODUCT_HOME): /opt/jfrog/artifactory
+router.entrypoints.internalPort (Default Value): 8046
+router.topology.local.requiredservicetypes (Environment Variable: JF_ROUTER_TOPOLOGY_LOCAL_REQUIREDSERVICETYPES): jfrt,jfac,jfmd,jffe,jfob,jfcon,jfevt,jfevd,jfcfg,jftpl,jfomr
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://host.docker.internal:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.multiTenant.cellId (Default Value): 
+shared.multiTenant.enabled (Default Value): false
+shared.multiTenant.tenantRegistryClient.caCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.cacheExpirationSecs (Default Value): 21600
+shared.multiTenant.tenantRegistryClient.clientCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.clientCertKey (Default Value): *****
+shared.multiTenant.tenantRegistryClient.dialTimeoutSecs (Default Value): 10
+shared.multiTenant.tenantRegistryClient.endpoints (Default Value): 
+shared.multiTenant.tenantRegistryClient.pingCacheExpirationSecs (Default Value): 15
+shared.multiTenant.tenantRegistryClient.pingTimeoutSecs (Default Value): 1
+shared.multiTenant.tenantRegistryClient.requestTimeoutSecs (Default Value): 30
+shared.newrelic.appName (Default Value): 
+shared.newrelic.distributedTracerEnabled (Default Value): true
+shared.newrelic.enableDebugLog (Default Value): false
+shared.newrelic.enabled (Default Value): false
+shared.newrelic.licenseKey (Default Value): *****
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): 3279034a9346
+shared.node.ip (Environment Variable: JF_SHARED_NODE_IP): 172.17.0.3
+shared.node.name (Environment Variable: JF_SHARED_NODE_NAME): 3279034a9346
+shared.restrictedmode.enabled (Environment Variable: JF_SHARED_RESTRICTEDMODE_ENABLED): true
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+shared.security.exposeApplicationHeaders (Default Value): false
+shared.security.joinKeyFile (Default Value): etc/security/join.key
+shared.security.masterKeyFile (Default Value): etc/security/master.key
+system.yaml (Environment Variable: JF_SYSTEM_YAML): /opt/jfrog/artifactory/var/etc/system.yaml [bootstrap]
+2025-06-06T05:37:46.602Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 5 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:37:51.619Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 10 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:37:56.635Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 15 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:38:01.638Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 20 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:38:06.643Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 25 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:38:11.648Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 30 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:38:16.652Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 35 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:38:21.658Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 40 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:38:26.661Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 45 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:38:31.666Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 50 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:38:36.672Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 55 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:38:41.677Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 60 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:38:46.682Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 65 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:38:51.688Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 70 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:38:56.693Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 75 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:39:01.698Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 80 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:39:06.703Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 85 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:39:11.709Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 90 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:39:16.714Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 95 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:39:21.719Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 100 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:39:26.725Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 105 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:39:31.743Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 110 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:39:36.749Z [jfevd] [INFO ] [1a986dfaa7bedff9] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 115 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:39:41.595Z [jfevd] [FATAL] [1a986dfaa7bedff9] [application_keys.go:20        ] [main                ] [                ] - Failed to resolve security keys: Cluster join: Failed resolving join key: failed resolving 'shared.security.joinKey' key; file does not exist: /opt/jfrog/artifactory/var/etc/security/join.key [bootstrap]
+2025-06-06T05:47:18.842Z [jfevd] [INFO ] [149664612877d7a4] [application.go:310            ] [main                ] [                ] - Effective configuration:
+access.jfconfig.enabled (Environment Variable: JF_ACCESS_JFCONFIG_ENABLED): true
+access.useexternaltopology (Environment Variable: JF_ACCESS_USEEXTERNALTOPOLOGY): true
+artifactory.pid (Environment Variable: JF_ARTIFACTORY_PID): /opt/jfrog/artifactory/var/work/run/artifactory.pid
+artifactory.user (Environment Variable: JF_ARTIFACTORY_USER): artifactory
+evidence.access.bypass.accessUrl (Default Value): 
+evidence.access.bypass.retryBackoffInitialIntervalMillis (Default Value): 500
+evidence.access.bypass.retryBackoffMaxElapsedTimeMillis (Default Value): 0
+evidence.access.bypass.retryBackoffMaxIntervalMillis (Default Value): 3600000
+evidence.access.bypass.revocableExpiryThresholdSeconds (Default Value): -1
+evidence.access.joinTimeoutMillis (Default Value): 180000
+evidence.access.pingTimeoutMillis (Default Value): 120000
+evidence.accessclient.url (Environment Variable: JF_EVIDENCE_ACCESSCLIENT_URL): http://localhost:8081/access
+evidence.api.maxFilterSize (Default Value): 50
+evidence.api.maxPageSize (Default Value): 200
+evidence.api.maxQueryDepth (Default Value): 20
+evidence.caching.license.capacity (Default Value): 100
+evidence.caching.license.expirationSecs (Default Value): 300
+evidence.caching.publicKeys.capacity (Default Value): 500
+evidence.caching.publicKeys.expirationSecs (Default Value): 14400
+evidence.database.disableParallelSelect (Default Value): true
+evidence.database.enableLogForPostgres (Default Value): false
+evidence.database.kerberosAuth (Default Value): false
+evidence.database.maxIdleConnections (Default Value): 10
+evidence.database.maxOpenConnections (Default Value): 100
+evidence.database.maxRecordsLimit (Default Value): 1000
+evidence.database.metrics.enabled (Default Value): false
+evidence.database.metrics.maxQueriesToTrack (Default Value): 5
+evidence.database.migrationLockRetryIntervalSecs (Default Value): 60
+evidence.database.password (File: shared.database.password): *****
+evidence.database.queryTimeoutSecs (Default Value): 1800
+evidence.database.type (File: shared.database.type): postgresql
+evidence.database.url (File: shared.database.url): jdbc:postgresql://postgres:5432/artifactorydb
+evidence.database.username (File: shared.database.username): artifactory
+evidence.database.waitForConnectionTimeoutSecs (Default Value): 15
+evidence.graphql.playground (Default Value): true
+evidence.grpcPort (Default Value): 8052
+evidence.httpPort (Default Value): 8051
+evidence.jfConnect.establishConnectionTimeoutMillis (Default Value): 3000
+evidence.jfConnect.fetchIntervalMillis (Default Value): 30000
+evidence.jfConnect.requestTimeoutMillis (Default Value): 30000
+evidence.jfConnect.retryConnectionIntervalMillis (Default Value): 1000
+evidence.jfConnect.tokenExpiryMinutes (Default Value): 1440
+evidence.logging.application.caller (Default Value): false
+evidence.logging.application.console (Default Value): true
+evidence.logging.application.filePath (Default Value): evidence-service.log
+evidence.logging.application.format (Default Value): jftext
+evidence.logging.application.level (Default Value): info
+evidence.logging.application.rotation.compress (Default Value): true
+evidence.logging.application.rotation.keepLastDecompressed (Default Value): 1
+evidence.logging.application.rotation.maxAgeDays (Default Value): 365
+evidence.logging.application.rotation.maxFiles (Default Value): 10
+evidence.logging.application.rotation.maxSizeMb (Default Value): 25
+evidence.logging.consoleLog.format (Default Value): jftext
+evidence.logging.metrics.console (Default Value): false
+evidence.logging.metrics.filePath (Default Value): evidence-metrics.log
+evidence.logging.metrics.rotation.compress (Default Value): true
+evidence.logging.metrics.rotation.keepLastDecompressed (Default Value): 1
+evidence.logging.metrics.rotation.maxAgeDays (Default Value): 365
+evidence.logging.metrics.rotation.maxFiles (Default Value): 10
+evidence.logging.metrics.rotation.maxSizeMb (Default Value): 25
+evidence.logging.request.console (Default Value): false
+evidence.logging.request.filePath (Default Value): evidence-request.log
+evidence.logging.request.rotation.compress (Default Value): true
+evidence.logging.request.rotation.keepLastDecompressed (Default Value): 1
+evidence.logging.request.rotation.maxAgeDays (Default Value): 365
+evidence.logging.request.rotation.maxFiles (Default Value): 10
+evidence.logging.request.rotation.maxSizeMb (Default Value): 25
+evidence.metrics.backOffice.enabled (Default Value): true
+evidence.metrics.enabled (Default Value): false
+evidence.metrics.exclude (Default Value): []
+evidence.metrics.intervalMillis (Default Value): 10s
+evidence.metrics.logPeriodically (Default Value): false
+evidence.metrics.triggers.enabled (Default Value): true
+evidence.metrics.triggers.intervalMillis (Default Value): 20000
+evidence.metrics.triggers.limit (Default Value): 1000000
+evidence.profiling.enabled (Default Value): false
+evidence.supportBundle.aggregationTimeoutMillis (Default Value): 3600000
+legacy.artifactory.pid (Environment Variable: JF_LEGACY_ARTIFACTORY_PID): /opt/jfrog/artifactory/app/run/artifactory.pid
+metadata.accessclient.url (Environment Variable: JF_METADATA_ACCESSCLIENT_URL): http://localhost:8081/access
+onemodel.artifactory.url (Environment Variable: JF_ONEMODEL_ARTIFACTORY_URL): http://localhost:8081
+product.data.internal (Environment Variable: JF_PRODUCT_DATA_INTERNAL): /var/opt/jfrog/artifactory
+product.home (Environment Variable: JF_PRODUCT_HOME): /opt/jfrog/artifactory
+router.entrypoints.internalPort (Default Value): 8046
+router.topology.local.requiredservicetypes (Environment Variable: JF_ROUTER_TOPOLOGY_LOCAL_REQUIREDSERVICETYPES): jfrt,jfac,jfmd,jffe,jfob,jfcon,jfevt,jfevd,jfcfg,jftpl,jfomr
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.multiTenant.cellId (Default Value): 
+shared.multiTenant.enabled (Default Value): false
+shared.multiTenant.tenantRegistryClient.caCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.cacheExpirationSecs (Default Value): 21600
+shared.multiTenant.tenantRegistryClient.clientCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.clientCertKey (Default Value): *****
+shared.multiTenant.tenantRegistryClient.dialTimeoutSecs (Default Value): 10
+shared.multiTenant.tenantRegistryClient.endpoints (Default Value): 
+shared.multiTenant.tenantRegistryClient.pingCacheExpirationSecs (Default Value): 15
+shared.multiTenant.tenantRegistryClient.pingTimeoutSecs (Default Value): 1
+shared.multiTenant.tenantRegistryClient.requestTimeoutSecs (Default Value): 30
+shared.newrelic.appName (Default Value): 
+shared.newrelic.distributedTracerEnabled (Default Value): true
+shared.newrelic.enableDebugLog (Default Value): false
+shared.newrelic.enabled (Default Value): false
+shared.newrelic.licenseKey (Default Value): *****
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.node.ip (Environment Variable: JF_SHARED_NODE_IP): 127.0.0.1
+shared.node.name (Environment Variable: JF_SHARED_NODE_NAME): 70669e478afc
+shared.restrictedmode.enabled (Environment Variable: JF_SHARED_RESTRICTEDMODE_ENABLED): true
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+shared.security.exposeApplicationHeaders (Default Value): false
+shared.security.joinKeyFile (Default Value): etc/security/join.key
+shared.security.masterKeyFile (Default Value): etc/security/master.key
+system.yaml (Environment Variable: JF_SYSTEM_YAML): /opt/jfrog/artifactory/var/etc/system.yaml [bootstrap]
+2025-06-06T05:47:23.850Z [jfevd] [INFO ] [149664612877d7a4] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 5 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:47:28.860Z [jfevd] [INFO ] [149664612877d7a4] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 10 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:47:34.163Z [jfevd] [INFO ] [149664612877d7a4] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 15 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:47:38.892Z [jfevd] [INFO ] [149664612877d7a4] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 20 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:47:44.099Z [jfevd] [INFO ] [149664612877d7a4] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 25 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:47:54.053Z [jfevd] [INFO ] [149664612877d7a4] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 35 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:47:59.075Z [jfevd] [INFO ] [149664612877d7a4] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 40 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:48:04.084Z [jfevd] [INFO ] [149664612877d7a4] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 45 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:48:09.144Z [jfevd] [INFO ] [149664612877d7a4] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 50 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:48:14.156Z [jfevd] [INFO ] [149664612877d7a4] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 55 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:48:19.161Z [jfevd] [INFO ] [149664612877d7a4] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 60 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:48:24.165Z [jfevd] [INFO ] [149664612877d7a4] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 65 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:48:29.168Z [jfevd] [INFO ] [149664612877d7a4] [security_keys.go:185          ] [main                ] [                ] - Cluster join: Join key is missing. Pending for 70 seconds with 2m0s timeout [bootstrap]
+2025-06-06T05:48:35.369Z [jfevd] [INFO ] [149664612877d7a4] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 5: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T05:48:40.388Z [jfevd] [INFO ] [149664612877d7a4] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 10: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T05:48:45.398Z [jfevd] [INFO ] [149664612877d7a4] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 15: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T05:48:50.430Z [jfevd] [INFO ] [149664612877d7a4] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 20: Service registry ping failed, will retry. Error: Failed to ping access, response status: 404 Not Found (returned 404) [bootstrap]
+2025-06-06T05:48:52.521Z [jfevd] [INFO ] [149664612877d7a4] [application.go:314            ] [main                ] [                ] - JFrog Evidence Service ID: jfevd@01jx1whbjf25v712c2mrk11s4z [bootstrap]
+2025-06-06T05:48:52.522Z [jfevd] [INFO ] [149664612877d7a4] [application.go:315            ] [main                ] [                ] - JFrog Evidence Node ID: artifactory-node-1 [bootstrap]
+2025-06-06T05:48:52.527Z [jfevd] [INFO ] [149664612877d7a4] [application.go:316            ] [main                ] [                ] - JFrog Evidence Node IP: 127.0.0.1 [bootstrap]
+2025-06-06T05:48:52.534Z [jfevd] [INFO ] [149664612877d7a4] [metrics_evidence_collector.go:] [main                ] [                ] - Back office metrics service initialized successfully. Usage directory: /opt/jfrog/artifactory/var/data/evidence/usage [metrics-collector]
+2025-06-06T05:48:52.542Z [jfevd] [INFO ] [149664612877d7a4] [database.go:90                ] [main                ] [                ] - Database connection driver: pgx [database]
+2025-06-06T05:48:52.565Z [jfevd] [INFO ] [149664612877d7a4] [postgres_jdbc_url_converter.go] [main                ] [                ] - No ssl parameter found, falling back to sslmode=disable [database]
+2025-06-06T05:48:52.567Z [jfevd] [INFO ] [149664612877d7a4] [database.go:104               ] [main                ] [                ] - Connecting to DB with parameters: Type: postgresql, Url: jdbc:postgresql://postgres:5432/artifactorydb, User: artifactory [database]
+2025-06-06T05:48:52.758Z [jfevd] [INFO ] [149664612877d7a4] [database_migration.go:75      ] [main                ] [                ] - Applying database migration files [database]
+2025-06-06T05:48:52.800Z [jfevd] [INFO ] [149664612877d7a4] [database_migration.go:159     ] [main                ] [                ] - Migration lock table created or is already present [database]
+2025-06-06T05:48:52.804Z [jfevd] [INFO ] [149664612877d7a4] [database_migration_locker.go:5] [main                ] [                ] - Trying to acquire migration lock for artifactory-node-1 [database]
+2025-06-06T05:48:52.826Z [jfevd] [INFO ] [149664612877d7a4] [database_migration_locker.go:7] [main                ] [                ] - Migration lock acquired for artifactory-node-1 [database]
+2025-06-06T05:48:52.850Z [jfevd] [INFO ] [149664612877d7a4] [database_migration.go:141     ] [main                ] [                ] - Applying 3 migrations files [database]
+2025-06-06T05:48:53.012Z [jfevd] [INFO ] [149664612877d7a4] [database_migration.go:255     ] [main                ] [                ] - Migration v001_evd_evidence.sql successfully applied (8 statements) [database]
+2025-06-06T05:48:53.017Z [jfevd] [INFO ] [149664612877d7a4] [database_migration.go:255     ] [main                ] [                ] - Migration v002_column_evidence_key_id.sql successfully applied (1 statements) [database]
+2025-06-06T05:48:53.027Z [jfevd] [INFO ] [149664612877d7a4] [database_migration.go:255     ] [main                ] [                ] - Migration v003_column_evidence_subject_type.sql successfully applied (1 statements) [database]
+2025-06-06T05:48:53.038Z [jfevd] [INFO ] [149664612877d7a4] [database_migration_locker.go:8] [main                ] [                ] - Trying to release lock owned by: artifactory-node-1 [database]
+2025-06-06T05:48:53.045Z [jfevd] [INFO ] [149664612877d7a4] [database_migration_locker.go:9] [main                ] [                ] - Released lock owned by node artifactory-node-1 [database]
+2025-06-06T05:48:53.048Z [jfevd] [INFO ] [149664612877d7a4] [database_migration.go:85      ] [main                ] [                ] - Applied 10 database migrations statements in 0.287395103 seconds [database]
+2025-06-06T05:48:53.058Z [jfevd] [WARN ] [149664612877d7a4] [graphql_handler.go:125        ] [main                ] [                ] - GraphQL OneModel compatibility filter is disabled by configuration [graphql-handler]
+2025-06-06T05:48:53.139Z [jfevd] [INFO ] [149664612877d7a4] [application.go:191            ] [main                ] [                ] - HTTP server listening on 127.0.0.1:8051 [application]
+2025-06-06T05:48:53.140Z [jfevd] [INFO ] [149664612877d7a4] [application.go:196            ] [main                ] [                ] - GRPC server listening on 127.0.0.1:8052 [application]
+2025-06-06T05:48:53.657Z [jfevd] [INFO ] [149664612877d7a4] [join_executor.go:178          ] [main                ] [                ] - Cluster join: Successfully joined the cluster [access-client]
+2025-06-06T05:48:53.679Z [jfevd] [INFO ] [149664612877d7a4] [join_executor.go:190          ] [main                ] [                ] - Cluster join: executing Router register at: localhost:8046 for service id jfevd@01jx1whbjf25v712c2mrk11s4z [access-client]
+2025-06-06T05:48:54.158Z [jfevd] [INFO ] [149664612877d7a4] [application.go:321            ] [main                ] [                ] - JFrog Evidence (jfevd) service initialization completed in 95.339 seconds [application]
+2025-06-06T05:48:54.160Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:49  ] [main                ] [                ] - Starting Platform Config stream connect goroutine [access-client]
+2025-06-06T05:48:54.166Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T05:48:54.181Z [jfevd] [INFO ] [149664612877d7a4] [dedicated_grpc_connection.go:2] [main                ] [                ] - Creating a new dedicated gRPC connection for localhost:8046 [access-client]
+2025-06-06T05:48:56.250Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:48:56.251Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:48:56.254Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T05:48:56.255Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T05:48:56.314Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:48:56.314Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:48:56.315Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T05:48:56.315Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T05:48:56.380Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:48:56.382Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:48:56.382Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T05:48:56.383Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T05:48:56.638Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:48:56.639Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:48:56.639Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T05:48:56.639Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T05:48:56.814Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:48:56.814Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:48:56.816Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T05:48:56.816Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T05:48:57.167Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:48:57.167Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:48:57.168Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T05:48:57.169Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T05:48:57.830Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:48:57.831Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:48:57.831Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T05:48:57.831Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T05:48:59.128Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:48:59.128Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:48:59.129Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T05:48:59.129Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T05:49:01.701Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:49:01.702Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:49:01.703Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T05:49:01.703Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T05:49:04.714Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:49:04.714Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:49:04.715Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T05:49:04.715Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T05:49:07.723Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:49:07.723Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = JFConfig is enabled, no handler for access rpc platform config resource [access-client]
+2025-06-06T05:49:07.723Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T05:49:07.724Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T05:49:11.925Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:105 ] [main                ] [                ] - Starting Platform Config stream Recv loop [access-client]
+2025-06-06T05:49:11.927Z [jfevd] [INFO ] [149664612877d7a4] [platform_config_stream.go:137 ] [main                ] [                ] - Starting Platform Config checkKeepAlive [access-client]
+2025-06-06T11:46:17.662Z [jfevd] [INFO ] [0040a8866d0b7753] [application.go:310            ] [main                ] [                ] - Effective configuration:
+access.jfconfig.enabled (Environment Variable: JF_ACCESS_JFCONFIG_ENABLED): true
+access.useexternaltopology (Environment Variable: JF_ACCESS_USEEXTERNALTOPOLOGY): true
+artifactory.pid (Environment Variable: JF_ARTIFACTORY_PID): /opt/jfrog/artifactory/var/work/run/artifactory.pid
+artifactory.user (Environment Variable: JF_ARTIFACTORY_USER): artifactory
+evidence.access.bypass.accessUrl (Default Value): 
+evidence.access.bypass.retryBackoffInitialIntervalMillis (Default Value): 500
+evidence.access.bypass.retryBackoffMaxElapsedTimeMillis (Default Value): 0
+evidence.access.bypass.retryBackoffMaxIntervalMillis (Default Value): 3600000
+evidence.access.bypass.revocableExpiryThresholdSeconds (Default Value): -1
+evidence.access.joinTimeoutMillis (Default Value): 180000
+evidence.access.pingTimeoutMillis (Default Value): 120000
+evidence.accessclient.url (Environment Variable: JF_EVIDENCE_ACCESSCLIENT_URL): http://localhost:8081/access
+evidence.api.maxFilterSize (Default Value): 50
+evidence.api.maxPageSize (Default Value): 200
+evidence.api.maxQueryDepth (Default Value): 20
+evidence.caching.license.capacity (Default Value): 100
+evidence.caching.license.expirationSecs (Default Value): 300
+evidence.caching.publicKeys.capacity (Default Value): 500
+evidence.caching.publicKeys.expirationSecs (Default Value): 14400
+evidence.database.disableParallelSelect (Default Value): true
+evidence.database.enableLogForPostgres (Default Value): false
+evidence.database.kerberosAuth (Default Value): false
+evidence.database.maxIdleConnections (Default Value): 10
+evidence.database.maxOpenConnections (Default Value): 100
+evidence.database.maxRecordsLimit (Default Value): 1000
+evidence.database.metrics.enabled (Default Value): false
+evidence.database.metrics.maxQueriesToTrack (Default Value): 5
+evidence.database.migrationLockRetryIntervalSecs (Default Value): 60
+evidence.database.password (File: shared.database.password): *****
+evidence.database.queryTimeoutSecs (Default Value): 1800
+evidence.database.type (File: shared.database.type): postgresql
+evidence.database.url (File: shared.database.url): jdbc:postgresql://postgres:5432/artifactorydb
+evidence.database.username (File: shared.database.username): artifactory
+evidence.database.waitForConnectionTimeoutSecs (Default Value): 15
+evidence.graphql.playground (Default Value): true
+evidence.grpcPort (Default Value): 8052
+evidence.httpPort (Default Value): 8051
+evidence.jfConnect.establishConnectionTimeoutMillis (Default Value): 3000
+evidence.jfConnect.fetchIntervalMillis (Default Value): 30000
+evidence.jfConnect.requestTimeoutMillis (Default Value): 30000
+evidence.jfConnect.retryConnectionIntervalMillis (Default Value): 1000
+evidence.jfConnect.tokenExpiryMinutes (Default Value): 1440
+evidence.logging.application.caller (Default Value): false
+evidence.logging.application.console (Default Value): true
+evidence.logging.application.filePath (Default Value): evidence-service.log
+evidence.logging.application.format (Default Value): jftext
+evidence.logging.application.level (Default Value): info
+evidence.logging.application.rotation.compress (Default Value): true
+evidence.logging.application.rotation.keepLastDecompressed (Default Value): 1
+evidence.logging.application.rotation.maxAgeDays (Default Value): 365
+evidence.logging.application.rotation.maxFiles (Default Value): 10
+evidence.logging.application.rotation.maxSizeMb (Default Value): 25
+evidence.logging.consoleLog.format (Default Value): jftext
+evidence.logging.metrics.console (Default Value): false
+evidence.logging.metrics.filePath (Default Value): evidence-metrics.log
+evidence.logging.metrics.rotation.compress (Default Value): true
+evidence.logging.metrics.rotation.keepLastDecompressed (Default Value): 1
+evidence.logging.metrics.rotation.maxAgeDays (Default Value): 365
+evidence.logging.metrics.rotation.maxFiles (Default Value): 10
+evidence.logging.metrics.rotation.maxSizeMb (Default Value): 25
+evidence.logging.request.console (Default Value): false
+evidence.logging.request.filePath (Default Value): evidence-request.log
+evidence.logging.request.rotation.compress (Default Value): true
+evidence.logging.request.rotation.keepLastDecompressed (Default Value): 1
+evidence.logging.request.rotation.maxAgeDays (Default Value): 365
+evidence.logging.request.rotation.maxFiles (Default Value): 10
+evidence.logging.request.rotation.maxSizeMb (Default Value): 25
+evidence.metrics.backOffice.enabled (Default Value): true
+evidence.metrics.enabled (Default Value): false
+evidence.metrics.exclude (Default Value): []
+evidence.metrics.intervalMillis (Default Value): 10s
+evidence.metrics.logPeriodically (Default Value): false
+evidence.metrics.triggers.enabled (Default Value): true
+evidence.metrics.triggers.intervalMillis (Default Value): 20000
+evidence.metrics.triggers.limit (Default Value): 1000000
+evidence.profiling.enabled (Default Value): false
+evidence.supportBundle.aggregationTimeoutMillis (Default Value): 3600000
+legacy.artifactory.pid (Environment Variable: JF_LEGACY_ARTIFACTORY_PID): /opt/jfrog/artifactory/app/run/artifactory.pid
+metadata.accessclient.url (Environment Variable: JF_METADATA_ACCESSCLIENT_URL): http://localhost:8081/access
+onemodel.artifactory.url (Environment Variable: JF_ONEMODEL_ARTIFACTORY_URL): http://localhost:8081
+product.data.internal (Environment Variable: JF_PRODUCT_DATA_INTERNAL): /var/opt/jfrog/artifactory
+product.home (Environment Variable: JF_PRODUCT_HOME): /opt/jfrog/artifactory
+router.entrypoints.internalPort (Default Value): 8046
+router.topology.local.requiredservicetypes (Environment Variable: JF_ROUTER_TOPOLOGY_LOCAL_REQUIREDSERVICETYPES): jfrt,jfac,jfmd,jffe,jfob,jfcon,jfevt,jfevd,jfcfg,jftpl,jfomr
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.multiTenant.cellId (Default Value): 
+shared.multiTenant.enabled (Default Value): false
+shared.multiTenant.tenantRegistryClient.caCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.cacheExpirationSecs (Default Value): 21600
+shared.multiTenant.tenantRegistryClient.clientCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.clientCertKey (Default Value): *****
+shared.multiTenant.tenantRegistryClient.dialTimeoutSecs (Default Value): 10
+shared.multiTenant.tenantRegistryClient.endpoints (Default Value): 
+shared.multiTenant.tenantRegistryClient.pingCacheExpirationSecs (Default Value): 15
+shared.multiTenant.tenantRegistryClient.pingTimeoutSecs (Default Value): 1
+shared.multiTenant.tenantRegistryClient.requestTimeoutSecs (Default Value): 30
+shared.newrelic.appName (Default Value): 
+shared.newrelic.distributedTracerEnabled (Default Value): true
+shared.newrelic.enableDebugLog (Default Value): false
+shared.newrelic.enabled (Default Value): false
+shared.newrelic.licenseKey (Default Value): *****
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.node.ip (Environment Variable: JF_SHARED_NODE_IP): 127.0.0.1
+shared.node.name (Environment Variable: JF_SHARED_NODE_NAME): 430b57084b87
+shared.restrictedmode.enabled (Environment Variable: JF_SHARED_RESTRICTEDMODE_ENABLED): true
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+shared.security.exposeApplicationHeaders (Default Value): false
+shared.security.joinKeyFile (Default Value): etc/security/join.key
+shared.security.masterKeyFile (Default Value): etc/security/master.key
+system.yaml (Environment Variable: JF_SYSTEM_YAML): /opt/jfrog/artifactory/var/etc/system.yaml [bootstrap]
+2025-06-06T11:46:21.692Z [jfevd] [INFO ] [0040a8866d0b7753] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 5: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:46:26.717Z [jfevd] [INFO ] [0040a8866d0b7753] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 10: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:46:31.744Z [jfevd] [INFO ] [0040a8866d0b7753] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 15: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:46:36.753Z [jfevd] [INFO ] [0040a8866d0b7753] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 20: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:46:41.760Z [jfevd] [INFO ] [0040a8866d0b7753] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 25: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:46:46.772Z [jfevd] [INFO ] [0040a8866d0b7753] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 30: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:46:51.782Z [jfevd] [INFO ] [0040a8866d0b7753] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 35: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:46:56.793Z [jfevd] [INFO ] [0040a8866d0b7753] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 40: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:47:01.806Z [jfevd] [INFO ] [0040a8866d0b7753] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 45: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:47:06.818Z [jfevd] [INFO ] [0040a8866d0b7753] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 50: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:47:11.827Z [jfevd] [INFO ] [0040a8866d0b7753] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 55: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:48:42.639Z [jfevd] [INFO ] [43551238d7cba7c9] [application.go:310            ] [main                ] [                ] - Effective configuration:
+access.jfconfig.enabled (Environment Variable: JF_ACCESS_JFCONFIG_ENABLED): true
+access.useexternaltopology (Environment Variable: JF_ACCESS_USEEXTERNALTOPOLOGY): true
+artifactory.pid (Environment Variable: JF_ARTIFACTORY_PID): /opt/jfrog/artifactory/var/work/run/artifactory.pid
+artifactory.user (Environment Variable: JF_ARTIFACTORY_USER): artifactory
+evidence.access.bypass.accessUrl (Default Value): 
+evidence.access.bypass.retryBackoffInitialIntervalMillis (Default Value): 500
+evidence.access.bypass.retryBackoffMaxElapsedTimeMillis (Default Value): 0
+evidence.access.bypass.retryBackoffMaxIntervalMillis (Default Value): 3600000
+evidence.access.bypass.revocableExpiryThresholdSeconds (Default Value): -1
+evidence.access.joinTimeoutMillis (Default Value): 180000
+evidence.access.pingTimeoutMillis (Default Value): 120000
+evidence.accessclient.url (Environment Variable: JF_EVIDENCE_ACCESSCLIENT_URL): http://localhost:8081/access
+evidence.api.maxFilterSize (Default Value): 50
+evidence.api.maxPageSize (Default Value): 200
+evidence.api.maxQueryDepth (Default Value): 20
+evidence.caching.license.capacity (Default Value): 100
+evidence.caching.license.expirationSecs (Default Value): 300
+evidence.caching.publicKeys.capacity (Default Value): 500
+evidence.caching.publicKeys.expirationSecs (Default Value): 14400
+evidence.database.disableParallelSelect (Default Value): true
+evidence.database.enableLogForPostgres (Default Value): false
+evidence.database.kerberosAuth (Default Value): false
+evidence.database.maxIdleConnections (Default Value): 10
+evidence.database.maxOpenConnections (Default Value): 100
+evidence.database.maxRecordsLimit (Default Value): 1000
+evidence.database.metrics.enabled (Default Value): false
+evidence.database.metrics.maxQueriesToTrack (Default Value): 5
+evidence.database.migrationLockRetryIntervalSecs (Default Value): 60
+evidence.database.password (File: shared.database.password): *****
+evidence.database.queryTimeoutSecs (Default Value): 1800
+evidence.database.type (File: shared.database.type): postgresql
+evidence.database.url (File: shared.database.url): jdbc:postgresql://postgres:5432/artifactorydb
+evidence.database.username (File: shared.database.username): artifactory
+evidence.database.waitForConnectionTimeoutSecs (Default Value): 15
+evidence.graphql.playground (Default Value): true
+evidence.grpcPort (Default Value): 8052
+evidence.httpPort (Default Value): 8051
+evidence.jfConnect.establishConnectionTimeoutMillis (Default Value): 3000
+evidence.jfConnect.fetchIntervalMillis (Default Value): 30000
+evidence.jfConnect.requestTimeoutMillis (Default Value): 30000
+evidence.jfConnect.retryConnectionIntervalMillis (Default Value): 1000
+evidence.jfConnect.tokenExpiryMinutes (Default Value): 1440
+evidence.logging.application.caller (Default Value): false
+evidence.logging.application.console (Default Value): true
+evidence.logging.application.filePath (Default Value): evidence-service.log
+evidence.logging.application.format (Default Value): jftext
+evidence.logging.application.level (Default Value): info
+evidence.logging.application.rotation.compress (Default Value): true
+evidence.logging.application.rotation.keepLastDecompressed (Default Value): 1
+evidence.logging.application.rotation.maxAgeDays (Default Value): 365
+evidence.logging.application.rotation.maxFiles (Default Value): 10
+evidence.logging.application.rotation.maxSizeMb (Default Value): 25
+evidence.logging.consoleLog.format (Default Value): jftext
+evidence.logging.metrics.console (Default Value): false
+evidence.logging.metrics.filePath (Default Value): evidence-metrics.log
+evidence.logging.metrics.rotation.compress (Default Value): true
+evidence.logging.metrics.rotation.keepLastDecompressed (Default Value): 1
+evidence.logging.metrics.rotation.maxAgeDays (Default Value): 365
+evidence.logging.metrics.rotation.maxFiles (Default Value): 10
+evidence.logging.metrics.rotation.maxSizeMb (Default Value): 25
+evidence.logging.request.console (Default Value): false
+evidence.logging.request.filePath (Default Value): evidence-request.log
+evidence.logging.request.rotation.compress (Default Value): true
+evidence.logging.request.rotation.keepLastDecompressed (Default Value): 1
+evidence.logging.request.rotation.maxAgeDays (Default Value): 365
+evidence.logging.request.rotation.maxFiles (Default Value): 10
+evidence.logging.request.rotation.maxSizeMb (Default Value): 25
+evidence.metrics.backOffice.enabled (Default Value): true
+evidence.metrics.enabled (Default Value): false
+evidence.metrics.exclude (Default Value): []
+evidence.metrics.intervalMillis (Default Value): 10s
+evidence.metrics.logPeriodically (Default Value): false
+evidence.metrics.triggers.enabled (Default Value): true
+evidence.metrics.triggers.intervalMillis (Default Value): 20000
+evidence.metrics.triggers.limit (Default Value): 1000000
+evidence.profiling.enabled (Default Value): false
+evidence.supportBundle.aggregationTimeoutMillis (Default Value): 3600000
+legacy.artifactory.pid (Environment Variable: JF_LEGACY_ARTIFACTORY_PID): /opt/jfrog/artifactory/app/run/artifactory.pid
+metadata.accessclient.url (Environment Variable: JF_METADATA_ACCESSCLIENT_URL): http://localhost:8081/access
+onemodel.artifactory.url (Environment Variable: JF_ONEMODEL_ARTIFACTORY_URL): http://localhost:8081
+product.data.internal (Environment Variable: JF_PRODUCT_DATA_INTERNAL): /var/opt/jfrog/artifactory
+product.home (Environment Variable: JF_PRODUCT_HOME): /opt/jfrog/artifactory
+router.entrypoints.internalPort (Default Value): 8046
+router.topology.local.requiredservicetypes (Environment Variable: JF_ROUTER_TOPOLOGY_LOCAL_REQUIREDSERVICETYPES): jfrt,jfac,jfmd,jffe,jfob,jfcon,jfevt,jfevd,jfcfg,jftpl,jfomr
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.multiTenant.cellId (Default Value): 
+shared.multiTenant.enabled (Default Value): false
+shared.multiTenant.tenantRegistryClient.caCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.cacheExpirationSecs (Default Value): 21600
+shared.multiTenant.tenantRegistryClient.clientCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.clientCertKey (Default Value): *****
+shared.multiTenant.tenantRegistryClient.dialTimeoutSecs (Default Value): 10
+shared.multiTenant.tenantRegistryClient.endpoints (Default Value): 
+shared.multiTenant.tenantRegistryClient.pingCacheExpirationSecs (Default Value): 15
+shared.multiTenant.tenantRegistryClient.pingTimeoutSecs (Default Value): 1
+shared.multiTenant.tenantRegistryClient.requestTimeoutSecs (Default Value): 30
+shared.newrelic.appName (Default Value): 
+shared.newrelic.distributedTracerEnabled (Default Value): true
+shared.newrelic.enableDebugLog (Default Value): false
+shared.newrelic.enabled (Default Value): false
+shared.newrelic.licenseKey (Default Value): *****
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.node.ip (Environment Variable: JF_SHARED_NODE_IP): 127.0.0.1
+shared.node.name (Environment Variable: JF_SHARED_NODE_NAME): c1c392036784
+shared.restrictedmode.enabled (Environment Variable: JF_SHARED_RESTRICTEDMODE_ENABLED): true
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+shared.security.exposeApplicationHeaders (Default Value): false
+shared.security.joinKeyFile (Default Value): etc/security/join.key
+shared.security.masterKeyFile (Default Value): etc/security/master.key
+system.yaml (Environment Variable: JF_SYSTEM_YAML): /opt/jfrog/artifactory/var/etc/system.yaml [bootstrap]
+2025-06-06T11:48:46.661Z [jfevd] [INFO ] [43551238d7cba7c9] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 5: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:48:51.679Z [jfevd] [INFO ] [43551238d7cba7c9] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 10: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:48:56.700Z [jfevd] [INFO ] [43551238d7cba7c9] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 15: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:49:01.718Z [jfevd] [INFO ] [43551238d7cba7c9] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 20: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:49:06.731Z [jfevd] [INFO ] [43551238d7cba7c9] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 25: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:49:11.740Z [jfevd] [INFO ] [43551238d7cba7c9] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 30: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:49:16.750Z [jfevd] [INFO ] [43551238d7cba7c9] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 35: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:49:21.759Z [jfevd] [INFO ] [43551238d7cba7c9] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 40: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:49:26.767Z [jfevd] [INFO ] [43551238d7cba7c9] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 45: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:49:31.775Z [jfevd] [INFO ] [43551238d7cba7c9] [access_client_thin.go:112     ] [main                ] [                ] - Cluster join: Retry 50: Service registry ping failed, will retry. Error: failed to connect to local router at address: http://localhost:8046/access/api/v1/system/ping: Get "http://localhost:8046/access/api/v1/system/ping": dial tcp [::1]:8046: connect: connection refused [bootstrap]
+2025-06-06T11:49:35.923Z [jfevd] [INFO ] [43551238d7cba7c9] [application.go:314            ] [main                ] [                ] - JFrog Evidence Service ID: jfevd@01jx1whbjf25v712c2mrk11s4z [bootstrap]
+2025-06-06T11:49:35.927Z [jfevd] [INFO ] [43551238d7cba7c9] [application.go:315            ] [main                ] [                ] - JFrog Evidence Node ID: artifactory-node-1 [bootstrap]
+2025-06-06T11:49:35.929Z [jfevd] [INFO ] [43551238d7cba7c9] [application.go:316            ] [main                ] [                ] - JFrog Evidence Node IP: 127.0.0.1 [bootstrap]
+2025-06-06T11:49:35.942Z [jfevd] [INFO ] [43551238d7cba7c9] [metrics_evidence_collector.go:] [main                ] [                ] - Back office metrics service initialized successfully. Usage directory: /opt/jfrog/artifactory/var/data/evidence/usage [metrics-collector]
+2025-06-06T11:49:35.951Z [jfevd] [INFO ] [43551238d7cba7c9] [database.go:90                ] [main                ] [                ] - Database connection driver: pgx [database]
+2025-06-06T11:49:35.955Z [jfevd] [INFO ] [43551238d7cba7c9] [postgres_jdbc_url_converter.go] [main                ] [                ] - No ssl parameter found, falling back to sslmode=disable [database]
+2025-06-06T11:49:35.956Z [jfevd] [INFO ] [43551238d7cba7c9] [database.go:104               ] [main                ] [                ] - Connecting to DB with parameters: Type: postgresql, Url: jdbc:postgresql://postgres:5432/artifactorydb, User: artifactory [database]
+2025-06-06T11:49:36.082Z [jfevd] [INFO ] [43551238d7cba7c9] [database_migration.go:75      ] [main                ] [                ] - Applying database migration files [database]
+2025-06-06T11:49:36.090Z [jfevd] [INFO ] [43551238d7cba7c9] [database_migration.go:159     ] [main                ] [                ] - Migration lock table created or is already present [database]
+2025-06-06T11:49:36.093Z [jfevd] [INFO ] [43551238d7cba7c9] [database_migration_locker.go:5] [main                ] [                ] - Trying to acquire migration lock for artifactory-node-1 [database]
+2025-06-06T11:49:36.153Z [jfevd] [INFO ] [43551238d7cba7c9] [database_migration_locker.go:7] [main                ] [                ] - Migration lock acquired for artifactory-node-1 [database]
+2025-06-06T11:49:36.170Z [jfevd] [INFO ] [43551238d7cba7c9] [database_migration.go:141     ] [main                ] [                ] - Applying 0 migrations files [database]
+2025-06-06T11:49:36.170Z [jfevd] [INFO ] [43551238d7cba7c9] [database_migration_locker.go:8] [main                ] [                ] - Trying to release lock owned by: artifactory-node-1 [database]
+2025-06-06T11:49:36.206Z [jfevd] [INFO ] [43551238d7cba7c9] [database_migration_locker.go:9] [main                ] [                ] - Released lock owned by node artifactory-node-1 [database]
+2025-06-06T11:49:36.207Z [jfevd] [INFO ] [43551238d7cba7c9] [database_migration.go:87      ] [main                ] [                ] - No database migrations to apply [database]
+2025-06-06T11:49:36.215Z [jfevd] [WARN ] [43551238d7cba7c9] [graphql_handler.go:125        ] [main                ] [                ] - GraphQL OneModel compatibility filter is disabled by configuration [graphql-handler]
+2025-06-06T11:49:36.272Z [jfevd] [INFO ] [43551238d7cba7c9] [application.go:191            ] [main                ] [                ] - HTTP server listening on 127.0.0.1:8051 [application]
+2025-06-06T11:49:36.273Z [jfevd] [INFO ] [43551238d7cba7c9] [application.go:196            ] [main                ] [                ] - GRPC server listening on 127.0.0.1:8052 [application]
+2025-06-06T11:49:36.635Z [jfevd] [INFO ] [43551238d7cba7c9] [join_executor.go:178          ] [main                ] [                ] - Cluster join: Successfully joined the cluster [access-client]
+2025-06-06T11:49:36.637Z [jfevd] [INFO ] [43551238d7cba7c9] [join_executor.go:190          ] [main                ] [                ] - Cluster join: executing Router register at: localhost:8046 for service id jfevd@01jx1whbjf25v712c2mrk11s4z [access-client]
+2025-06-06T11:49:36.984Z [jfevd] [INFO ] [43551238d7cba7c9] [application.go:321            ] [main                ] [                ] - JFrog Evidence (jfevd) service initialization completed in 54.360 seconds [application]
+2025-06-06T11:49:36.984Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:49  ] [main                ] [                ] - Starting Platform Config stream connect goroutine [access-client]
+2025-06-06T11:49:36.998Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T11:49:37.032Z [jfevd] [INFO ] [43551238d7cba7c9] [dedicated_grpc_connection.go:2] [main                ] [                ] - Creating a new dedicated gRPC connection for localhost:8046 [access-client]
+2025-06-06T11:49:37.187Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access-client]
+2025-06-06T11:49:37.188Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access-client]
+2025-06-06T11:49:37.188Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T11:49:37.190Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T11:49:37.218Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access-client]
+2025-06-06T11:49:37.220Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access-client]
+2025-06-06T11:49:37.223Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T11:49:37.262Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T11:49:37.311Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access-client]
+2025-06-06T11:49:37.313Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access-client]
+2025-06-06T11:49:37.319Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T11:49:37.333Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T11:49:37.422Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access-client]
+2025-06-06T11:49:37.423Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access-client]
+2025-06-06T11:49:37.424Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T11:49:37.424Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T11:49:37.594Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access-client]
+2025-06-06T11:49:37.594Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access-client]
+2025-06-06T11:49:37.595Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T11:49:37.595Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T11:49:37.931Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access-client]
+2025-06-06T11:49:37.932Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access-client]
+2025-06-06T11:49:37.934Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T11:49:37.936Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T11:49:38.594Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access-client]
+2025-06-06T11:49:38.597Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access-client]
+2025-06-06T11:49:38.598Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T11:49:38.598Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T11:49:39.883Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access-client]
+2025-06-06T11:49:39.883Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:77  ] [main                ] [                ] - Platform Config not able to subscribe to stream error: server error: rpc error: code = Unavailable desc = unexpected HTTP status code received from server: 502 (Bad Gateway); transport: received unexpected content-type "text/plain; charset=utf-8" [access-client]
+2025-06-06T11:49:39.884Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:78  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T11:49:39.885Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T11:49:49.340Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:105 ] [main                ] [                ] - Starting Platform Config stream Recv loop [access-client]
+2025-06-06T11:49:49.341Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:137 ] [main                ] [                ] - Starting Platform Config checkKeepAlive [access-client]
+2025-06-06T11:51:14.935Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:147 ] [main                ] [                ] - Platform Config Stream will be reconnected due to keepAliveTimeout. Last Event Time: 2025-06-06 11:50:54 +0000 UTC [access-client]
+2025-06-06T11:51:15.096Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:123 ] [main                ] [                ] - Platform Config Stream Read Error: rpc error: code = Canceled desc = context canceled [access-client]
+2025-06-06T11:51:15.094Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:150 ] [main                ] [                ] - Stopping Platform Config checkKeepAlive [access-client]
+2025-06-06T11:51:15.126Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:115 ] [main                ] [                ] - Platform Config stream Recv loop stopped [access-client]
+2025-06-06T11:51:15.130Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:88  ] [main                ] [                ] - Platform Config stream disconnected [access-client]
+2025-06-06T11:51:15.146Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:62  ] [main                ] [                ] - Connecting to Platform Config stream [access-client]
+2025-06-06T11:51:26.003Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:105 ] [main                ] [                ] - Starting Platform Config stream Recv loop [access-client]
+2025-06-06T11:51:26.399Z [jfevd] [INFO ] [43551238d7cba7c9] [platform_config_stream.go:137 ] [main                ] [                ] - Starting Platform Config checkKeepAlive [access-client]

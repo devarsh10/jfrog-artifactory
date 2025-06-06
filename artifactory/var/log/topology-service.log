@@ -1,0 +1,1126 @@
+2025-06-06T05:27:48.779Z [jftpl] [INFO ] [                ] [plicationContextInitializer:82] [main                ] - topology (jftpl) service initialization started. Version: 1.92.3 Revision: 19203900 PID: 8257 Home: /opt/jfrog/artifactory
+2025-06-06T05:27:48.799Z [jftpl] [INFO ] [                ] [plicationContextInitializer:38] [main                ] - Topology service deployment type: OnPrem
+2025-06-06T05:27:48.838Z [jftpl] [INFO ] [                ] [plicationContextInitializer:52] [main                ] - fips.mode (Default Value): none
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://host.docker.internal:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.logging.enableJsonConsoleLogAppenders (Default Value): false
+shared.multiTenant.enabled (Default Value): false
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): 099e1d1a365c
+shared.runtime.isSaas (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+topology.accessClient.connectionTimeoutSecs (Default Value): 5
+topology.accessClient.insecure (Default Value): false
+topology.accessClient.maxJoinRetries (Default Value): 90
+topology.accessClient.providerCacheTimeoutSecs (Default Value): 10800
+topology.accessClient.serverBypassMaxJoinRetries (Default Value): 5
+topology.accessClient.serverBypassUrl (Default Value): 
+topology.accessClient.socketTimeoutSecs (Default Value): 45
+topology.accessClient.versionCacheExpirationSecs (Default Value): 120
+topology.accessClient.waitJoinMillis (Default Value): 1000
+topology.cleanup.staleNodeInitialDelaySecs (Default Value): 3600
+topology.cleanup.staleNodeIntervalSecs (Default Value): 3600
+topology.cleanup.staleNodeThresholdSecs (Default Value): 604800
+topology.database.maxOpenConnections (Default Value): 100
+topology.database.maxWait (Default Value): 30000
+topology.database.metrics.enabled (Default Value): false
+topology.database.migrationRetry.backoff (Default Value): 1.5
+topology.database.migrationRetry.initialDelayMillis (Default Value): 2000
+topology.database.migrationRetry.maxIntervalSecs (Default Value): 900
+topology.database.timeoutSecs (Default Value): 600
+topology.grpc.maxInboundMetadataSize (Default Value): 8192
+topology.grpc.port (Default Value): 8021
+topology.healthCheck.initialDelaySecs (Default Value): 15
+topology.healthCheck.intervalSecs (Default Value): 10
+topology.healthCheck.tenantCacheExpirationSecs (Default Value): 30
+topology.kubernetesFetcher.cacheTimeoutSecs (Default Value): 120
+topology.kubernetesFetcher.clientTimeoutSecs (Default Value): 10
+topology.kubernetesFetcher.enabled (Default Value): false
+topology.logging.requestFilter.enabled (Default Value): false
+topology.logging.requestFilter.grpc.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.grpc.ignorePaths (Default Value): 
+topology.logging.requestFilter.grpc.ignoreStatusCodes (Default Value): 
+topology.logging.requestFilter.http.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.http.ignorePaths (Default Value): 
+topology.logging.requestFilter.http.ignoreStatusCodes (Default Value): 
+topology.metrics.enabled (Default Value): false
+topology.metrics.exclude (Default Value): 
+topology.metrics.intervalSecs (Default Value): 60
+topology.metrics.logPeriodically (Default Value): true
+topology.metrics.numberServicesCacheTimeoutSecs (Default Value): 600
+topology.multiTenant.parallelMigrationsCount (Default Value): 0
+topology.newrelic.enabled (Default Value): false
+topology.newrelic.environment (Default Value): devel
+topology.newrelic.licenseKey (Default Value): *****
+topology.newrelic.logLevel (Default Value): off
+topology.newrelic.namespace (Default Value): devel
+topology.port (Default Value): 8020
+topology.routerHost (Default Value): localhost
+topology.security.exposeApplicationHeaders (Default Value): false
+topology.tomcat.config (Default Value): 
+2025-06-06T05:27:54.592Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T05:27:54.608Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T05:27:56.149Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:44       ] [main                ] - Starting gRPC Server on port 8021
+2025-06-06T05:27:57.163Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T05:27:57.164Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T05:27:57.630Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:66       ] [main                ] - gRPC Server started, listening on 8021
+2025-06-06T05:27:57.639Z [jftpl] [INFO ] [                ] [c.j.t.s.m.MetricsService:47   ] [main                ] - Metrics Framework Service is disabled
+2025-06-06T05:28:23.988Z [jftpl] [WARN ] [8d90c23b251851ea] [.SingleTenantContextService:52] [topology-scheduler-1] - Database health check failed: The connection attempt failed. org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:364)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.jfrog.storage.wrapper.JFrogDataSourceWrapper.getConnection(JFrogDataSourceWrapper.java:104)
+	at org.jfrog.storage.wrapper.JFrogDataSourceWrapper.invoke(JFrogDataSourceWrapper.java:73)
+	at jdk.proxy2/jdk.proxy2.$Proxy77.getConnection(Unknown Source)
+	at com.jfrog.topology.server.singletenant.SingleTenantContextService.isReady(SingleTenantContextService.java:48)
+	at com.jfrog.topology.server.system.HealthCheckRunner.run(HealthCheckRunner.java:33)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	... 23 common frames omitted
+
+2025-06-06T05:28:23.993Z [jftpl] [WARN ] [8d90c23b251851ea] [c.j.t.s.s.HealthCheckRunner:42] [topology-scheduler-1] - Service node is unhealthy
+2025-06-06T05:28:45.011Z [jftpl] [WARN ] [81be8708c462a795] [.SingleTenantContextService:52] [topology-scheduler-2] - Database health check failed: The connection attempt failed. org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:364)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.jfrog.storage.wrapper.JFrogDataSourceWrapper.getConnection(JFrogDataSourceWrapper.java:104)
+	at org.jfrog.storage.wrapper.JFrogDataSourceWrapper.invoke(JFrogDataSourceWrapper.java:73)
+	at jdk.proxy2/jdk.proxy2.$Proxy77.getConnection(Unknown Source)
+	at com.jfrog.topology.server.singletenant.SingleTenantContextService.isReady(SingleTenantContextService.java:48)
+	at com.jfrog.topology.server.system.HealthCheckRunner.run(HealthCheckRunner.java:33)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	... 23 common frames omitted
+
+2025-06-06T05:28:45.018Z [jftpl] [WARN ] [81be8708c462a795] [c.j.t.s.s.HealthCheckRunner:42] [topology-scheduler-2] - Service node is unhealthy
+2025-06-06T05:29:06.062Z [jftpl] [WARN ] [55c56c322472ab0d] [.SingleTenantContextService:52] [topology-scheduler-2] - Database health check failed: The connection attempt failed. org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:364)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.jfrog.storage.wrapper.JFrogDataSourceWrapper.getConnection(JFrogDataSourceWrapper.java:104)
+	at org.jfrog.storage.wrapper.JFrogDataSourceWrapper.invoke(JFrogDataSourceWrapper.java:73)
+	at jdk.proxy2/jdk.proxy2.$Proxy77.getConnection(Unknown Source)
+	at com.jfrog.topology.server.singletenant.SingleTenantContextService.isReady(SingleTenantContextService.java:48)
+	at com.jfrog.topology.server.system.HealthCheckRunner.run(HealthCheckRunner.java:33)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	... 23 common frames omitted
+
+2025-06-06T05:29:06.072Z [jftpl] [WARN ] [55c56c322472ab0d] [c.j.t.s.s.HealthCheckRunner:42] [topology-scheduler-2] - Service node is unhealthy
+2025-06-06T05:29:27.087Z [jftpl] [WARN ] [a0280570e4c41c1c] [.SingleTenantContextService:52] [topology-scheduler-2] - Database health check failed: The connection attempt failed. org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:364)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.jfrog.storage.wrapper.JFrogDataSourceWrapper.getConnection(JFrogDataSourceWrapper.java:104)
+	at org.jfrog.storage.wrapper.JFrogDataSourceWrapper.invoke(JFrogDataSourceWrapper.java:73)
+	at jdk.proxy2/jdk.proxy2.$Proxy77.getConnection(Unknown Source)
+	at com.jfrog.topology.server.singletenant.SingleTenantContextService.isReady(SingleTenantContextService.java:48)
+	at com.jfrog.topology.server.system.HealthCheckRunner.run(HealthCheckRunner.java:33)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	... 23 common frames omitted
+
+2025-06-06T05:29:27.095Z [jftpl] [WARN ] [a0280570e4c41c1c] [c.j.t.s.s.HealthCheckRunner:42] [topology-scheduler-2] - Service node is unhealthy
+2025-06-06T05:29:48.257Z [jftpl] [WARN ] [7dfd445619fafa4c] [.SingleTenantContextService:52] [topology-scheduler-2] - Database health check failed: The connection attempt failed. org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:364)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.jfrog.storage.wrapper.JFrogDataSourceWrapper.getConnection(JFrogDataSourceWrapper.java:104)
+	at org.jfrog.storage.wrapper.JFrogDataSourceWrapper.invoke(JFrogDataSourceWrapper.java:73)
+	at jdk.proxy2/jdk.proxy2.$Proxy77.getConnection(Unknown Source)
+	at com.jfrog.topology.server.singletenant.SingleTenantContextService.isReady(SingleTenantContextService.java:48)
+	at com.jfrog.topology.server.system.HealthCheckRunner.run(HealthCheckRunner.java:33)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	... 23 common frames omitted
+
+2025-06-06T05:29:48.259Z [jftpl] [WARN ] [7dfd445619fafa4c] [c.j.t.s.s.HealthCheckRunner:42] [topology-scheduler-2] - Service node is unhealthy
+2025-06-06T05:30:03.753Z [jftpl] [WARN ] [                ] [eTenantMasterKeyInitializer:21] [main                ] - Error resolving the master key. Check that Access started successfully and verify the database configuration. https://jfrog.com/help/r/jfrog-installation-setup-documentation/database-configuration
+2025-06-06T05:30:03.778Z [jftpl] [WARN ] [                ] [ebServerApplicationContext:635] [main                ] - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalStateException: Failed resolving MasterKey key; Missing MasterKey key
+2025-06-06T05:30:04.389Z [jftpl] [ERROR] [                ] [o.s.b.SpringApplication:857   ] [main                ] - Application run failedjava.lang.IllegalStateException: Failed resolving MasterKey key; Missing MasterKey key
+	at org.jfrog.security.common.KeyUtils.keyResolutionFailure(KeyUtils.java:152)
+	at org.jfrog.security.common.KeyUtils.waitForKey(KeyUtils.java:81)
+	at com.jfrog.topology.server.singletenant.SingleTenantMasterKeyInitializer.init(SingleTenantMasterKeyInitializer.java:17)
+	at com.jfrog.topology.server.TopologyStartupListener.initializeMasterKey(TopologyStartupListener.java:47)
+	at com.jfrog.topology.server.TopologyStartupListener.afterStartup(TopologyStartupListener.java:38)
+	at com.jfrog.topology.server.TopologyStartupListener.onApplicationEvent(TopologyStartupListener.java:31)
+	at com.jfrog.topology.server.TopologyStartupListener.onApplicationEvent(TopologyStartupListener.java:20)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1009)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at com.jfrog.topology.server.TopologyApplication.main(TopologyApplication.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+	at org.springframework.boot.loader.launch.FipsModeWarLauncher.main(FipsModeWarLauncher.java:73)
+
+2025-06-06T05:30:04.395Z [jftpl] [ERROR] [                ] [c.j.t.s.TopologyApplication:36] [main                ] - Fatal error during startup: Failed resolving MasterKey key; Missing MasterKey key. Exit now!java.lang.IllegalStateException: Failed resolving MasterKey key; Missing MasterKey key
+	at org.jfrog.security.common.KeyUtils.keyResolutionFailure(KeyUtils.java:152)
+	at org.jfrog.security.common.KeyUtils.waitForKey(KeyUtils.java:81)
+	at com.jfrog.topology.server.singletenant.SingleTenantMasterKeyInitializer.init(SingleTenantMasterKeyInitializer.java:17)
+	at com.jfrog.topology.server.TopologyStartupListener.initializeMasterKey(TopologyStartupListener.java:47)
+	at com.jfrog.topology.server.TopologyStartupListener.afterStartup(TopologyStartupListener.java:38)
+	at com.jfrog.topology.server.TopologyStartupListener.onApplicationEvent(TopologyStartupListener.java:31)
+	at com.jfrog.topology.server.TopologyStartupListener.onApplicationEvent(TopologyStartupListener.java:20)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1009)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at com.jfrog.topology.server.TopologyApplication.main(TopologyApplication.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+	at org.springframework.boot.loader.launch.FipsModeWarLauncher.main(FipsModeWarLauncher.java:73)
+
+2025-06-06T05:37:49.272Z [jftpl] [INFO ] [                ] [plicationContextInitializer:82] [main                ] - topology (jftpl) service initialization started. Version: 1.92.3 Revision: 19203900 PID: 7252 Home: /opt/jfrog/artifactory
+2025-06-06T05:37:49.290Z [jftpl] [INFO ] [                ] [plicationContextInitializer:38] [main                ] - Topology service deployment type: OnPrem
+2025-06-06T05:37:49.343Z [jftpl] [INFO ] [                ] [plicationContextInitializer:52] [main                ] - fips.mode (Default Value): none
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://host.docker.internal:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.logging.enableJsonConsoleLogAppenders (Default Value): false
+shared.multiTenant.enabled (Default Value): false
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): 3279034a9346
+shared.runtime.isSaas (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+topology.accessClient.connectionTimeoutSecs (Default Value): 5
+topology.accessClient.insecure (Default Value): false
+topology.accessClient.maxJoinRetries (Default Value): 90
+topology.accessClient.providerCacheTimeoutSecs (Default Value): 10800
+topology.accessClient.serverBypassMaxJoinRetries (Default Value): 5
+topology.accessClient.serverBypassUrl (Default Value): 
+topology.accessClient.socketTimeoutSecs (Default Value): 45
+topology.accessClient.versionCacheExpirationSecs (Default Value): 120
+topology.accessClient.waitJoinMillis (Default Value): 1000
+topology.cleanup.staleNodeInitialDelaySecs (Default Value): 3600
+topology.cleanup.staleNodeIntervalSecs (Default Value): 3600
+topology.cleanup.staleNodeThresholdSecs (Default Value): 604800
+topology.database.maxOpenConnections (Default Value): 100
+topology.database.maxWait (Default Value): 30000
+topology.database.metrics.enabled (Default Value): false
+topology.database.migrationRetry.backoff (Default Value): 1.5
+topology.database.migrationRetry.initialDelayMillis (Default Value): 2000
+topology.database.migrationRetry.maxIntervalSecs (Default Value): 900
+topology.database.timeoutSecs (Default Value): 600
+topology.grpc.maxInboundMetadataSize (Default Value): 8192
+topology.grpc.port (Default Value): 8021
+topology.healthCheck.initialDelaySecs (Default Value): 15
+topology.healthCheck.intervalSecs (Default Value): 10
+topology.healthCheck.tenantCacheExpirationSecs (Default Value): 30
+topology.kubernetesFetcher.cacheTimeoutSecs (Default Value): 120
+topology.kubernetesFetcher.clientTimeoutSecs (Default Value): 10
+topology.kubernetesFetcher.enabled (Default Value): false
+topology.logging.requestFilter.enabled (Default Value): false
+topology.logging.requestFilter.grpc.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.grpc.ignorePaths (Default Value): 
+topology.logging.requestFilter.grpc.ignoreStatusCodes (Default Value): 
+topology.logging.requestFilter.http.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.http.ignorePaths (Default Value): 
+topology.logging.requestFilter.http.ignoreStatusCodes (Default Value): 
+topology.metrics.enabled (Default Value): false
+topology.metrics.exclude (Default Value): 
+topology.metrics.intervalSecs (Default Value): 60
+topology.metrics.logPeriodically (Default Value): true
+topology.metrics.numberServicesCacheTimeoutSecs (Default Value): 600
+topology.multiTenant.parallelMigrationsCount (Default Value): 0
+topology.newrelic.enabled (Default Value): false
+topology.newrelic.environment (Default Value): devel
+topology.newrelic.licenseKey (Default Value): *****
+topology.newrelic.logLevel (Default Value): off
+topology.newrelic.namespace (Default Value): devel
+topology.port (Default Value): 8020
+topology.routerHost (Default Value): localhost
+topology.security.exposeApplicationHeaders (Default Value): false
+topology.tomcat.config (Default Value): 
+2025-06-06T05:37:56.443Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T05:37:56.461Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T05:37:57.635Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:44       ] [main                ] - Starting gRPC Server on port 8021
+2025-06-06T05:37:58.022Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T05:37:58.023Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T05:37:58.479Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:66       ] [main                ] - gRPC Server started, listening on 8021
+2025-06-06T05:37:58.490Z [jftpl] [INFO ] [                ] [c.j.t.s.m.MetricsService:47   ] [main                ] - Metrics Framework Service is disabled
+2025-06-06T05:38:11.726Z [jftpl] [WARN ] [                ] [ebServerApplicationContext:635] [main                ] - Exception encountered during context initialization - cancelling refresh attempt: com.jfrog.topology.server.changelogs.DatabaseMigrationException: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+
+2025-06-06T05:38:11.889Z [jftpl] [ERROR] [                ] [o.s.b.SpringApplication:857   ] [main                ] - Application run failedcom.jfrog.topology.server.changelogs.DatabaseMigrationException: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+
+	at com.jfrog.topology.server.changelogs.SingleTenantMigrationExecutor.executeOnStartup(SingleTenantMigrationExecutor.java:43)
+	at com.jfrog.topology.server.TopologyStartupListener.afterStartup(TopologyStartupListener.java:40)
+	at com.jfrog.topology.server.TopologyStartupListener.onApplicationEvent(TopologyStartupListener.java:31)
+	at com.jfrog.topology.server.TopologyStartupListener.onApplicationEvent(TopologyStartupListener.java:20)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1009)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at com.jfrog.topology.server.TopologyApplication.main(TopologyApplication.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+	at org.springframework.boot.loader.launch.FipsModeWarLauncher.main(FipsModeWarLauncher.java:73)
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:71)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:76)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:137)
+	at org.flywaydb.core.Flyway.info(Flyway.java:262)
+	at org.jfrog.storage.util.DbUtils.isCleanInstall(DbUtils.java:852)
+	at org.jfrog.storage.util.DbUtils.assertAllowedDbType(DbUtils.java:872)
+	at org.jfrog.storage.util.migration.MigrationUtil.initSchemas(MigrationUtil.java:101)
+	at com.jfrog.topology.server.changelogs.SingleTenantMigrationExecutor.executeOnStartup(SingleTenantMigrationExecutor.java:38)
+	... 20 common frames omitted
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:364)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.jfrog.storage.wrapper.JFrogDataSourceWrapper.getConnection(JFrogDataSourceWrapper.java:104)
+	at org.jfrog.storage.wrapper.JFrogDataSourceWrapper.invoke(JFrogDataSourceWrapper.java:73)
+	at jdk.proxy2/jdk.proxy2.$Proxy77.getConnection(Unknown Source)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:59)
+	... 27 common frames omitted
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	... 42 common frames omitted
+
+2025-06-06T05:38:11.898Z [jftpl] [ERROR] [                ] [c.j.t.s.TopologyApplication:36] [main                ] - Fatal error during startup: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+. Exit now!com.jfrog.topology.server.changelogs.DatabaseMigrationException: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+
+	at com.jfrog.topology.server.changelogs.SingleTenantMigrationExecutor.executeOnStartup(SingleTenantMigrationExecutor.java:43)
+	at com.jfrog.topology.server.TopologyStartupListener.afterStartup(TopologyStartupListener.java:40)
+	at com.jfrog.topology.server.TopologyStartupListener.onApplicationEvent(TopologyStartupListener.java:31)
+	at com.jfrog.topology.server.TopologyStartupListener.onApplicationEvent(TopologyStartupListener.java:20)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1009)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at com.jfrog.topology.server.TopologyApplication.main(TopologyApplication.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)
+	at org.springframework.boot.loader.launch.FipsModeWarLauncher.main(FipsModeWarLauncher.java:73)
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: The connection attempt failed.
+-------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : The connection attempt failed.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:71)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:76)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:137)
+	at org.flywaydb.core.Flyway.info(Flyway.java:262)
+	at org.jfrog.storage.util.DbUtils.isCleanInstall(DbUtils.java:852)
+	at org.jfrog.storage.util.DbUtils.assertAllowedDbType(DbUtils.java:872)
+	at org.jfrog.storage.util.migration.MigrationUtil.initSchemas(MigrationUtil.java:101)
+	at com.jfrog.topology.server.changelogs.SingleTenantMigrationExecutor.executeOnStartup(SingleTenantMigrationExecutor.java:38)
+	... 20 common frames omitted
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:364)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.jfrog.storage.wrapper.JFrogDataSourceWrapper.getConnection(JFrogDataSourceWrapper.java:104)
+	at org.jfrog.storage.wrapper.JFrogDataSourceWrapper.invoke(JFrogDataSourceWrapper.java:73)
+	at jdk.proxy2/jdk.proxy2.$Proxy77.getConnection(Unknown Source)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:59)
+	... 27 common frames omitted
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	... 42 common frames omitted
+
+2025-06-06T05:47:27.526Z [jftpl] [INFO ] [                ] [plicationContextInitializer:82] [main                ] - topology (jftpl) service initialization started. Version: 1.92.3 Revision: 19203900 PID: 8526 Home: /opt/jfrog/artifactory
+2025-06-06T05:47:27.757Z [jftpl] [INFO ] [                ] [plicationContextInitializer:38] [main                ] - Topology service deployment type: OnPrem
+2025-06-06T05:47:28.039Z [jftpl] [INFO ] [                ] [plicationContextInitializer:52] [main                ] - fips.mode (Default Value): none
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.logging.enableJsonConsoleLogAppenders (Default Value): false
+shared.multiTenant.enabled (Default Value): false
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.runtime.isSaas (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+topology.accessClient.connectionTimeoutSecs (Default Value): 5
+topology.accessClient.insecure (Default Value): false
+topology.accessClient.maxJoinRetries (Default Value): 90
+topology.accessClient.providerCacheTimeoutSecs (Default Value): 10800
+topology.accessClient.serverBypassMaxJoinRetries (Default Value): 5
+topology.accessClient.serverBypassUrl (Default Value): 
+topology.accessClient.socketTimeoutSecs (Default Value): 45
+topology.accessClient.versionCacheExpirationSecs (Default Value): 120
+topology.accessClient.waitJoinMillis (Default Value): 1000
+topology.cleanup.staleNodeInitialDelaySecs (Default Value): 3600
+topology.cleanup.staleNodeIntervalSecs (Default Value): 3600
+topology.cleanup.staleNodeThresholdSecs (Default Value): 604800
+topology.database.maxOpenConnections (Default Value): 100
+topology.database.maxWait (Default Value): 30000
+topology.database.metrics.enabled (Default Value): false
+topology.database.migrationRetry.backoff (Default Value): 1.5
+topology.database.migrationRetry.initialDelayMillis (Default Value): 2000
+topology.database.migrationRetry.maxIntervalSecs (Default Value): 900
+topology.database.timeoutSecs (Default Value): 600
+topology.grpc.maxInboundMetadataSize (Default Value): 8192
+topology.grpc.port (Default Value): 8021
+topology.healthCheck.initialDelaySecs (Default Value): 15
+topology.healthCheck.intervalSecs (Default Value): 10
+topology.healthCheck.tenantCacheExpirationSecs (Default Value): 30
+topology.kubernetesFetcher.cacheTimeoutSecs (Default Value): 120
+topology.kubernetesFetcher.clientTimeoutSecs (Default Value): 10
+topology.kubernetesFetcher.enabled (Default Value): false
+topology.logging.requestFilter.enabled (Default Value): false
+topology.logging.requestFilter.grpc.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.grpc.ignorePaths (Default Value): 
+topology.logging.requestFilter.grpc.ignoreStatusCodes (Default Value): 
+topology.logging.requestFilter.http.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.http.ignorePaths (Default Value): 
+topology.logging.requestFilter.http.ignoreStatusCodes (Default Value): 
+topology.metrics.enabled (Default Value): false
+topology.metrics.exclude (Default Value): 
+topology.metrics.intervalSecs (Default Value): 60
+topology.metrics.logPeriodically (Default Value): true
+topology.metrics.numberServicesCacheTimeoutSecs (Default Value): 600
+topology.multiTenant.parallelMigrationsCount (Default Value): 0
+topology.newrelic.enabled (Default Value): false
+topology.newrelic.environment (Default Value): devel
+topology.newrelic.licenseKey (Default Value): *****
+topology.newrelic.logLevel (Default Value): off
+topology.newrelic.namespace (Default Value): devel
+topology.port (Default Value): 8020
+topology.routerHost (Default Value): localhost
+topology.security.exposeApplicationHeaders (Default Value): false
+topology.tomcat.config (Default Value): 
+2025-06-06T05:47:55.951Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T05:47:55.969Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T05:47:58.012Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:44       ] [main                ] - Starting gRPC Server on port 8021
+2025-06-06T05:47:58.771Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T05:47:58.772Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T05:47:59.535Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:66       ] [main                ] - gRPC Server started, listening on 8021
+2025-06-06T05:47:59.557Z [jftpl] [INFO ] [                ] [c.j.t.s.m.MetricsService:47   ] [main                ] - Metrics Framework Service is disabled
+2025-06-06T05:48:08.174Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:62    ] [main                ] - Database migration started
+2025-06-06T05:48:08.246Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:70    ] [main                ] - Latest pending Flyway changelog: 1.2
+2025-06-06T05:48:08.309Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:73    ] [main                ] - Current Flyway changelog: none
+2025-06-06T05:48:08.310Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:75    ] [main                ] - Database migration in progress...
+2025-06-06T05:48:08.820Z [jftpl] [INFO ] [                ] [c.j.t.s.c.MigrationCallback:24] [main                ] - Applying changelog: 1.0 (Initial Schema)
+2025-06-06T05:48:09.081Z [jftpl] [INFO ] [                ] [c.j.t.s.c.MigrationCallback:25] [main                ] - Applied changelog: 1.0 (Initial Schema)
+2025-06-06T05:48:09.156Z [jftpl] [INFO ] [                ] [c.j.t.s.c.MigrationCallback:24] [main                ] - Applying changelog: 1.1 (Create ServiceId)
+2025-06-06T05:48:09.169Z [jftpl] [INFO ] [                ] [c.j.t.s.c.MigrationCallback:25] [main                ] - Applied changelog: 1.1 (Create ServiceId)
+2025-06-06T05:48:09.202Z [jftpl] [INFO ] [                ] [c.j.t.s.c.MigrationCallback:24] [main                ] - Applying changelog: 1.2 (Add Availability Zone id)
+2025-06-06T05:48:09.221Z [jftpl] [INFO ] [                ] [c.j.t.s.c.MigrationCallback:25] [main                ] - Applied changelog: 1.2 (Add Availability Zone id)
+2025-06-06T05:48:09.546Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:80    ] [main                ] - Current Flyway changelog: 1.2
+2025-06-06T05:48:09.547Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:82    ] [main                ] - Database migration done
+2025-06-06T05:48:09.574Z [jftpl] [INFO ] [                ] [t.s.TopologyStartupListener:42] [main                ] - topology (jftpl) service initialization completed in 49.727 seconds. Listening on port: 8020
+2025-06-06T05:48:14.640Z [jftpl] [INFO ] [fcf7a9985084e464] [c.j.t.s.s.HealthCheckRunner:37] [topology-scheduler-1] - Service node has become healthy
+2025-06-06T05:48:55.579Z [jftpl] [INFO ] [55a62b8fcaec0711] [.TenantAccessClientProvider:95] [c-default-executor-0] - Scheduling Access join...
+2025-06-06T05:48:55.629Z [jftpl] [INFO ] [55a62b8fcaec0711] [c.j.t.s.a.AccessJoiner:40     ] [jf-common-pool-0    ] - Beginning Access join...
+2025-06-06T05:48:56.689Z [jftpl] [WARN ] [55a62b8fcaec0711] [enAuthenticationInterceptor:44] [c-default-executor-0] - Service is not ready: Timed out waiting for Access Join, please try again later
+2025-06-06T05:48:58.620Z [jftpl] [INFO ] [55a62b8fcaec0711] [.a.c.AccessClientBootstrap:179] [jf-common-pool-0    ] - Cluster join: Executing join on 'http://localhost:8046/access'
+2025-06-06T05:48:58.904Z [jftpl] [INFO ] [55a62b8fcaec0711] [.a.c.AccessClientBootstrap:190] [jf-common-pool-0    ] - Cluster join: Successfully joined the cluster
+2025-06-06T05:48:58.906Z [jftpl] [INFO ] [55a62b8fcaec0711] [c.j.t.s.a.AccessJoiner:50     ] [jf-common-pool-0    ] - Successfully joined Access
+2025-06-06T05:51:48.009Z [jftpl] [WARN ] [03e764068f368f46] [.RpcServiceRegistryResource:85] [c-default-executor-0] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
+2025-06-06T05:54:05.867Z [jftpl] [WARN ] [6954a41b657aab35] [.RpcServiceRegistryResource:85] [c-default-executor-1] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
+2025-06-06T05:57:37.479Z [jftpl] [WARN ] [4e5b64cfb34c3164] [.RpcServiceRegistryResource:85] [c-default-executor-1] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
+2025-06-06T06:04:18.660Z [jftpl] [WARN ] [79ca9081027ecc8a] [.RpcServiceRegistryResource:85] [c-default-executor-4] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
+2025-06-06T06:04:30.463Z [jftpl] [WARN ] [6bc7fa9a01d52274] [.RpcServiceRegistryResource:85] [c-default-executor-5] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
+2025-06-06T06:09:25.964Z [jftpl] [WARN ] [1e5009b74eafcf3e] [.RpcServiceRegistryResource:85] [c-default-executor-6] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
+2025-06-06T06:11:29.895Z [jftpl] [WARN ] [2901ab905f64ce1a] [.RpcServiceRegistryResource:85] [c-default-executor-7] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
+2025-06-06T06:18:33.434Z [jftpl] [WARN ] [1008ba10be0fa853] [.RpcServiceRegistryResource:85] [c-default-executor-7] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
+2025-06-06T06:18:39.540Z [jftpl] [WARN ] [6df28d4bbe729d47] [.RpcServiceRegistryResource:85] [-default-executor-10] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
+2025-06-06T06:23:31.373Z [jftpl] [INFO ] [                ] [plicationContextInitializer:82] [main                ] - topology (jftpl) service initialization started. Version: 1.92.3 Revision: 19203900 PID: 6869 Home: /opt/jfrog/artifactory
+2025-06-06T06:23:31.388Z [jftpl] [INFO ] [                ] [plicationContextInitializer:38] [main                ] - Topology service deployment type: OnPrem
+2025-06-06T06:23:31.461Z [jftpl] [INFO ] [                ] [plicationContextInitializer:52] [main                ] - fips.mode (Default Value): none
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.logging.enableJsonConsoleLogAppenders (Default Value): false
+shared.multiTenant.enabled (Default Value): false
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.runtime.isSaas (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+topology.accessClient.connectionTimeoutSecs (Default Value): 5
+topology.accessClient.insecure (Default Value): false
+topology.accessClient.maxJoinRetries (Default Value): 90
+topology.accessClient.providerCacheTimeoutSecs (Default Value): 10800
+topology.accessClient.serverBypassMaxJoinRetries (Default Value): 5
+topology.accessClient.serverBypassUrl (Default Value): 
+topology.accessClient.socketTimeoutSecs (Default Value): 45
+topology.accessClient.versionCacheExpirationSecs (Default Value): 120
+topology.accessClient.waitJoinMillis (Default Value): 1000
+topology.cleanup.staleNodeInitialDelaySecs (Default Value): 3600
+topology.cleanup.staleNodeIntervalSecs (Default Value): 3600
+topology.cleanup.staleNodeThresholdSecs (Default Value): 604800
+topology.database.maxOpenConnections (Default Value): 100
+topology.database.maxWait (Default Value): 30000
+topology.database.metrics.enabled (Default Value): false
+topology.database.migrationRetry.backoff (Default Value): 1.5
+topology.database.migrationRetry.initialDelayMillis (Default Value): 2000
+topology.database.migrationRetry.maxIntervalSecs (Default Value): 900
+topology.database.timeoutSecs (Default Value): 600
+topology.grpc.maxInboundMetadataSize (Default Value): 8192
+topology.grpc.port (Default Value): 8021
+topology.healthCheck.initialDelaySecs (Default Value): 15
+topology.healthCheck.intervalSecs (Default Value): 10
+topology.healthCheck.tenantCacheExpirationSecs (Default Value): 30
+topology.kubernetesFetcher.cacheTimeoutSecs (Default Value): 120
+topology.kubernetesFetcher.clientTimeoutSecs (Default Value): 10
+topology.kubernetesFetcher.enabled (Default Value): false
+topology.logging.requestFilter.enabled (Default Value): false
+topology.logging.requestFilter.grpc.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.grpc.ignorePaths (Default Value): 
+topology.logging.requestFilter.grpc.ignoreStatusCodes (Default Value): 
+topology.logging.requestFilter.http.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.http.ignorePaths (Default Value): 
+topology.logging.requestFilter.http.ignoreStatusCodes (Default Value): 
+topology.metrics.enabled (Default Value): false
+topology.metrics.exclude (Default Value): 
+topology.metrics.intervalSecs (Default Value): 60
+topology.metrics.logPeriodically (Default Value): true
+topology.metrics.numberServicesCacheTimeoutSecs (Default Value): 600
+topology.multiTenant.parallelMigrationsCount (Default Value): 0
+topology.newrelic.enabled (Default Value): false
+topology.newrelic.environment (Default Value): devel
+topology.newrelic.licenseKey (Default Value): *****
+topology.newrelic.logLevel (Default Value): off
+topology.newrelic.namespace (Default Value): devel
+topology.port (Default Value): 8020
+topology.routerHost (Default Value): localhost
+topology.security.exposeApplicationHeaders (Default Value): false
+topology.tomcat.config (Default Value): 
+2025-06-06T06:23:39.758Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T06:23:39.773Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T06:23:42.244Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:44       ] [main                ] - Starting gRPC Server on port 8021
+2025-06-06T06:23:42.805Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T06:23:42.813Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T06:23:43.762Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:66       ] [main                ] - gRPC Server started, listening on 8021
+2025-06-06T06:23:43.779Z [jftpl] [INFO ] [                ] [c.j.t.s.m.MetricsService:47   ] [main                ] - Metrics Framework Service is disabled
+2025-06-06T06:23:49.299Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:62    ] [main                ] - Database migration started
+2025-06-06T06:23:49.402Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:70    ] [main                ] - Latest pending Flyway changelog: none
+2025-06-06T06:23:49.457Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:73    ] [main                ] - Current Flyway changelog: 1.2
+2025-06-06T06:23:49.458Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:75    ] [main                ] - Database migration in progress...
+2025-06-06T06:23:49.678Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:80    ] [main                ] - Current Flyway changelog: 1.2
+2025-06-06T06:23:49.679Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:82    ] [main                ] - Database migration done
+2025-06-06T06:23:49.685Z [jftpl] [INFO ] [                ] [t.s.TopologyStartupListener:42] [main                ] - topology (jftpl) service initialization completed in 26.857 seconds. Listening on port: 8020
+2025-06-06T06:23:58.844Z [jftpl] [INFO ] [3c76b59dbcdc7270] [c.j.t.s.s.HealthCheckRunner:37] [topology-scheduler-1] - Service node has become healthy
+2025-06-06T06:24:32.404Z [jftpl] [INFO ] [5fcace5cb6c42f7a] [.TenantAccessClientProvider:95] [c-default-executor-0] - Scheduling Access join...
+2025-06-06T06:24:32.614Z [jftpl] [INFO ] [5fcace5cb6c42f7a] [c.j.t.s.a.AccessJoiner:40     ] [jf-common-pool-0    ] - Beginning Access join...
+2025-06-06T06:24:33.608Z [jftpl] [WARN ] [5fcace5cb6c42f7a] [enAuthenticationInterceptor:44] [c-default-executor-0] - Service is not ready: Timed out waiting for Access Join, please try again later
+2025-06-06T06:24:46.202Z [jftpl] [WARN ] [2368b0c650c4d996] [enAuthenticationInterceptor:44] [c-default-executor-0] - Service is not ready: Timed out waiting for Access Join, please try again later
+2025-06-06T06:24:47.587Z [jftpl] [INFO ] [5fcace5cb6c42f7a] [.a.c.AccessClientBootstrap:179] [jf-common-pool-0    ] - Cluster join: Executing join on 'http://localhost:8046/access'
+2025-06-06T06:24:48.534Z [jftpl] [INFO ] [5fcace5cb6c42f7a] [.a.c.AccessClientBootstrap:190] [jf-common-pool-0    ] - Cluster join: Successfully joined the cluster
+2025-06-06T06:24:48.535Z [jftpl] [INFO ] [5fcace5cb6c42f7a] [c.j.t.s.a.AccessJoiner:50     ] [jf-common-pool-0    ] - Successfully joined Access
+2025-06-06T06:26:15.914Z [jftpl] [WARN ] [1e0a787c97574676] [.RpcServiceRegistryResource:85] [c-default-executor-0] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
+2025-06-06T06:26:29.630Z [jftpl] [WARN ] [34a20261b4572f27] [.RpcServiceRegistryResource:85] [c-default-executor-2] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
+2025-06-06T06:28:45.432Z [jftpl] [WARN ] [16d2a0183aeb2e26] [.RpcServiceRegistryResource:85] [c-default-executor-3] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
+2025-06-06T06:29:39.343Z [jftpl] [WARN ] [436af1ec1f44d6db] [.RpcServiceRegistryResource:85] [c-default-executor-0] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
+2025-06-06T06:29:57.257Z [jftpl] [WARN ] [2576c97e38431e16] [.RpcServiceRegistryResource:85] [c-default-executor-0] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
+2025-06-06T11:46:25.984Z [jftpl] [INFO ] [                ] [plicationContextInitializer:82] [main                ] - topology (jftpl) service initialization started. Version: 1.92.3 Revision: 19203900 PID: 8539 Home: /opt/jfrog/artifactory
+2025-06-06T11:46:25.999Z [jftpl] [INFO ] [                ] [plicationContextInitializer:38] [main                ] - Topology service deployment type: OnPrem
+2025-06-06T11:46:26.094Z [jftpl] [INFO ] [                ] [plicationContextInitializer:52] [main                ] - fips.mode (Default Value): none
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.logging.enableJsonConsoleLogAppenders (Default Value): false
+shared.multiTenant.enabled (Default Value): false
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.runtime.isSaas (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+topology.accessClient.connectionTimeoutSecs (Default Value): 5
+topology.accessClient.insecure (Default Value): false
+topology.accessClient.maxJoinRetries (Default Value): 90
+topology.accessClient.providerCacheTimeoutSecs (Default Value): 10800
+topology.accessClient.serverBypassMaxJoinRetries (Default Value): 5
+topology.accessClient.serverBypassUrl (Default Value): 
+topology.accessClient.socketTimeoutSecs (Default Value): 45
+topology.accessClient.versionCacheExpirationSecs (Default Value): 120
+topology.accessClient.waitJoinMillis (Default Value): 1000
+topology.cleanup.staleNodeInitialDelaySecs (Default Value): 3600
+topology.cleanup.staleNodeIntervalSecs (Default Value): 3600
+topology.cleanup.staleNodeThresholdSecs (Default Value): 604800
+topology.database.maxOpenConnections (Default Value): 100
+topology.database.maxWait (Default Value): 30000
+topology.database.metrics.enabled (Default Value): false
+topology.database.migrationRetry.backoff (Default Value): 1.5
+topology.database.migrationRetry.initialDelayMillis (Default Value): 2000
+topology.database.migrationRetry.maxIntervalSecs (Default Value): 900
+topology.database.timeoutSecs (Default Value): 600
+topology.grpc.maxInboundMetadataSize (Default Value): 8192
+topology.grpc.port (Default Value): 8021
+topology.healthCheck.initialDelaySecs (Default Value): 15
+topology.healthCheck.intervalSecs (Default Value): 10
+topology.healthCheck.tenantCacheExpirationSecs (Default Value): 30
+topology.kubernetesFetcher.cacheTimeoutSecs (Default Value): 120
+topology.kubernetesFetcher.clientTimeoutSecs (Default Value): 10
+topology.kubernetesFetcher.enabled (Default Value): false
+topology.logging.requestFilter.enabled (Default Value): false
+topology.logging.requestFilter.grpc.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.grpc.ignorePaths (Default Value): 
+topology.logging.requestFilter.grpc.ignoreStatusCodes (Default Value): 
+topology.logging.requestFilter.http.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.http.ignorePaths (Default Value): 
+topology.logging.requestFilter.http.ignoreStatusCodes (Default Value): 
+topology.metrics.enabled (Default Value): false
+topology.metrics.exclude (Default Value): 
+topology.metrics.intervalSecs (Default Value): 60
+topology.metrics.logPeriodically (Default Value): true
+topology.metrics.numberServicesCacheTimeoutSecs (Default Value): 600
+topology.multiTenant.parallelMigrationsCount (Default Value): 0
+topology.newrelic.enabled (Default Value): false
+topology.newrelic.environment (Default Value): devel
+topology.newrelic.licenseKey (Default Value): *****
+topology.newrelic.logLevel (Default Value): off
+topology.newrelic.namespace (Default Value): devel
+topology.port (Default Value): 8020
+topology.routerHost (Default Value): localhost
+topology.security.exposeApplicationHeaders (Default Value): false
+topology.tomcat.config (Default Value): 
+2025-06-06T11:46:35.319Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T11:46:35.328Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T11:46:36.761Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:44       ] [main                ] - Starting gRPC Server on port 8021
+2025-06-06T11:46:37.217Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T11:46:37.219Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T11:46:37.708Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:66       ] [main                ] - gRPC Server started, listening on 8021
+2025-06-06T11:46:37.726Z [jftpl] [INFO ] [                ] [c.j.t.s.m.MetricsService:47   ] [main                ] - Metrics Framework Service is disabled
+2025-06-06T11:46:41.728Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:62    ] [main                ] - Database migration started
+2025-06-06T11:46:41.821Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:70    ] [main                ] - Latest pending Flyway changelog: none
+2025-06-06T11:46:41.907Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:73    ] [main                ] - Current Flyway changelog: 1.2
+2025-06-06T11:46:41.908Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:75    ] [main                ] - Database migration in progress...
+2025-06-06T11:46:42.238Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:80    ] [main                ] - Current Flyway changelog: 1.2
+2025-06-06T11:46:42.239Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:82    ] [main                ] - Database migration done
+2025-06-06T11:46:42.243Z [jftpl] [INFO ] [                ] [t.s.TopologyStartupListener:42] [main                ] - topology (jftpl) service initialization completed in 23.589 seconds. Listening on port: 8020
+2025-06-06T11:46:52.787Z [jftpl] [INFO ] [c1043fc8beeb4d78] [c.j.t.s.s.HealthCheckRunner:37] [topology-scheduler-1] - Service node has become healthy
+2025-06-06T11:48:49.765Z [jftpl] [INFO ] [                ] [plicationContextInitializer:82] [main                ] - topology (jftpl) service initialization started. Version: 1.92.3 Revision: 19203900 PID: 8516 Home: /opt/jfrog/artifactory
+2025-06-06T11:48:49.775Z [jftpl] [INFO ] [                ] [plicationContextInitializer:38] [main                ] - Topology service deployment type: OnPrem
+2025-06-06T11:48:49.812Z [jftpl] [INFO ] [                ] [plicationContextInitializer:52] [main                ] - fips.mode (Default Value): none
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.logging.enableJsonConsoleLogAppenders (Default Value): false
+shared.multiTenant.enabled (Default Value): false
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.runtime.isSaas (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+topology.accessClient.connectionTimeoutSecs (Default Value): 5
+topology.accessClient.insecure (Default Value): false
+topology.accessClient.maxJoinRetries (Default Value): 90
+topology.accessClient.providerCacheTimeoutSecs (Default Value): 10800
+topology.accessClient.serverBypassMaxJoinRetries (Default Value): 5
+topology.accessClient.serverBypassUrl (Default Value): 
+topology.accessClient.socketTimeoutSecs (Default Value): 45
+topology.accessClient.versionCacheExpirationSecs (Default Value): 120
+topology.accessClient.waitJoinMillis (Default Value): 1000
+topology.cleanup.staleNodeInitialDelaySecs (Default Value): 3600
+topology.cleanup.staleNodeIntervalSecs (Default Value): 3600
+topology.cleanup.staleNodeThresholdSecs (Default Value): 604800
+topology.database.maxOpenConnections (Default Value): 100
+topology.database.maxWait (Default Value): 30000
+topology.database.metrics.enabled (Default Value): false
+topology.database.migrationRetry.backoff (Default Value): 1.5
+topology.database.migrationRetry.initialDelayMillis (Default Value): 2000
+topology.database.migrationRetry.maxIntervalSecs (Default Value): 900
+topology.database.timeoutSecs (Default Value): 600
+topology.grpc.maxInboundMetadataSize (Default Value): 8192
+topology.grpc.port (Default Value): 8021
+topology.healthCheck.initialDelaySecs (Default Value): 15
+topology.healthCheck.intervalSecs (Default Value): 10
+topology.healthCheck.tenantCacheExpirationSecs (Default Value): 30
+topology.kubernetesFetcher.cacheTimeoutSecs (Default Value): 120
+topology.kubernetesFetcher.clientTimeoutSecs (Default Value): 10
+topology.kubernetesFetcher.enabled (Default Value): false
+topology.logging.requestFilter.enabled (Default Value): false
+topology.logging.requestFilter.grpc.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.grpc.ignorePaths (Default Value): 
+topology.logging.requestFilter.grpc.ignoreStatusCodes (Default Value): 
+topology.logging.requestFilter.http.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.http.ignorePaths (Default Value): 
+topology.logging.requestFilter.http.ignoreStatusCodes (Default Value): 
+topology.metrics.enabled (Default Value): false
+topology.metrics.exclude (Default Value): 
+topology.metrics.intervalSecs (Default Value): 60
+topology.metrics.logPeriodically (Default Value): true
+topology.metrics.numberServicesCacheTimeoutSecs (Default Value): 600
+topology.multiTenant.parallelMigrationsCount (Default Value): 0
+topology.newrelic.enabled (Default Value): false
+topology.newrelic.environment (Default Value): devel
+topology.newrelic.licenseKey (Default Value): *****
+topology.newrelic.logLevel (Default Value): off
+topology.newrelic.namespace (Default Value): devel
+topology.port (Default Value): 8020
+topology.routerHost (Default Value): localhost
+topology.security.exposeApplicationHeaders (Default Value): false
+topology.tomcat.config (Default Value): 
+2025-06-06T11:48:58.604Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T11:48:58.644Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T11:49:00.513Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:44       ] [main                ] - Starting gRPC Server on port 8021
+2025-06-06T11:49:01.054Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T11:49:01.059Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T11:49:01.585Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:66       ] [main                ] - gRPC Server started, listening on 8021
+2025-06-06T11:49:01.602Z [jftpl] [INFO ] [                ] [c.j.t.s.m.MetricsService:47   ] [main                ] - Metrics Framework Service is disabled
+2025-06-06T11:49:05.967Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:62    ] [main                ] - Database migration started
+2025-06-06T11:49:06.092Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:70    ] [main                ] - Latest pending Flyway changelog: none
+2025-06-06T11:49:06.136Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:73    ] [main                ] - Current Flyway changelog: 1.2
+2025-06-06T11:49:06.136Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:75    ] [main                ] - Database migration in progress...
+2025-06-06T11:49:06.425Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:80    ] [main                ] - Current Flyway changelog: 1.2
+2025-06-06T11:49:06.426Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:82    ] [main                ] - Database migration done
+2025-06-06T11:49:06.441Z [jftpl] [INFO ] [                ] [t.s.TopologyStartupListener:42] [main                ] - topology (jftpl) service initialization completed in 22.853 seconds. Listening on port: 8020
+2025-06-06T11:49:16.666Z [jftpl] [INFO ] [e98d0c2ab7e17da7] [c.j.t.s.s.HealthCheckRunner:37] [topology-scheduler-1] - Service node has become healthy
+2025-06-06T11:49:41.666Z [jftpl] [INFO ] [49e26f7a220c440e] [.TenantAccessClientProvider:95] [c-default-executor-0] - Scheduling Access join...
+2025-06-06T11:49:41.713Z [jftpl] [INFO ] [49e26f7a220c440e] [c.j.t.s.a.AccessJoiner:40     ] [jf-common-pool-0    ] - Beginning Access join...
+2025-06-06T11:49:42.759Z [jftpl] [WARN ] [49e26f7a220c440e] [enAuthenticationInterceptor:44] [c-default-executor-0] - Service is not ready: Timed out waiting for Access Join, please try again later
+2025-06-06T11:49:44.517Z [jftpl] [INFO ] [49e26f7a220c440e] [.a.c.AccessClientBootstrap:179] [jf-common-pool-0    ] - Cluster join: Executing join on 'http://localhost:8046/access'
+2025-06-06T11:49:44.816Z [jftpl] [INFO ] [49e26f7a220c440e] [.a.c.AccessClientBootstrap:190] [jf-common-pool-0    ] - Cluster join: Successfully joined the cluster
+2025-06-06T11:49:44.817Z [jftpl] [INFO ] [49e26f7a220c440e] [c.j.t.s.a.AccessJoiner:50     ] [jf-common-pool-0    ] - Successfully joined Access
+2025-06-06T11:50:35.607Z [jftpl] [WARN ] [02b26a992f5500d8] [.RpcServiceRegistryResource:85] [c-default-executor-0] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
+2025-06-06T12:02:46.910Z [jftpl] [INFO ] [                ] [plicationContextInitializer:82] [main                ] - topology (jftpl) service initialization started. Version: 1.92.3 Revision: 19203900 PID: 6877 Home: /opt/jfrog/artifactory
+2025-06-06T12:02:46.934Z [jftpl] [INFO ] [                ] [plicationContextInitializer:38] [main                ] - Topology service deployment type: OnPrem
+2025-06-06T12:02:47.014Z [jftpl] [INFO ] [                ] [plicationContextInitializer:52] [main                ] - fips.mode (Default Value): none
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.logging.enableJsonConsoleLogAppenders (Default Value): false
+shared.multiTenant.enabled (Default Value): false
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.runtime.isSaas (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+topology.accessClient.connectionTimeoutSecs (Default Value): 5
+topology.accessClient.insecure (Default Value): false
+topology.accessClient.maxJoinRetries (Default Value): 90
+topology.accessClient.providerCacheTimeoutSecs (Default Value): 10800
+topology.accessClient.serverBypassMaxJoinRetries (Default Value): 5
+topology.accessClient.serverBypassUrl (Default Value): 
+topology.accessClient.socketTimeoutSecs (Default Value): 45
+topology.accessClient.versionCacheExpirationSecs (Default Value): 120
+topology.accessClient.waitJoinMillis (Default Value): 1000
+topology.cleanup.staleNodeInitialDelaySecs (Default Value): 3600
+topology.cleanup.staleNodeIntervalSecs (Default Value): 3600
+topology.cleanup.staleNodeThresholdSecs (Default Value): 604800
+topology.database.maxOpenConnections (Default Value): 100
+topology.database.maxWait (Default Value): 30000
+topology.database.metrics.enabled (Default Value): false
+topology.database.migrationRetry.backoff (Default Value): 1.5
+topology.database.migrationRetry.initialDelayMillis (Default Value): 2000
+topology.database.migrationRetry.maxIntervalSecs (Default Value): 900
+topology.database.timeoutSecs (Default Value): 600
+topology.grpc.maxInboundMetadataSize (Default Value): 8192
+topology.grpc.port (Default Value): 8021
+topology.healthCheck.initialDelaySecs (Default Value): 15
+topology.healthCheck.intervalSecs (Default Value): 10
+topology.healthCheck.tenantCacheExpirationSecs (Default Value): 30
+topology.kubernetesFetcher.cacheTimeoutSecs (Default Value): 120
+topology.kubernetesFetcher.clientTimeoutSecs (Default Value): 10
+topology.kubernetesFetcher.enabled (Default Value): false
+topology.logging.requestFilter.enabled (Default Value): false
+topology.logging.requestFilter.grpc.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.grpc.ignorePaths (Default Value): 
+topology.logging.requestFilter.grpc.ignoreStatusCodes (Default Value): 
+topology.logging.requestFilter.http.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.http.ignorePaths (Default Value): 
+topology.logging.requestFilter.http.ignoreStatusCodes (Default Value): 
+topology.metrics.enabled (Default Value): false
+topology.metrics.exclude (Default Value): 
+topology.metrics.intervalSecs (Default Value): 60
+topology.metrics.logPeriodically (Default Value): true
+topology.metrics.numberServicesCacheTimeoutSecs (Default Value): 600
+topology.multiTenant.parallelMigrationsCount (Default Value): 0
+topology.newrelic.enabled (Default Value): false
+topology.newrelic.environment (Default Value): devel
+topology.newrelic.licenseKey (Default Value): *****
+topology.newrelic.logLevel (Default Value): off
+topology.newrelic.namespace (Default Value): devel
+topology.port (Default Value): 8020
+topology.routerHost (Default Value): localhost
+topology.security.exposeApplicationHeaders (Default Value): false
+topology.tomcat.config (Default Value): 
+2025-06-06T12:02:57.276Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T12:02:57.295Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T12:03:00.168Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:44       ] [main                ] - Starting gRPC Server on port 8021
+2025-06-06T12:03:01.218Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T12:03:01.220Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T12:03:02.289Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:66       ] [main                ] - gRPC Server started, listening on 8021
+2025-06-06T12:03:02.345Z [jftpl] [INFO ] [                ] [c.j.t.s.m.MetricsService:47   ] [main                ] - Metrics Framework Service is disabled
+2025-06-06T12:03:08.939Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:62    ] [main                ] - Database migration started
+2025-06-06T12:03:09.155Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:70    ] [main                ] - Latest pending Flyway changelog: none
+2025-06-06T12:03:09.281Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:73    ] [main                ] - Current Flyway changelog: 1.2
+2025-06-06T12:03:09.284Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:75    ] [main                ] - Database migration in progress...
+2025-06-06T12:03:09.556Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:80    ] [main                ] - Current Flyway changelog: 1.2
+2025-06-06T12:03:09.557Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:82    ] [main                ] - Database migration done
+2025-06-06T12:03:09.563Z [jftpl] [INFO ] [                ] [t.s.TopologyStartupListener:42] [main                ] - topology (jftpl) service initialization completed in 30.699 seconds. Listening on port: 8020
+2025-06-06T12:03:17.421Z [jftpl] [INFO ] [d35b59a8965d72ee] [c.j.t.s.s.HealthCheckRunner:37] [topology-scheduler-1] - Service node has become healthy
+2025-06-06T12:04:25.997Z [jftpl] [INFO ] [12917f93825ed5e7] [.TenantAccessClientProvider:95] [c-default-executor-0] - Scheduling Access join...
+2025-06-06T12:04:26.075Z [jftpl] [INFO ] [12917f93825ed5e7] [c.j.t.s.a.AccessJoiner:40     ] [jf-common-pool-0    ] - Beginning Access join...
+2025-06-06T12:04:30.790Z [jftpl] [WARN ] [12917f93825ed5e7] [enAuthenticationInterceptor:44] [c-default-executor-0] - Service is not ready: Timed out waiting for Access Join, please try again later
+2025-06-06T12:04:50.047Z [jftpl] [WARN ] [4bc8da57b5360537] [enAuthenticationInterceptor:44] [c-default-executor-2] - Service is not ready: Timed out waiting for Access Join, please try again later
+2025-06-06T12:04:51.691Z [jftpl] [WARN ] [650536d5015f643c] [enAuthenticationInterceptor:44] [c-default-executor-1] - Service is not ready: Timed out waiting for Access Join, please try again later
+2025-06-06T12:05:05.326Z [jftpl] [WARN ] [44a324b4335133f0] [enAuthenticationInterceptor:44] [c-default-executor-1] - Service is not ready: Timed out waiting for Access Join, please try again later
+2025-06-06T12:05:08.135Z [jftpl] [INFO ] [12917f93825ed5e7] [.a.c.AccessClientBootstrap:179] [jf-common-pool-0    ] - Cluster join: Executing join on 'http://localhost:8046/access'
+2025-06-06T12:05:08.781Z [jftpl] [INFO ] [12917f93825ed5e7] [.a.c.AccessClientBootstrap:190] [jf-common-pool-0    ] - Cluster join: Successfully joined the cluster
+2025-06-06T12:05:08.782Z [jftpl] [INFO ] [12917f93825ed5e7] [c.j.t.s.a.AccessJoiner:50     ] [jf-common-pool-0    ] - Successfully joined Access
+2025-06-06T12:13:56.255Z [jftpl] [WARN ] [1f06cfe872a1e164] [.RpcServiceRegistryResource:85] [c-default-executor-5] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
+2025-06-06T12:24:20.124Z [jftpl] [INFO ] [                ] [plicationContextInitializer:82] [main                ] - topology (jftpl) service initialization started. Version: 1.92.3 Revision: 19203900 PID: 6957 Home: /opt/jfrog/artifactory
+2025-06-06T12:24:20.165Z [jftpl] [INFO ] [                ] [plicationContextInitializer:38] [main                ] - Topology service deployment type: OnPrem
+2025-06-06T12:24:20.259Z [jftpl] [INFO ] [                ] [plicationContextInitializer:52] [main                ] - fips.mode (Default Value): none
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.logging.enableJsonConsoleLogAppenders (Default Value): false
+shared.multiTenant.enabled (Default Value): false
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.runtime.isSaas (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+topology.accessClient.connectionTimeoutSecs (Default Value): 5
+topology.accessClient.insecure (Default Value): false
+topology.accessClient.maxJoinRetries (Default Value): 90
+topology.accessClient.providerCacheTimeoutSecs (Default Value): 10800
+topology.accessClient.serverBypassMaxJoinRetries (Default Value): 5
+topology.accessClient.serverBypassUrl (Default Value): 
+topology.accessClient.socketTimeoutSecs (Default Value): 45
+topology.accessClient.versionCacheExpirationSecs (Default Value): 120
+topology.accessClient.waitJoinMillis (Default Value): 1000
+topology.cleanup.staleNodeInitialDelaySecs (Default Value): 3600
+topology.cleanup.staleNodeIntervalSecs (Default Value): 3600
+topology.cleanup.staleNodeThresholdSecs (Default Value): 604800
+topology.database.maxOpenConnections (Default Value): 100
+topology.database.maxWait (Default Value): 30000
+topology.database.metrics.enabled (Default Value): false
+topology.database.migrationRetry.backoff (Default Value): 1.5
+topology.database.migrationRetry.initialDelayMillis (Default Value): 2000
+topology.database.migrationRetry.maxIntervalSecs (Default Value): 900
+topology.database.timeoutSecs (Default Value): 600
+topology.grpc.maxInboundMetadataSize (Default Value): 8192
+topology.grpc.port (Default Value): 8021
+topology.healthCheck.initialDelaySecs (Default Value): 15
+topology.healthCheck.intervalSecs (Default Value): 10
+topology.healthCheck.tenantCacheExpirationSecs (Default Value): 30
+topology.kubernetesFetcher.cacheTimeoutSecs (Default Value): 120
+topology.kubernetesFetcher.clientTimeoutSecs (Default Value): 10
+topology.kubernetesFetcher.enabled (Default Value): false
+topology.logging.requestFilter.enabled (Default Value): false
+topology.logging.requestFilter.grpc.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.grpc.ignorePaths (Default Value): 
+topology.logging.requestFilter.grpc.ignoreStatusCodes (Default Value): 
+topology.logging.requestFilter.http.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.http.ignorePaths (Default Value): 
+topology.logging.requestFilter.http.ignoreStatusCodes (Default Value): 
+topology.metrics.enabled (Default Value): false
+topology.metrics.exclude (Default Value): 
+topology.metrics.intervalSecs (Default Value): 60
+topology.metrics.logPeriodically (Default Value): true
+topology.metrics.numberServicesCacheTimeoutSecs (Default Value): 600
+topology.multiTenant.parallelMigrationsCount (Default Value): 0
+topology.newrelic.enabled (Default Value): false
+topology.newrelic.environment (Default Value): devel
+topology.newrelic.licenseKey (Default Value): *****
+topology.newrelic.logLevel (Default Value): off
+topology.newrelic.namespace (Default Value): devel
+topology.port (Default Value): 8020
+topology.routerHost (Default Value): localhost
+topology.security.exposeApplicationHeaders (Default Value): false
+topology.tomcat.config (Default Value): 
+2025-06-06T12:24:34.372Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T12:24:34.390Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T12:24:37.204Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:44       ] [main                ] - Starting gRPC Server on port 8021
+2025-06-06T12:24:37.834Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T12:24:37.835Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T12:24:38.531Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:66       ] [main                ] - gRPC Server started, listening on 8021
+2025-06-06T12:24:38.547Z [jftpl] [INFO ] [                ] [c.j.t.s.m.MetricsService:47   ] [main                ] - Metrics Framework Service is disabled
+2025-06-06T12:24:43.139Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:62    ] [main                ] - Database migration started
+2025-06-06T12:24:43.243Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:70    ] [main                ] - Latest pending Flyway changelog: none
+2025-06-06T12:24:43.325Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:73    ] [main                ] - Current Flyway changelog: 1.2
+2025-06-06T12:24:43.327Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:75    ] [main                ] - Database migration in progress...
+2025-06-06T12:24:47.007Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:80    ] [main                ] - Current Flyway changelog: 1.2
+2025-06-06T12:24:47.008Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:82    ] [main                ] - Database migration done
+2025-06-06T12:24:47.419Z [jftpl] [INFO ] [                ] [t.s.TopologyStartupListener:42] [main                ] - topology (jftpl) service initialization completed in 42.871 seconds. Listening on port: 8020
+2025-06-06T12:24:57.053Z [jftpl] [INFO ] [57d8e5faed42aebf] [c.j.t.s.s.HealthCheckRunner:37] [topology-scheduler-1] - Service node has become healthy
+2025-06-06T13:06:26.740Z [jftpl] [INFO ] [                ] [plicationContextInitializer:82] [main                ] - topology (jftpl) service initialization started. Version: 1.92.3 Revision: 19203900 PID: 7067 Home: /opt/jfrog/artifactory
+2025-06-06T13:06:26.749Z [jftpl] [INFO ] [                ] [plicationContextInitializer:38] [main                ] - Topology service deployment type: OnPrem
+2025-06-06T13:06:26.784Z [jftpl] [INFO ] [                ] [plicationContextInitializer:52] [main                ] - fips.mode (Default Value): none
+shared.database.driver (File): org.postgresql.Driver
+shared.database.password (File): *****
+shared.database.type (File): postgresql
+shared.database.url (File): jdbc:postgresql://postgres:5432/artifactorydb
+shared.database.username (File): artifactory
+shared.logging.enableJsonConsoleLogAppenders (Default Value): false
+shared.multiTenant.enabled (Default Value): false
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): artifactory-node-1
+shared.runtime.isSaas (Default Value): false
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+topology.accessClient.connectionTimeoutSecs (Default Value): 5
+topology.accessClient.insecure (Default Value): false
+topology.accessClient.maxJoinRetries (Default Value): 90
+topology.accessClient.providerCacheTimeoutSecs (Default Value): 10800
+topology.accessClient.serverBypassMaxJoinRetries (Default Value): 5
+topology.accessClient.serverBypassUrl (Default Value): 
+topology.accessClient.socketTimeoutSecs (Default Value): 45
+topology.accessClient.versionCacheExpirationSecs (Default Value): 120
+topology.accessClient.waitJoinMillis (Default Value): 1000
+topology.cleanup.staleNodeInitialDelaySecs (Default Value): 3600
+topology.cleanup.staleNodeIntervalSecs (Default Value): 3600
+topology.cleanup.staleNodeThresholdSecs (Default Value): 604800
+topology.database.maxOpenConnections (Default Value): 100
+topology.database.maxWait (Default Value): 30000
+topology.database.metrics.enabled (Default Value): false
+topology.database.migrationRetry.backoff (Default Value): 1.5
+topology.database.migrationRetry.initialDelayMillis (Default Value): 2000
+topology.database.migrationRetry.maxIntervalSecs (Default Value): 900
+topology.database.timeoutSecs (Default Value): 600
+topology.grpc.maxInboundMetadataSize (Default Value): 8192
+topology.grpc.port (Default Value): 8021
+topology.healthCheck.initialDelaySecs (Default Value): 15
+topology.healthCheck.intervalSecs (Default Value): 10
+topology.healthCheck.tenantCacheExpirationSecs (Default Value): 30
+topology.kubernetesFetcher.cacheTimeoutSecs (Default Value): 120
+topology.kubernetesFetcher.clientTimeoutSecs (Default Value): 10
+topology.kubernetesFetcher.enabled (Default Value): false
+topology.logging.requestFilter.enabled (Default Value): false
+topology.logging.requestFilter.grpc.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.grpc.ignorePaths (Default Value): 
+topology.logging.requestFilter.grpc.ignoreStatusCodes (Default Value): 
+topology.logging.requestFilter.http.ignoreDurationThresholdMillis (Default Value): 100
+topology.logging.requestFilter.http.ignorePaths (Default Value): 
+topology.logging.requestFilter.http.ignoreStatusCodes (Default Value): 
+topology.metrics.enabled (Default Value): false
+topology.metrics.exclude (Default Value): 
+topology.metrics.intervalSecs (Default Value): 60
+topology.metrics.logPeriodically (Default Value): true
+topology.metrics.numberServicesCacheTimeoutSecs (Default Value): 600
+topology.multiTenant.parallelMigrationsCount (Default Value): 0
+topology.newrelic.enabled (Default Value): false
+topology.newrelic.environment (Default Value): devel
+topology.newrelic.licenseKey (Default Value): *****
+topology.newrelic.logLevel (Default Value): off
+topology.newrelic.namespace (Default Value): devel
+topology.port (Default Value): 8020
+topology.routerHost (Default Value): localhost
+topology.security.exposeApplicationHeaders (Default Value): false
+topology.tomcat.config (Default Value): 
+2025-06-06T13:06:34.985Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T13:06:34.995Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T13:06:37.065Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:44       ] [main                ] - Starting gRPC Server on port 8021
+2025-06-06T13:06:37.802Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:24 ] [main                ] - HttpRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T13:06:37.803Z [jftpl] [INFO ] [                ] [c.j.t.s.l.RequestLogHelper:25 ] [main                ] - GrpcRequestConfig: Config[filterPaths=[], filterStatusCodes=[], filterDurationThreshold=100]
+2025-06-06T13:06:38.442Z [jftpl] [INFO ] [                ] [c.j.t.s.g.GrpcServer:66       ] [main                ] - gRPC Server started, listening on 8021
+2025-06-06T13:06:38.451Z [jftpl] [INFO ] [                ] [c.j.t.s.m.MetricsService:47   ] [main                ] - Metrics Framework Service is disabled
+2025-06-06T13:06:42.058Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:62    ] [main                ] - Database migration started
+2025-06-06T13:06:42.155Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:70    ] [main                ] - Latest pending Flyway changelog: none
+2025-06-06T13:06:42.189Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:73    ] [main                ] - Current Flyway changelog: 1.2
+2025-06-06T13:06:42.189Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:75    ] [main                ] - Database migration in progress...
+2025-06-06T13:06:42.316Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:80    ] [main                ] - Current Flyway changelog: 1.2
+2025-06-06T13:06:42.317Z [jftpl] [INFO ] [                ] [c.j.t.s.c.FlywayFactory:82    ] [main                ] - Database migration done
+2025-06-06T13:06:42.321Z [jftpl] [INFO ] [                ] [t.s.TopologyStartupListener:42] [main                ] - topology (jftpl) service initialization completed in 27.387 seconds. Listening on port: 8020
+2025-06-06T13:06:53.504Z [jftpl] [INFO ] [2c4fd0740fb40fcd] [c.j.t.s.s.HealthCheckRunner:37] [topology-scheduler-1] - Service node has become healthy
+2025-06-06T13:07:16.775Z [jftpl] [INFO ] [3275525d14739564] [.TenantAccessClientProvider:95] [c-default-executor-0] - Scheduling Access join...
+2025-06-06T13:07:16.795Z [jftpl] [INFO ] [3275525d14739564] [c.j.t.s.a.AccessJoiner:40     ] [jf-common-pool-0    ] - Beginning Access join...
+2025-06-06T13:07:17.803Z [jftpl] [WARN ] [3275525d14739564] [enAuthenticationInterceptor:44] [c-default-executor-0] - Service is not ready: Timed out waiting for Access Join, please try again later
+2025-06-06T13:07:17.879Z [jftpl] [INFO ] [3275525d14739564] [.a.c.AccessClientBootstrap:179] [jf-common-pool-0    ] - Cluster join: Executing join on 'http://localhost:8046/access'
+2025-06-06T13:07:18.185Z [jftpl] [INFO ] [3275525d14739564] [.a.c.AccessClientBootstrap:190] [jf-common-pool-0    ] - Cluster join: Successfully joined the cluster
+2025-06-06T13:07:18.186Z [jftpl] [INFO ] [3275525d14739564] [c.j.t.s.a.AccessJoiner:50     ] [jf-common-pool-0    ] - Successfully joined Access
+2025-06-06T13:11:47.220Z [jftpl] [WARN ] [240a2cf492a26f60] [.RpcServiceRegistryResource:85] [c-default-executor-1] - Got error from topology heartbeat: ERROR: CANCELLED: client cancelled
